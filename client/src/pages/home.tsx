@@ -19,7 +19,8 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+          {/* Hero Section with Text and Image Side by Side */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-20">
             <div className="space-y-12">
               {/* Main Headline - Presidential Typography */}
               <div className="space-y-6">
@@ -40,7 +41,7 @@ export default function HomePage() {
                 <span className="font-semibold text-gray-900"> Real leadership. Real change.</span>
               </p>
 
-              {/* Action Buttons - Moved below text */}
+              {/* Action Buttons - Below text */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/volunteer" className="group">
                   <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
@@ -62,40 +63,38 @@ export default function HomePage() {
               </div>
             </div>
             
-            <div className="space-y-12">
-              {/* Candidate Image - Clean and Professional */}
-              <div className="relative">
-                <div className="relative group">
-                  <img 
-                    src={candidatePhoto} 
-                    alt="Jump - Candidate for U.S. Senate" 
-                    className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
-                  />
-                  <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 shadow-elegant">
-                    <span className="text-black font-bold text-lg tracking-wider">2025</span>
-                  </div>
+            {/* Candidate Image - Next to the text */}
+            <div className="relative">
+              <div className="relative group">
+                <img 
+                  src={candidatePhoto} 
+                  alt="Jump - Candidate for U.S. Senate" 
+                  className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
+                />
+                <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 shadow-elegant">
+                  <span className="text-black font-bold text-lg tracking-wider">2025</span>
                 </div>
               </div>
+            </div>
+          </div>
 
-              {/* Quote Section - Professional Speech Box */}
-              <div className="relative">
-                <div className="bg-gray-50 p-8 shadow-elegant border-l-4 border-black">
-                  {/* Quote Mark */}
-                  <div className="text-4xl text-gray-400 font-serif leading-none mb-4">
-                    "
-                  </div>
-                  
-                  {/* Quote Content */}
-                  <blockquote className="text-xl md:text-2xl font-medium text-gray-900 leading-relaxed mb-4">
-                    I'm running for U.S. Senate because I believe the government should promote equality for everyone.
-                  </blockquote>
-                  
-                  {/* Attribution */}
-                  <div className="flex items-center space-x-4">
-                    <div className="w-12 h-0.5 bg-black"></div>
-                    <span className="text-sm text-gray-600 font-medium tracking-wider uppercase">Jump for Senate</span>
-                  </div>
-                </div>
+          {/* Quote Section - Below the hero section */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-50 p-8 shadow-elegant border-l-4 border-black">
+              {/* Quote Mark */}
+              <div className="text-4xl text-gray-400 font-serif leading-none mb-4">
+                "
+              </div>
+              
+              {/* Quote Content */}
+              <blockquote className="text-xl md:text-2xl font-medium text-gray-900 leading-relaxed mb-4">
+                I'm running for U.S. Senate because I believe the government should promote equality for everyone.
+              </blockquote>
+              
+              {/* Attribution */}
+              <div className="flex items-center space-x-4">
+                <div className="w-12 h-0.5 bg-black"></div>
+                <span className="text-sm text-gray-600 font-medium tracking-wider uppercase">Jump for Senate</span>
               </div>
             </div>
           </div>
