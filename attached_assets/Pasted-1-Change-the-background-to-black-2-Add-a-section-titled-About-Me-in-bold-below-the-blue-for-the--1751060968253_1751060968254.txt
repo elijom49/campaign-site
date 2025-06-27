@@ -1,0 +1,34 @@
+1. Change the background to black
+2. Add a section titled "About Me" in bold below the blue for the working class. for you. section
+3. Move the picture to the About Me on the right. Leave room for a bio on the left parallel to the picture. Add 'Bio" at the top of this section
+4. Below the Bio and picture that are parallel to each other, add a section titled "My Policies" in bold. It should match the font and formatting of "About Me". Text on the left with a space for video parallel on the right
+5. Change "About" page at the top header to "Campaign". On this "Campaign" page, move the entire Fighting for Our Future section including the three boxes. Leave the "The Issues" button which should link to the "Campaign" page.
+6. Put the same picture in the middle of the Campaign page. Surrounding the picture should be the boxes with Lowering Cost of Living, Environmental Policy, Elimination of The Pink Tax. Add two more boxes and title them "Placeholders". The five boxes in total should go around the picture with one box on the left of the picture, one box on the right of the picture, and three boxes below the picture.
+7. Make the campaign page background black too.
+8. At the bottom of the campaign page, put a separate section called "How You Can Help"
+9. In the "How You Can Help" section, have a list of three: Volunteer, Donate, Attend a Meeting. Volunteer should link to the existing volunteer page. Donate should link to the Act Blue donation page. No link for Attend a Meeting yet.
+10. Add a new page at the top called "Community". On this page, add a section called "Follow Us!". Link the TikTok, LinkedIn, YouTube. If you don't have any of those links, put the word instead of the link.
+11. Add another section below called "Fundraising". Add the attached flyer. Below the flyer, include this information:
+Join The Senator's Cup, our first fundraiser for the campaign.
+
+Think you can ball? Put it to the test. 8-player tournament, $100 entry, $300 prizes. Remaining proceeds go to the campaign. We're running events three times a week throughout this election cycle, and we'll be adding bonus brackets for bigger challenges for those who can't get enough of winning.
+
+In addition, join our the Cup Discord. A place for men who are serious about being a person of influence in their community. Hang with the guys, talk politics, sports, gaming, cash, and business as you get direct-from-Jump updates on the campaign while participating in a community of men with power and confidence.
+
+Brackets will begin soon. If you'd like to be on the staff team for The Senator's Cup, please let us know. There are remote and local positions available.
+
+12. On the Community page, add a third section for Merch. Include pictures of a t-shirt, a tote bag, and stickers using the Jump logo.
+
+13. On the Community page, add a fourth section and call it "Campaign Updates". There should be three sub-sections for "Calendar", "Main", and "Press". Please make these look super cool but professional.
+
+14. Now we're going to change the top section of the home page. Put "Your Future U.S. Senator Lives Among the People" in big bold letters on the top left. Beneath this title, put the Jump logo and the "Donate Now" and "Join Our Team" buttons. 
+
+15. Next to the big bold letters and the buttons, put the picture
+
+16. the homepage should have a white background
+
+17. Keep the "I'm running for U.S. Senate" quote, but make it look more like a quote that pops out. Instead of taking up the width of the page, make it standout in a smaller speech box.
+
+18. After that section, still highlight the Fighting for Our Future that was moved to the Campaign page. Don't include the whole thing, just highlights and a button to click that says "The Issues"
+
+19. At the bottom of the home page, before the "Join the Revolution" Section, add in big bold letters, "It's not Red vs. Blue, it's oligarchs vs. you."
