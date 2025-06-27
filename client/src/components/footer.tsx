@@ -1,9 +1,12 @@
 import { Link } from "wouter";
-import { SiTiktok, SiLinkedin, SiYoutube } from "react-icons/si";
+import { SiTiktok, SiLinkedin, SiYoutube, SiInstagram } from "react-icons/si";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/hooks/use-language";
 import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function Footer() {
+  const { t } = useLanguage();
+  
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,39 +18,39 @@ export default function Footer() {
               className="h-12 w-auto mb-4"
             />
             <div className="flex space-x-4 mb-6">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.tiktok.com/@jumpforsenate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <SiTiktok size={24} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <SiLinkedin size={24} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.youtube.com/@JumpForSenate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <SiYoutube size={24} />
+              </a>
+              <a href="https://www.instagram.com/jumpforsenate" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <SiInstagram size={24} />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Connect</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.connect')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about">
                   <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                    About
+                    {t('nav.about')}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/campaign">
                   <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                    Campaign
+                    {t('nav.campaign')}
                   </span>
                 </Link>
               </li>
               <li>
                 <Link href="/community">
                   <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                    Community
+                    {t('nav.community')}
                   </span>
                 </Link>
               </li>
@@ -58,18 +61,18 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://secure.actblue.com/donate" 
+                  href="https://secure.actblue.com/donate/jumpforsenate" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Donate
+                  {t('home.donate')}
                 </a>
               </li>
               <li>
                 <Link href="/volunteer">
                   <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                    Volunteer
+                    {t('nav.volunteer')}
                   </span>
                 </Link>
               </li>
@@ -77,20 +80,20 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-4">Contact</h3>
+            <h3 className="text-lg font-bold mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-2 text-gray-300">
               <li>
                 <a 
-                  href="mailto:jumpshepherd@gmail.com" 
+                  href="mailto:blue@jump2026.com" 
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  jumpshepherd@gmail.com
+                  blue@jump2026.com
                 </a>
               </li>
             </ul>
             <div className="mt-4">
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold rounded-none">
-                Sign Up for Updates
+                {t('footer.signUpUpdates')}
               </Button>
             </div>
           </div>
