@@ -17,6 +17,14 @@ export default function AboutPage() {
               <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.9]">
                 {t('about.meetJump')}
               </h1>
+              
+              {/* Bio Space */}
+              <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                <p className="text-body-large text-gray-300 leading-relaxed">
+                  XXXXXXXXXXXX
+                </p>
+              </div>
+              
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/campaign">
                   <span className="btn-primary-large">View Platform</span>
@@ -65,6 +73,57 @@ export default function AboutPage() {
             <p className="text-body-large text-gray-300 max-w-4xl mx-auto">
               {t('about.policiesDesc')}
             </p>
+          </div>
+          
+          {/* Vertical Timeline */}
+          <div className="col-span-12 lg:col-span-8 mx-auto">
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-500"></div>
+              
+              {/* Timeline Items */}
+              <div className="space-y-12">
+                {/* Policy 1 */}
+                <div className="relative flex items-start">
+                  <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
+                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
+                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
+                  </div>
+                </div>
+                
+                {/* Policy 2 */}
+                <div className="relative flex items-start">
+                  <div className="absolute left-6 w-4 h-4 bg-yellow-500 rounded-full border-4 border-black"></div>
+                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
+                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
+                  </div>
+                </div>
+                
+                {/* Policy 3 */}
+                <div className="relative flex items-start">
+                  <div className="absolute left-6 w-4 h-4 bg-green-500 rounded-full border-4 border-black"></div>
+                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
+                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
+                  </div>
+                </div>
+                
+                {/* Policy 4 */}
+                <div className="relative flex items-start">
+                  <div className="absolute left-6 w-4 h-4 bg-purple-500 rounded-full border-4 border-black"></div>
+                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
+                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
+                  </div>
+                </div>
+                
+                {/* Policy 5 */}
+                <div className="relative flex items-start">
+                  <div className="absolute left-6 w-4 h-4 bg-red-500 rounded-full border-4 border-black"></div>
+                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
+                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
