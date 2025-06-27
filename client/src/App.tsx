@@ -6,7 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import Home from "@/pages/home";
+import Home from "@/pages/home-new";
 import Campaign from "@/pages/campaign";
 import Community from "@/pages/community";
 import About from "@/pages/about";
