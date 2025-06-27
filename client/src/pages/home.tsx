@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Home, Leaf, Equal, ArrowRight, Star } from "lucide-react";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function HomePage() {
   return (
@@ -18,13 +19,13 @@ export default function HomePage() {
           <div className="absolute bottom-1/4 left-1/2 w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           {/* Hero Section - Flex layout with text and image side by side */}
-          <div className="flex flex-col lg:flex-row items-start gap-12 mb-20">
+          <div className="flex flex-col lg:flex-row items-start gap-12 mb-12">
             {/* Text Content */}
-            <div className="flex-1 lg:max-w-2xl space-y-12">
+            <div className="flex-1 lg:max-w-2xl space-y-8">
               {/* Main Headline */}
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
                   Your Future
                   <br />
@@ -36,17 +37,20 @@ export default function HomePage() {
                 </h1>
               </div>
               
-              {/* Subtext */}
-              <p className="text-xl md:text-2xl text-gray-600 font-normal leading-relaxed">
-                It's not Red vs. Blue, it's oligarchs vs. you.
-              </p>
+              {/* Logo */}
+              <div className="py-4">
+                <img 
+                  src={jumpLogo} 
+                  alt="Jump for Senate Logo" 
+                  className="h-16 w-auto"
+                />
+              </div>
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/volunteer" className="group">
                   <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
                     <span>Get Involved</span>
-                    <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                   </Button>
                 </Link>
                 <a 
@@ -57,7 +61,6 @@ export default function HomePage() {
                 >
                   <Button className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 shadow-elegant">
                     <span>Donate</span>
-                    <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                   </Button>
                 </a>
               </div>
@@ -71,30 +74,27 @@ export default function HomePage() {
                   alt="Jump - Candidate for U.S. Senate" 
                   className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
                 />
-                <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 shadow-elegant">
-                  <span className="text-black font-bold text-lg tracking-wider">2025</span>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Quote Section - Below the hero section */}
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-50 p-8 shadow-elegant border-l-4 border-black">
-              {/* Quote Mark */}
-              <div className="text-4xl text-gray-400 font-serif leading-none mb-4">
-                "
+          {/* Quote Section - Zohran-style left square box */}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              {/* Quote Box - Left side */}
+              <div className="lg:col-span-5">
+                <div className="bg-black text-white p-8 aspect-square flex items-center justify-center">
+                  <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-center">
+                    I'm running for U.S. Senate because I believe the government should promote equality for everyone.
+                  </blockquote>
+                </div>
               </div>
               
-              {/* Quote Content */}
-              <blockquote className="text-xl md:text-2xl font-medium text-gray-900 leading-relaxed mb-4">
-                I'm running for U.S. Senate because I believe the government should promote equality for everyone.
-              </blockquote>
-              
-              {/* Attribution */}
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-0.5 bg-black"></div>
-                <span className="text-sm text-gray-600 font-medium tracking-wider uppercase">Jump for Senate</span>
+              {/* Tagline - Right side */}
+              <div className="lg:col-span-7 lg:pl-8">
+                <p className="text-2xl md:text-3xl font-light text-gray-900 leading-tight">
+                  It's not <span className="text-red-600 font-semibold">Red</span> vs. <span className="text-blue-600 font-semibold">Blue</span>, it's oligarchs vs. you.
+                </p>
               </div>
             </div>
           </div>
@@ -104,32 +104,20 @@ export default function HomePage() {
 
 
       {/* Fighting for Our Future - Professional Layout */}
-      <div className="relative py-32 bg-white">
-        {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0)`,
-            backgroundSize: '50px 50px'
-          }}></div>
-        </div>
-        
+      <div className="relative py-16 bg-white">        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8">
-              <span className="font-black">Fighting</span> for Our Future
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-600 mb-8">
+              Fighting for Our Future
             </h2>
-            <div className="w-32 h-0.5 bg-black mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-gray-600 font-normal max-w-4xl mx-auto leading-relaxed">
-              Our campaign is built on the foundation of economic justice, environmental responsibility, and equality for all.
-            </p>
           </div>
 
           {/* Professional Policy Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Card 1 - Housing */}
-            <div className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional">
+            <Link href="/campaign" className="group">
+              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
                     <Home className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
@@ -141,14 +129,13 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
-                  <ArrowRight className="ml-2 w-5 h-5" />
                 </div>
               </Card>
-            </div>
+            </Link>
             
             {/* Card 2 - Environment */}
-            <div className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional">
+            <Link href="/campaign" className="group">
+              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
                     <Leaf className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
@@ -160,14 +147,13 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
-                  <ArrowRight className="ml-2 w-5 h-5" />
                 </div>
               </Card>
-            </div>
+            </Link>
             
             {/* Card 3 - Equality */}
-            <div className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional">
+            <Link href="/campaign" className="group">
+              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
                 <div className="mb-6">
                   <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
                     <Equal className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
@@ -179,10 +165,9 @@ export default function HomePage() {
                 </p>
                 <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
-                  <ArrowRight className="ml-2 w-5 h-5" />
                 </div>
               </Card>
-            </div>
+            </Link>
           </div>
 
           {/* Call to Action */}
@@ -190,55 +175,21 @@ export default function HomePage() {
             <Link href="/campaign" className="group inline-block">
               <Button className="bg-black hover:bg-gray-800 text-white px-16 py-4 text-xl font-semibold rounded-none shadow-elegant transform hover:scale-105 transition-all duration-300">
                 <span>The Issues</span>
-                <ArrowRight className="ml-4 w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </Button>
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Red vs Blue Section - Powerful Statement */}
-      <div className="relative py-40 bg-black">
-        {/* Minimal accent elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/2 left-10 w-0.5 h-40 bg-white opacity-20"></div>
-          <div className="absolute top-1/2 right-10 w-0.5 h-40 bg-white opacity-20"></div>
-        </div>
-        
+      {/* Join the Movement - Final CTA */}
+      <div className="relative py-16 bg-white">        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-12 leading-[0.9]">
-            It's not Red vs. Blue,
-            <br />
-            it's <span className="font-black">oligarchs vs. you</span>.
+          <h2 className="text-4xl md:text-5xl font-black text-blue-600 mb-6">
+            Join the Movement
           </h2>
           
-          <div className="w-32 h-0.5 bg-white mx-auto mb-12"></div>
-          
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto font-normal leading-relaxed">
-            This election is about standing up to the wealthy elite who have rigged the system against working families.
-            <span className="text-white font-semibold"> The time for change is now.</span>
-          </p>
-        </div>
-      </div>
-
-      {/* Join the Revolution - Final CTA */}
-      <div className="relative py-40 bg-white">
-        {/* Subtle background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-40 h-40 bg-gray-100 rounded-full opacity-50"></div>
-          <div className="absolute bottom-20 right-20 w-60 h-60 bg-gray-50 rounded-full opacity-60"></div>
-        </div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-light text-gray-900 mb-12">
-            Join the <span className="font-black">Movement</span>
-          </h2>
-          
-          <div className="w-32 h-0.5 bg-black mx-auto mb-12"></div>
-          
-          <p className="text-xl md:text-2xl text-gray-600 mb-16 max-w-4xl mx-auto font-normal leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-normal leading-relaxed">
             Together, we can build a future where every person has the opportunity to thrive.
-            <span className="text-gray-900 font-semibold"> Your voice matters. Your vote counts.</span>
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -250,20 +201,13 @@ export default function HomePage() {
             >
               <Button className="bg-black hover:bg-gray-800 text-white px-16 py-6 text-xl font-semibold rounded-none shadow-elegant transform hover:scale-105 transition-all duration-300">
                 <span>Donate Today</span>
-                <ArrowRight className="ml-4 w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </Button>
             </a>
             <Link href="/volunteer" className="group">
               <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-16 py-6 text-xl font-semibold rounded-none transform hover:scale-105 transition-all duration-300 bg-transparent">
                 <span>Get Involved</span>
-                <ArrowRight className="ml-4 w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </Button>
             </Link>
-          </div>
-          
-          {/* Professional footer note */}
-          <div className="mt-16 text-gray-500 text-lg font-normal">
-            <p>Join thousands of supporters across Illinois</p>
           </div>
         </div>
       </div>
