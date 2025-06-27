@@ -27,9 +27,11 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <div className="relative group cursor-pointer">
-                <div className="w-24 h-12 bg-black rounded-none flex items-center justify-center shadow-elegant transform group-hover:scale-105 transition-all duration-300">
-                  <span className="text-white font-black text-lg tracking-[0.2em]">JUMP</span>
-                </div>
+                <img 
+                  src="/attached_assets/Jump For Senate White Chicago Trans _1751061793394.png" 
+                  alt="Jump for Senate - Chicago, Illinois" 
+                  className="h-16 w-auto transform group-hover:scale-105 transition-all duration-300"
+                />
               </div>
             </Link>
           </div>

@@ -18,8 +18,8 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="space-y-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+            <div className="space-y-12">
               {/* Main Headline - Presidential Typography */}
               <div className="space-y-6">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
@@ -39,21 +39,14 @@ export default function HomePage() {
                 <span className="font-semibold text-gray-900"> Real leadership. Real change.</span>
               </p>
 
-              {/* Jump Logo - Minimal and Elegant */}
-              <div className="flex items-center space-x-6">
-                <div className="relative group">
-                  <div className="w-32 h-16 bg-black rounded-lg flex items-center justify-center shadow-elegant transform group-hover:scale-105 transition-all duration-500">
-                    <span className="text-white font-black text-xl tracking-[0.2em]">JUMP</span>
-                  </div>
-                </div>
-                <div className="h-12 w-0.5 bg-gray-300"></div>
-                <div className="text-sm text-gray-500 font-medium tracking-wider uppercase">
-                  For U.S. Senate
-                </div>
-              </div>
-
-              {/* Action Buttons - Sophisticated Design */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              {/* Action Buttons - Moved below text */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/volunteer" className="group">
+                  <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
+                    <span>Get Involved</span>
+                    <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  </Button>
+                </Link>
                 <a 
                   href="https://secure.actblue.com/donate" 
                   target="_blank" 
@@ -61,29 +54,46 @@ export default function HomePage() {
                   className="group"
                 >
                   <Button className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 shadow-elegant">
-                    <span>Donate Now</span>
+                    <span>Donate</span>
                     <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                   </Button>
                 </a>
-                <Link href="/volunteer" className="group">
-                  <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
-                    <span>Join Our Team</span>
-                    <ArrowRight className="ml-3 w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                  </Button>
-                </Link>
               </div>
             </div>
             
-            {/* Candidate Image - Clean and Professional */}
-            <div className="relative">
-              <div className="relative group">
-                <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="rounded-none shadow-professional w-full h-auto grayscale hover:grayscale-0 transition-all duration-700" 
-                />
-                <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 shadow-elegant">
-                  <span className="text-black font-bold text-lg tracking-wider">2025</span>
+            <div className="space-y-12">
+              {/* Candidate Image - Clean and Professional */}
+              <div className="relative">
+                <div className="relative group">
+                  <img 
+                    src="/attached_assets/IMG_2361_1751061882818.jpg" 
+                    alt="Jump - Candidate for U.S. Senate" 
+                    className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
+                  />
+                  <div className="absolute -bottom-6 -right-6 bg-white px-6 py-3 shadow-elegant">
+                    <span className="text-black font-bold text-lg tracking-wider">2025</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Quote Section - Professional Speech Box */}
+              <div className="relative">
+                <div className="bg-gray-50 p-8 shadow-elegant border-l-4 border-black">
+                  {/* Quote Mark */}
+                  <div className="text-4xl text-gray-400 font-serif leading-none mb-4">
+                    "
+                  </div>
+                  
+                  {/* Quote Content */}
+                  <blockquote className="text-xl md:text-2xl font-medium text-gray-900 leading-relaxed mb-4">
+                    I'm running for U.S. Senate because I believe the government should promote equality for everyone.
+                  </blockquote>
+                  
+                  {/* Attribution */}
+                  <div className="flex items-center space-x-4">
+                    <div className="w-12 h-0.5 bg-black"></div>
+                    <span className="text-sm text-gray-600 font-medium tracking-wider uppercase">Jump for Senate</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -91,37 +101,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Quote Section - Sophisticated Statement */}
-      <div className="relative py-32 bg-gray-50">
-        {/* Minimal geometric elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-40 left-40 w-1 h-32 bg-gray-300 opacity-40"></div>
-          <div className="absolute bottom-40 right-40 w-32 h-1 bg-gray-300 opacity-40"></div>
-        </div>
-        
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="relative">
-            {/* Quote Mark */}
-            <div className="text-8xl text-gray-200 font-serif leading-none mb-8">
-              "
-            </div>
-            
-            {/* Quote Content - Presidential Styling */}
-            <div className="space-y-8">
-              <blockquote className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight max-w-4xl mx-auto">
-                I'm running for
-                <span className="font-black"> U.S. Senate</span>
-              </blockquote>
-              
-              <div className="w-24 h-0.5 bg-black mx-auto"></div>
-              
-              <p className="text-xl md:text-2xl text-gray-600 font-normal leading-relaxed max-w-3xl mx-auto">
-                Because working families deserve a voice in Washington that truly represents their interests.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+
 
       {/* Fighting for Our Future - Professional Layout */}
       <div className="relative py-32 bg-white">
