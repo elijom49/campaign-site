@@ -12,7 +12,7 @@ export default function CampaignPage() {
           {/* Left Column - Top */}
           <div className="space-y-8">
             {/* Environmental Policy */}
-            <div className="policy-card-advanced bg-gray-900 border-gray-800">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl">
               <div className="text-center mb-4">
                 <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Environmental Policy</h2>
               </div>
@@ -21,7 +21,7 @@ export default function CampaignPage() {
             </div>
             
             {/* Bottom Left Policy */}
-            <div className="policy-card-advanced bg-gray-900 border-gray-800">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl">
               <div className="text-center mb-4">
                 <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">XXXXX Policy</h2>
               </div>
@@ -45,7 +45,7 @@ export default function CampaignPage() {
           {/* Right Column */}
           <div className="space-y-8">
             {/* The Billionaire's Bill */}
-            <div className="policy-card-advanced bg-gray-900 border-gray-800">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl">
               <div className="text-center mb-4">
                 <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">The Billionaire's Bill</h2>
               </div>
@@ -56,7 +56,7 @@ export default function CampaignPage() {
             </div>
             
             {/* XXX Policy */}
-            <div className="policy-card-advanced bg-gray-900 border-gray-800">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl">
               <div className="text-center mb-4">
                 <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">XXX Policy</h2>
               </div>
@@ -69,7 +69,7 @@ export default function CampaignPage() {
         {/* Bottom Section - Pink Tax */}
         <div className="col-span-12">
           <div className="max-w-4xl mx-auto">
-            <div className="policy-card-advanced bg-gray-900 border-gray-800 text-center">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl text-center">
               <div className="text-center mb-6">
                 <h2 className="text-headline text-4xl font-bold text-yellow-400 mb-2">Elimination of The Pink Tax</h2>
               </div>
