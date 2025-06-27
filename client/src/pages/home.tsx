@@ -19,10 +19,10 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
-          {/* Hero Section - Text on left, Image on right */}
-          <div className="grid grid-cols-12 gap-8 items-start mb-20">
-            {/* Text Content - Takes up 7 columns */}
-            <div className="col-span-12 lg:col-span-7 space-y-12">
+          {/* Hero Section - Flex layout with text and image side by side */}
+          <div className="flex flex-col lg:flex-row items-start gap-12 mb-20">
+            {/* Text Content */}
+            <div className="flex-1 lg:max-w-2xl space-y-12">
               {/* Main Headline */}
               <div className="space-y-6">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
@@ -37,9 +37,8 @@ export default function HomePage() {
               </div>
               
               {/* Subtext */}
-              <p className="text-xl md:text-2xl text-gray-600 font-normal leading-relaxed max-w-lg">
+              <p className="text-xl md:text-2xl text-gray-600 font-normal leading-relaxed">
                 It's not Red vs. Blue, it's oligarchs vs. you.
-                <span className="font-semibold text-gray-900"> Real leadership. Real change.</span>
               </p>
 
               {/* Action Buttons */}
@@ -64,8 +63,8 @@ export default function HomePage() {
               </div>
             </div>
             
-            {/* Candidate Image - Takes up 5 columns, positioned to the right */}
-            <div className="col-span-12 lg:col-span-5">
+            {/* Candidate Image - Right side, shrink-0 to maintain size */}
+            <div className="flex-shrink-0 lg:w-96">
               <div className="relative group">
                 <img 
                   src={candidatePhoto} 
