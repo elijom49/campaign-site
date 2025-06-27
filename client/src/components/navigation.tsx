@@ -2,17 +2,21 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/hooks/use-language";
+import LanguageToggle from "@/components/language-toggle";
 import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function Navigation() {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/campaign", label: "Campaign" },
-    { href: "/community", label: "Community" },
-    { href: "/volunteer", label: "Volunteer" },
+    { href: "/", label: t('nav.home') },
+    { href: "/about", label: t('nav.about') },
+    { href: "/campaign", label: t('nav.campaign') },
+    { href: "/community", label: t('nav.community') },
+    { href: "/volunteer", label: t('nav.volunteer') },
   ];
 
   const isActive = (href: string) => {
@@ -38,8 +42,8 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
+            <div className="flex items-center space-x-8">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
                   <span
@@ -54,6 +58,7 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
+            <LanguageToggle />
           </div>
 
           {/* Mobile menu button */}
