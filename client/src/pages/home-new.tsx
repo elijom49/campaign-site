@@ -14,10 +14,6 @@ export default function HomePage() {
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold border border-blue-200">
-                <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
-                2026 U.S. Senate • Chicago, Illinois
-              </div>
               <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9]">
                 Your Future
                 <br />
@@ -130,75 +126,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Large Quote Section */}
-      <section className="quote-section-large">
-        <div className="content-grid-advanced">
-          <div className="col-span-12">
-            <blockquote className="quote-large">
-              "Politics isn't about party lines — it's about serving the people who put their trust in you."
-            </blockquote>
-            <div className="mt-8 text-center">
-              <div className="text-lg font-semibold text-yellow-400">— Jump</div>
-              <div className="text-sm text-gray-400">Candidate for U.S. Senate</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* News & Updates Section */}
-      <section className="news-section">
-        <div className="content-grid-advanced">
-          <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-gray-900 mb-6">
-              Campaign Updates
-            </h2>
-            <p className="text-body-large text-gray-600">
-              Stay informed about our movement for change
-            </p>
-          </div>
-          
-          <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <article className="news-card">
-              <div className="p-6">
-                <div className="text-sm text-blue-600 font-semibold mb-2">Campaign Launch</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Jump Announces Senate Run
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Focusing on economic justice and healthcare access for all Illinois families.
-                </p>
-                <div className="text-sm text-gray-500">December 2025</div>
-              </div>
-            </article>
-            
-            <article className="news-card">
-              <div className="p-6">
-                <div className="text-sm text-blue-600 font-semibold mb-2">Policy Platform</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Comprehensive Healthcare Plan
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Detailed proposal for universal coverage and prescription drug reform.
-                </p>
-                <div className="text-sm text-gray-500">January 2026</div>
-              </div>
-            </article>
-            
-            <article className="news-card">
-              <div className="p-6">
-                <div className="text-sm text-blue-600 font-semibold mb-2">Community</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                  Grassroots Support Growing
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  Volunteers across Illinois are joining our movement for change.
-                </p>
-                <div className="text-sm text-gray-500">February 2026</div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+
+
 
       {/* Call to Action Section */}
       <section className="cta-section-advanced">

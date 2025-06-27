@@ -7,10 +7,10 @@ import { LanguageProvider } from "@/hooks/use-language";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import Home from "@/pages/home-new";
-import Campaign from "@/pages/campaign";
-import Community from "@/pages/community";
-import About from "@/pages/about";
-import Volunteer from "@/pages/volunteer";
+import Campaign from "@/pages/campaign-new";
+import Community from "@/pages/community-new";
+import About from "@/pages/about-new";
+import Volunteer from "@/pages/volunteer-new";
 import NotFound from "@/pages/not-found";
 
 function Router() {
