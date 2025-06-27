@@ -19,15 +19,16 @@ export default function HomePage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-40">
-          {/* Hero Section with Text and Image Side by Side */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-20">
-            <div className="space-y-12">
-              {/* Main Headline - Presidential Typography */}
+          {/* Hero Section - Text on left, Image on right */}
+          <div className="grid grid-cols-12 gap-8 items-start mb-20">
+            {/* Text Content - Takes up 7 columns */}
+            <div className="col-span-12 lg:col-span-7 space-y-12">
+              {/* Main Headline */}
               <div className="space-y-6">
                 <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
                   Your Future
                   <br />
-                  <span className="font-black">U.S. Senator</span>
+                  <span className="font-black text-blue-600">U.S. Senator</span>
                   <br />
                   <span className="font-light">Lives Among</span>
                   <br />
@@ -35,13 +36,13 @@ export default function HomePage() {
                 </h1>
               </div>
               
-              {/* Subtext - Clean and Professional */}
+              {/* Subtext */}
               <p className="text-xl md:text-2xl text-gray-600 font-normal leading-relaxed max-w-lg">
-                Fighting for working families in Chicago and across Illinois.
+                It's not Red vs. Blue, it's oligarchs vs. you.
                 <span className="font-semibold text-gray-900"> Real leadership. Real change.</span>
               </p>
 
-              {/* Action Buttons - Below text */}
+              {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/volunteer" className="group">
                   <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
@@ -63,8 +64,8 @@ export default function HomePage() {
               </div>
             </div>
             
-            {/* Candidate Image - Next to the text */}
-            <div className="relative">
+            {/* Candidate Image - Takes up 5 columns, positioned to the right */}
+            <div className="col-span-12 lg:col-span-5">
               <div className="relative group">
                 <img 
                   src={candidatePhoto} 
