@@ -10,13 +10,10 @@ export default function HomePage() {
     <div className="bg-white min-h-screen">
       {/* Hero Section - Presidential Quality Design */}
       <div className="relative overflow-hidden bg-white">
-        {/* Subtle geometric patterns */}
+        {/* Clean background */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 right-20 w-96 h-96 bg-gray-100 rounded-full opacity-30"></div>
           <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-gray-50 rounded-full opacity-40"></div>
-          <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-gray-400 rounded-full"></div>
-          <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-gray-300 rounded-full"></div>
-          <div className="absolute bottom-1/4 left-1/2 w-1.5 h-1.5 bg-gray-400 rounded-full"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -35,6 +32,11 @@ export default function HomePage() {
                   <br />
                   <span className="font-black text-gray-800">the People</span>
                 </h1>
+                
+                {/* Tagline under headline */}
+                <p className="text-lg md:text-xl text-gray-600 font-normal leading-relaxed mt-4">
+                  It's not <span className="text-red-600 font-semibold">Red</span> vs. <span className="text-blue-600 font-semibold">Blue</span>, it's oligarchs vs. you.
+                </p>
               </div>
               
               {/* Logo */}
@@ -67,7 +69,7 @@ export default function HomePage() {
             </div>
             
             {/* Candidate Image - Right side, shrink-0 to maintain size */}
-            <div className="flex-shrink-0 lg:w-96">
+            <div className="flex-shrink-0 lg:w-96 space-y-4">
               <div className="relative group">
                 <img 
                   src={candidatePhoto} 
@@ -75,33 +77,19 @@ export default function HomePage() {
                   className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
                 />
               </div>
+              
+              {/* Quote under image */}
+              <div className="bg-gray-50 border-l-4 border-blue-600 p-4 shadow-sm">
+                <blockquote className="text-sm md:text-base text-gray-700 italic leading-relaxed">
+                  "I'm running for U.S. Senate because I believe the government should promote equality for everyone."
+                </blockquote>
+              </div>
             </div>
           </div>
 
-          {/* Quote Section - Zohran-style left square box */}
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              {/* Quote Box - Left side */}
-              <div className="lg:col-span-5">
-                <div className="bg-black text-white p-8 aspect-square flex items-center justify-center">
-                  <blockquote className="text-xl md:text-2xl font-medium leading-relaxed text-center">
-                    I'm running for U.S. Senate because I believe the government should promote equality for everyone.
-                  </blockquote>
-                </div>
-              </div>
-              
-              {/* Tagline - Right side */}
-              <div className="lg:col-span-7 lg:pl-8">
-                <p className="text-2xl md:text-3xl font-light text-gray-900 leading-tight">
-                  It's not <span className="text-red-600 font-semibold">Red</span> vs. <span className="text-blue-600 font-semibold">Blue</span>, it's oligarchs vs. you.
-                </p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
-
-
 
       {/* Fighting for Our Future - Professional Layout */}
       <div className="relative py-16 bg-white">        

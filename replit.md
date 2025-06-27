@@ -102,6 +102,7 @@ This is a modern political campaign website for "JUMP" who is running for U.S. S
 
 ## Changelog
 - June 27, 2025. Initial setup
+- June 27, 2025. Major homepage redesign: Moved tagline under headline, added quote under candidate photo, removed decorative dots, updated navigation styling, redesigned footer with logo and updated contact info, improved spacing throughout for better flow
 
 ## User Preferences
 
