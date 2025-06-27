@@ -9,11 +9,16 @@ export default function HomePage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section - Presidential Quality Design */}
-      <div className="relative overflow-hidden bg-white">
-        {/* Clean background */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50 to-yellow-50">
+        {/* Beautiful decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 right-20 w-96 h-96 bg-gray-100 rounded-full opacity-30"></div>
-          <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-gray-50 rounded-full opacity-40"></div>
+          <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-200 to-yellow-200 rounded-full opacity-20"></div>
+          <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-gradient-to-tr from-yellow-200 to-blue-200 rounded-full opacity-20"></div>
+          
+          {/* Elegant border frames */}
+          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-blue-300 rounded-lg opacity-30"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 border-4 border-yellow-300 rounded-lg opacity-30"></div>
+          <div className="absolute top-1/2 right-32 w-16 h-16 border-2 border-blue-400 rounded-full opacity-40"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -39,13 +44,15 @@ export default function HomePage() {
                 </p>
               </div>
               
-              {/* Logo */}
+              {/* Logo with frame */}
               <div className="py-4">
-                <img 
-                  src={jumpLogo} 
-                  alt="Jump for Senate Logo" 
-                  className="h-16 w-auto"
-                />
+                <div className="inline-block p-4 bg-white rounded-lg shadow-lg border-2 border-blue-200">
+                  <img 
+                    src={jumpLogo} 
+                    alt="Jump for Senate Logo" 
+                    className="h-16 w-auto"
+                  />
+                </div>
               </div>
 
               {/* Action Buttons */}
@@ -79,8 +86,8 @@ export default function HomePage() {
               </div>
               
               {/* Quote under image */}
-              <div className="bg-gray-50 border-l-4 border-blue-600 p-4 shadow-sm">
-                <blockquote className="text-sm md:text-base text-gray-700 italic leading-relaxed">
+              <div className="accent-bar-blue bg-white p-6 shadow-lg border border-blue-100 rounded-lg">
+                <blockquote className="text-sm md:text-base text-gray-700 italic leading-relaxed pl-4">
                   "I'm running for U.S. Senate because I believe the government should promote equality for everyone."
                 </blockquote>
               </div>
@@ -94,28 +101,31 @@ export default function HomePage() {
       {/* Fighting for Our Future - Professional Layout */}
       <div className="relative py-16 bg-white">        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header */}
+          {/* Section Header with beautiful frame */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-600 mb-8">
-              Fighting for Our Future
-            </h2>
+            <div className="inline-block relative">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-600 mb-8 px-12 py-6 bg-white rounded-xl shadow-2xl border-4 border-yellow-400 relative z-10">
+                Fighting for Our Future
+              </h2>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-yellow-500 rounded-xl transform rotate-1 -z-10"></div>
+            </div>
           </div>
 
-          {/* Professional Policy Cards */}
+          {/* Beautiful 3D Policy Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Card 1 - Housing */}
             <Link href="/campaign" className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
-                    <Home className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
+                  <div className="w-20 h-20 frame-blue-3d rounded-lg flex items-center justify-center mb-6 transition-all duration-300">
+                    <Home className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Lowering Cost of Living</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed flex-grow">
                   Making housing, healthcare, and education affordable for every family through bold policy action.
                 </p>
-                <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="mt-8 flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
                 </div>
               </Card>
@@ -123,17 +133,17 @@ export default function HomePage() {
             
             {/* Card 2 - Environment */}
             <Link href="/campaign" className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
-                    <Leaf className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
+                  <div className="w-20 h-20 frame-yellow-3d rounded-lg flex items-center justify-center mb-6 transition-all duration-300">
+                    <Leaf className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Environmental Policy</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed flex-grow">
                   Protecting our planet while creating good-paying green jobs for the next generation.
                 </p>
-                <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="mt-8 flex items-center text-yellow-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
                 </div>
               </Card>
@@ -141,17 +151,17 @@ export default function HomePage() {
             
             {/* Card 3 - Equality */}
             <Link href="/campaign" className="group">
-              <Card className="border-2 border-gray-200 hover:border-black transition-all duration-300 p-8 h-full bg-white shadow-subtle hover:shadow-professional cursor-pointer">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden">
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gray-100 rounded-none flex items-center justify-center mb-6 group-hover:bg-black transition-colors duration-300">
-                    <Equal className="w-8 h-8 text-gray-700 group-hover:text-white transition-colors duration-300" />
+                  <div className="w-20 h-20 frame-blue-3d rounded-lg flex items-center justify-center mb-6 transition-all duration-300">
+                    <Equal className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">Elimination of The Pink Tax</h3>
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed flex-grow">
                   Ending gender-based pricing discrimination once and for all through federal legislation.
                 </p>
-                <div className="mt-8 flex items-center text-gray-900 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                <div className="mt-8 flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                   <span>Learn More</span>
                 </div>
               </Card>
@@ -170,32 +180,34 @@ export default function HomePage() {
       </div>
 
       {/* Join the Movement - Final CTA */}
-      <div className="relative py-16 bg-white">        
+      <div className="relative py-16 bg-gradient-to-br from-blue-50 to-yellow-50">        
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-black text-blue-600 mb-6">
-            Join the Movement
-          </h2>
-          
-          <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-normal leading-relaxed">
-            Together, we can build a future where every person has the opportunity to thrive.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <a 
-              href="https://secure.actblue.com/donate" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group"
-            >
-              <Button className="bg-black hover:bg-gray-800 text-white px-16 py-6 text-xl font-semibold rounded-none shadow-elegant transform hover:scale-105 transition-all duration-300">
-                <span>Donate Today</span>
-              </Button>
-            </a>
-            <Link href="/volunteer" className="group">
-              <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-16 py-6 text-xl font-semibold rounded-none transform hover:scale-105 transition-all duration-300 bg-transparent">
-                <span>Get Involved</span>
-              </Button>
-            </Link>
+          <div className="accent-bar-yellow bg-white p-8 rounded-xl shadow-2xl border-2 border-yellow-300 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-black text-blue-600 mb-6">
+              Join the Movement
+            </h2>
+            
+            <p className="text-xl md:text-2xl text-gray-600 mb-12 font-normal leading-relaxed pl-4">
+              Together, we can build a future where every person has the opportunity to thrive.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <a 
+                href="https://secure.actblue.com/donate" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <Button className="frame-blue-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
+                  <span>Donate Today</span>
+                </Button>
+              </a>
+              <Link href="/volunteer" className="group">
+                <Button className="frame-yellow-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
+                  <span>Get Involved</span>
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

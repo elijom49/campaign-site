@@ -24,7 +24,7 @@
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Professional campaign colors - Black, White, Grey, Blue palette */
+  /* Professional campaign colors - Logo-inspired palette */
   --campaign-black: hsl(0, 0%, 8%);
   --campaign-grey-900: hsl(0, 0%, 12%);
   --campaign-grey-800: hsl(0, 0%, 18%);
@@ -36,12 +36,134 @@
   --campaign-grey-200: hsl(0, 0%, 85%);
   --campaign-grey-100: hsl(0, 0%, 92%);
   --campaign-white: hsl(0, 0%, 100%);
-  --campaign-blue: hsl(207, 90%, 54%);
-  --campaign-blue-dark: hsl(207, 90%, 45%);
+  
+  /* Logo-inspired colors */
+  --campaign-blue: hsl(217, 100%, 50%);
+  --campaign-blue-light: hsl(217, 100%, 65%);
+  --campaign-blue-dark: hsl(217, 100%, 35%);
+  --campaign-yellow: hsl(45, 100%, 50%);
+  --campaign-yellow-light: hsl(45, 100%, 65%);
+  --campaign-yellow-dark: hsl(45, 100%, 35%);
+  --campaign-red: hsl(0, 85%, 55%);
   
   /* Professional typography */
   --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  /* 3D Frame Effects */
+  --shadow-blue-3d: 0 8px 25px -5px rgba(59, 130, 246, 0.5), 0 10px 10px -5px rgba(59, 130, 246, 0.04);
+  --shadow-yellow-3d: 0 8px 25px -5px rgba(245, 158, 11, 0.5), 0 10px 10px -5px rgba(245, 158, 11, 0.04);
+  --shadow-elegant-3d: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --border-3d-blue: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  --border-3d-yellow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* Beautiful 3D Frame Classes */
+.frame-blue-3d {
+  background: linear-gradient(145deg, hsl(217, 100%, 50%), hsl(217, 100%, 45%));
+  box-shadow: var(--shadow-blue-3d), var(--border-3d-blue);
+  border: 2px solid hsl(217, 100%, 40%);
+  position: relative;
+}
+
+.frame-blue-3d::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(145deg, hsl(217, 100%, 65%), hsl(217, 100%, 35%));
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.frame-yellow-3d {
+  background: linear-gradient(145deg, hsl(45, 100%, 50%), hsl(45, 100%, 45%));
+  box-shadow: var(--shadow-yellow-3d), var(--border-3d-yellow);
+  border: 2px solid hsl(45, 100%, 40%);
+  position: relative;
+}
+
+.frame-yellow-3d::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(145deg, hsl(45, 100%, 65%), hsl(45, 100%, 35%));
+  z-index: -1;
+  border-radius: inherit;
+}
+
+.card-elevated {
+  background: white;
+  box-shadow: var(--shadow-elegant-3d);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card-elevated:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-blue-3d);
+  border-color: hsl(217, 100%, 50%);
+}
+
+.card-elevated::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(217, 100%, 50%), hsl(45, 100%, 50%));
+  border-radius: 4px 4px 0 0;
+}
+
+.border-frame-blue {
+  border: 4px solid;
+  border-image: linear-gradient(145deg, hsl(217, 100%, 50%), hsl(217, 100%, 70%)) 1;
+  box-shadow: var(--shadow-blue-3d);
+}
+
+.border-frame-yellow {
+  border: 4px solid;
+  border-image: linear-gradient(145deg, hsl(45, 100%, 50%), hsl(45, 100%, 70%)) 1;
+  box-shadow: var(--shadow-yellow-3d);
+}
+
+.accent-bar-blue {
+  position: relative;
+}
+
+.accent-bar-blue::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, hsl(217, 100%, 50%), hsl(217, 100%, 70%));
+  border-radius: 0 3px 3px 0;
+  box-shadow: 2px 0 8px rgba(59, 130, 246, 0.3);
+}
+
+.accent-bar-yellow {
+  position: relative;
+}
+
+.accent-bar-yellow::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, hsl(45, 100%, 50%), hsl(45, 100%, 70%));
+  border-radius: 0 3px 3px 0;
+  box-shadow: 2px 0 8px rgba(245, 158, 11, 0.3);
 }
 
 .dark {
