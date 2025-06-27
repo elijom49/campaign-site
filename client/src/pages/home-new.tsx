@@ -93,9 +93,9 @@ export default function HomePage() {
             <div className="policy-card-advanced interactive-element">
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Healthcare Access</h3>
+                <h3 className="text-subheadline text-xl font-semibold">Lowering Cost of Living</h3>
               </div>
-              <p className="text-gray-600 mb-4">Universal healthcare coverage that puts patients over profits.</p>
+              <p className="text-gray-600 mb-4">Taking back single family homes from corporate ownership...</p>
               <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
@@ -104,9 +104,9 @@ export default function HomePage() {
             <div className="policy-card-advanced interactive-element">
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Economic Justice</h3>
+                <h3 className="text-subheadline text-xl font-semibold">Environmental Policy</h3>
               </div>
-              <p className="text-gray-600 mb-4">Fair wages and worker protections for all Americans.</p>
+              <p className="text-gray-600 mb-4">Championing environmental policy and supporting farmers...</p>
               <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
@@ -115,9 +115,9 @@ export default function HomePage() {
             <div className="policy-card-advanced interactive-element">
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Climate Action</h3>
+                <h3 className="text-subheadline text-xl font-semibold">Elimination of The Pink Tax</h3>
               </div>
-              <p className="text-gray-600 mb-4">Bold environmental policies for a sustainable future.</p>
+              <p className="text-gray-600 mb-4">Making women's essential products tax-deductible...</p>
               <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
