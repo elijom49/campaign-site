@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -27,9 +28,11 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <div className="relative group cursor-pointer">
-                <div className="w-32 h-16 bg-black rounded-lg flex items-center justify-center shadow-elegant transform group-hover:scale-105 transition-all duration-300">
-                  <span className="text-white font-black text-xl tracking-[0.2em]">JUMP</span>
-                </div>
+                <img 
+                  src={jumpLogo} 
+                  alt="Jump for Senate - Chicago, Illinois" 
+                  className="h-16 w-auto transform group-hover:scale-105 transition-all duration-300"
+                />
               </div>
             </Link>
           </div>

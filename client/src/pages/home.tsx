@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Home, Leaf, Equal, ArrowRight, Star } from "lucide-react";
+import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 
 export default function HomePage() {
   return (
@@ -66,7 +67,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="relative group">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000" 
+                    src={candidatePhoto} 
                     alt="Jump - Candidate for U.S. Senate" 
                     className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
                   />
