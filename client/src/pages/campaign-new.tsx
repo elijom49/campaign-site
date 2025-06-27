@@ -13,14 +13,20 @@ export default function CampaignPage() {
           <div className="space-y-8">
             {/* Environmental Policy */}
             <div className="policy-card-advanced bg-gray-900 border-gray-800">
-              <h3 className="text-subheadline text-2xl font-semibold text-white mb-4">Environmental Policy</h3>
-              <p className="text-body-large text-gray-300">XXXXXXXX</p>
+              <div className="text-center mb-4">
+                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Environmental Policy</h2>
+              </div>
+              <h3 className="text-subheadline text-xl font-semibold text-white mb-4">Policy Details</h3>
+              <p className="text-body-large text-white">XXXXXXXX</p>
             </div>
             
             {/* Bottom Left Policy */}
             <div className="policy-card-advanced bg-gray-900 border-gray-800">
-              <h3 className="text-subheadline text-2xl font-semibold text-white mb-4">XXXXX Policy</h3>
-              <p className="text-body-large text-gray-300">XXXXXXX</p>
+              <div className="text-center mb-4">
+                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">XXXXX Policy</h2>
+              </div>
+              <h3 className="text-subheadline text-xl font-semibold text-white mb-4">Policy Details</h3>
+              <p className="text-body-large text-white">XXXXXXX</p>
             </div>
           </div>
           
@@ -40,16 +46,22 @@ export default function CampaignPage() {
           <div className="space-y-8">
             {/* The Billionaire's Bill */}
             <div className="policy-card-advanced bg-gray-900 border-gray-800">
-              <h3 className="text-subheadline text-2xl font-semibold text-white mb-4">The Billionaire's Bill</h3>
-              <p className="text-body-large text-gray-300">
+              <div className="text-center mb-4">
+                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">The Billionaire's Bill</h2>
+              </div>
+              <h3 className="text-subheadline text-xl font-semibold text-white mb-4">Tax Policy</h3>
+              <p className="text-body-large text-white">
                 The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
               </p>
             </div>
             
             {/* XXX Policy */}
             <div className="policy-card-advanced bg-gray-900 border-gray-800">
-              <h3 className="text-subheadline text-2xl font-semibold text-white mb-4">XXX Policy</h3>
-              <p className="text-body-large text-gray-300">XXXXXXX</p>
+              <div className="text-center mb-4">
+                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">XXX Policy</h2>
+              </div>
+              <h3 className="text-subheadline text-xl font-semibold text-white mb-4">Policy Details</h3>
+              <p className="text-body-large text-white">XXXXXXX</p>
             </div>
           </div>
         </div>
@@ -58,8 +70,11 @@ export default function CampaignPage() {
         <div className="col-span-12">
           <div className="max-w-4xl mx-auto">
             <div className="policy-card-advanced bg-gray-900 border-gray-800 text-center">
-              <h3 className="text-headline text-3xl font-semibold text-white mb-6">Elimination of The Pink Tax</h3>
-              <p className="text-body-large text-gray-300 leading-relaxed">
+              <div className="text-center mb-6">
+                <h2 className="text-headline text-4xl font-bold text-yellow-400 mb-2">Elimination of The Pink Tax</h2>
+              </div>
+              <h3 className="text-subheadline text-xl font-semibold text-white mb-6">Women's Rights Policy</h3>
+              <p className="text-body-large text-white leading-relaxed">
                 The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
               </p>
             </div>
