@@ -21,30 +21,29 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white/95 backdrop-blur-md shadow-xl sticky top-0 z-50 border-b border-gray-100">
+    <nav className="bg-white/95 backdrop-blur-professional shadow-elegant sticky top-0 z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/">
               <div className="relative group cursor-pointer">
-                <div className="w-24 h-12 gradient-primary rounded-xl flex items-center justify-center shadow-lg transform group-hover:scale-105 transition-all duration-300">
-                  <span className="text-white font-black text-lg tracking-wider">JUMP</span>
+                <div className="w-24 h-12 bg-black rounded-none flex items-center justify-center shadow-elegant transform group-hover:scale-105 transition-all duration-300">
+                  <span className="text-white font-black text-lg tracking-[0.2em]">JUMP</span>
                 </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-campaign-yellow rounded-full animate-pulse"></div>
               </div>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-2">
+            <div className="ml-10 flex items-center space-x-8">
               {navItems.map((item) => (
                 <Link key={item.href} href={item.href}>
                   <span
-                    className={`px-6 py-3 text-lg font-bold transition-all duration-300 cursor-pointer rounded-xl ${
+                    className={`px-4 py-2 text-lg font-medium transition-all duration-300 cursor-pointer relative ${
                       isActive(item.href)
-                        ? "gradient-primary text-white shadow-lg transform scale-105"
-                        : "text-gray-900 hover:text-white hover:bg-gradient-to-r hover:from-campaign-blue hover:to-campaign-purple hover:shadow-lg hover:scale-105"
+                        ? "text-black after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-black"
+                        : "text-gray-600 hover:text-black"
                     }`}
                   >
                     {item.label}
