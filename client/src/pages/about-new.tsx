@@ -43,7 +43,8 @@ export default function AboutPage() {
                 <img 
                   src={candidatePhoto} 
                   alt="Jump - Candidate for U.S. Senate" 
-                  className="w-full h-80 object-cover rounded-2xl shadow-2xl" 
+                  className="w-full h-80 object-cover object-center rounded-2xl shadow-2xl" 
+                  style={{objectPosition: 'center 20%'}}
                 />
               </div>
               
@@ -70,9 +71,7 @@ export default function AboutPage() {
             <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
               {t('about.policies')}
             </h2>
-            <p className="text-body-large text-gray-300 max-w-4xl mx-auto">
-              {t('about.policiesDesc')}
-            </p>
+
           </div>
           
           {/* Vertical Timeline */}
