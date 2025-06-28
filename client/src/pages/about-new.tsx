@@ -12,8 +12,8 @@ export default function AboutPage() {
     <div className="bg-black text-white">
       {/* Hero Section - Compact */}
       <section className="h-80">
-        <div className="content-grid-advanced h-full">
-          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-4 flex flex-col justify-center h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+          <div className="bg-blue-600 p-4 flex flex-col justify-center">
             <div className="space-y-3">
               <h1 className="text-display text-2xl lg:text-3xl text-white leading-tight">
                 {t('about.meetJump')}
@@ -37,7 +37,7 @@ export default function AboutPage() {
             </div>
           </div>
           
-          <div className="col-span-12 lg:col-span-6 h-full">
+          <div className="h-full">
             {/* Picture fills exact same height */}
             <img 
               src={candidatePhoto} 
