@@ -35,7 +35,13 @@ export default function Navigation() {
               <img 
                 src={jumpLogo} 
                 alt="Jump for Senate - Chicago, Illinois" 
-                className="h-16 w-auto transform hover:scale-105 transition-all duration-300"
+                className="h-16 w-auto"
+                style={{
+                  filter: 'none',
+                  boxShadow: 'none',
+                  border: 'none',
+                  background: 'transparent'
+                }}
               />
             </Link>
           </div>
