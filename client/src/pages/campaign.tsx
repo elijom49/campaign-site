@@ -68,7 +68,7 @@ export default function CampaignPage() {
 
         {/* Volunteer Opportunities Section */}
         <div className="col-span-12">
-          <div className="bg-white p-8 shadow-2xl border border-gray-200">
+          <div className="bg-white p-8 border border-gray-200">
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">
                 <Users className="w-12 h-12 text-yellow-400" />
@@ -81,7 +81,7 @@ export default function CampaignPage() {
             
             <div className="grid md:grid-cols-3 gap-8">
               {/* Phone Banking */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Phone Banking</h3>
                 <p className="text-gray-600 mb-6">
@@ -100,7 +100,7 @@ export default function CampaignPage() {
               </div>
 
               {/* Canvassing */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Users className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Canvassing</h3>
                 <p className="text-gray-600 mb-6">
@@ -119,7 +119,7 @@ export default function CampaignPage() {
               </div>
 
               {/* Events */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Events</h3>
                 <p className="text-gray-600 mb-6">
@@ -140,7 +140,7 @@ export default function CampaignPage() {
           </div>
 
           {/* Donations Section */}
-          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12">
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold text-blue-600 mb-4">Donations</h2>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -151,7 +151,7 @@ export default function CampaignPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* ActBlue Donation */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <div className="mb-6">
                   <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <DollarSign className="w-10 h-10 text-white" />
@@ -174,7 +174,7 @@ export default function CampaignPage() {
               </div>
 
               {/* Fundraising */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <div className="mb-6">
                   <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-10 h-10 text-white" />
@@ -206,14 +206,14 @@ export default function CampaignPage() {
           <div className="py-12"></div>
 
           {/* Press Section */}
-          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12">
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold text-blue-600 mb-4">Press</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Social Media */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Share2 className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">Social Media</h3>
                 <p className="text-gray-600 mb-6">
@@ -236,7 +236,7 @@ export default function CampaignPage() {
               </div>
 
               {/* In the News */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">In the News</h3>
                 <p className="text-gray-600 mb-6">
