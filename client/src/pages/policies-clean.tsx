@@ -9,11 +9,11 @@ export default function PoliciesPage() {
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section with Background Image */}
       <div 
-        className="relative h-96 flex items-center justify-center"
+        className="relative h-[500px] flex items-center justify-center"
         style={{
           backgroundImage: `url(${heroPhoto})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
         }}
