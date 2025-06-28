@@ -15,54 +15,62 @@ export default function CampaignPage() {
           </p>
         </div>
 
-        {/* Candidate Image Section */}
-        <div className="col-span-12 flex justify-center py-8">
-          <div className="relative">
-            <img 
-              src={candidatePhoto} 
-              alt="Jump - Candidate for U.S. Senate" 
-              className="w-full max-w-md h-96 object-cover object-center shadow-2xl" 
-              style={{objectPosition: 'center 20%'}}
-            />
-          </div>
-        </div>
-
-        {/* Policy Platform Section */}
+        {/* Policy Platform and Candidate Section - Parallel Layout */}
         <div className="aclu-blue-section">
           <h2 className="aclu-section-title">
             Our Policy Platform
           </h2>
           
-          <div className="aclu-content-grid">
-            <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
-              <h3>Environmental Policy</h3>
-            </div>
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="grid lg:grid-cols-4 gap-8">
+              {/* Policy Cards - Left 3 columns */}
+              <div className="lg:col-span-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Environmental Policy</h3>
+                  </div>
 
-            <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
-              <h3>The Billionaire's Bill</h3>
-              <p className="text-gray-600 mt-4">
-                The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
-              </p>
-            </div>
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>The Billionaire's Bill</h3>
+                    <p className="text-gray-600 mt-4">
+                      The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
+                    </p>
+                  </div>
 
-            <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
-              <h3>Elimination of The Pink Tax</h3>
-              <p className="text-gray-600 mt-4">
-                The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
-              </p>
-            </div>
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Elimination of The Pink Tax</h3>
+                    <p className="text-gray-600 mt-4">
+                      The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
+                    </p>
+                  </div>
 
-            <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
-              <h3>Healthcare Policy</h3>
-            </div>
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Healthcare Policy</h3>
+                  </div>
+                </div>
+                
+                {/* Education Funding - Full width below */}
+                <div className="aclu-card mt-6">
+                  <div className="aclu-card-arrow">→</div>
+                  <h3>Education Funding</h3>
+                </div>
+              </div>
 
-            <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
-              <h3>Education Funding</h3>
+              {/* Candidate Image - Right 1 column */}
+              <div className="lg:col-span-1 flex justify-center">
+                <div className="relative">
+                  <img 
+                    src={candidatePhoto} 
+                    alt="Jump - Candidate for U.S. Senate" 
+                    className="w-full h-96 object-cover object-center shadow-2xl" 
+                    style={{objectPosition: 'center 20%'}}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
