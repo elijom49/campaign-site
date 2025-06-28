@@ -10,36 +10,62 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <div 
-        className="relative h-96 flex items-center"
-        style={{backgroundColor: '#E47B5A'}}
-      >
-        <div className="w-full max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left: Text Content */}
-          <div className="text-left">
-            <h1 className="text-6xl lg:text-7xl font-bold text-yellow-400 mb-6 tracking-tight">
-              ABOUT<br />JUMP
-            </h1>
-            <p className="text-xl text-white leading-relaxed">
-              Born and raised in Chicago, Jump Shepherd understands the challenges facing working families in Illinois. As your next U.S. Senator, he's committed to fighting for economic justice, environmental protection, and equality for all.
-            </p>
+      <section className="section-spacing-loose">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 lg:col-span-6 space-y-8">
+            <div className="space-y-6">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.9]">
+                {t('about.meetJump')}
+              </h1>
+              
+              {/* Bio Space */}
+              <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                <p className="text-body-large text-gray-300 leading-relaxed">
+                  XXXXXXXXXXXX
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/campaign">
+                  <span className="btn-primary-large">View Platform</span>
+                </Link>
+                <Link href="/volunteer">
+                  <span className="btn-secondary-large">Get Involved</span>
+                </Link>
+              </div>
+            </div>
           </div>
           
-          {/* Right: Circular Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <img 
-                src={candidatePhoto} 
-                alt="Jump Shepherd - About" 
-                className="w-80 h-80 object-cover rounded-full shadow-2xl"
-                style={{
-                  objectPosition: 'center 20%'
-                }}
-              />
+          <div className="col-span-12 lg:col-span-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Picture Box */}
+              <div className="relative">
+                <img 
+                  src={candidatePhoto} 
+                  alt="Jump - Candidate for U.S. Senate" 
+                  className="w-full h-80 object-cover object-center rounded-2xl shadow-2xl" 
+                  style={{
+                    objectPosition: 'center 20%',
+                    filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
+                  }}
+                />
+              </div>
+              
+              {/* Video Box */}
+              <div className="relative">
+                <iframe
+                  className="w-full h-80 rounded-2xl shadow-2xl"
+                  src="https://www.youtube.com/embed/lcbYrTEnyOM"
+                  title="Jump for Senate Campaign Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Policy Focus Section - ACLU-Inspired Design */}
       <div className="aclu-blue-section">
