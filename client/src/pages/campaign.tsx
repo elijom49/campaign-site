@@ -65,7 +65,6 @@ export default function CampaignPage() {
             </div>
           </div>
         </div>
-
         {/* Volunteer Opportunities Section */}
         <div className="col-span-12">
           <div className="bg-white p-8">
