@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { MapPin, Users, Heart, Target, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
-import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import candidatePhoto from "@assets/IMG_2354_1751141579485.jpg";
 
 export default function AboutPage() {
   const { t } = useLanguage();
@@ -44,7 +44,10 @@ export default function AboutPage() {
                   src={candidatePhoto} 
                   alt="Jump - Candidate for U.S. Senate" 
                   className="w-full h-80 object-cover object-center rounded-2xl shadow-2xl" 
-                  style={{objectPosition: 'center 20%'}}
+                  style={{
+                    objectPosition: 'center 20%',
+                    filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
+                  }}
                 />
               </div>
               
