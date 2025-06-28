@@ -14,6 +14,7 @@ export default function Navigation() {
   const navItems = [
     { href: "/", label: t('nav.home') },
     { href: "/about", label: t('nav.about') },
+    { href: "/policies", label: "Policies" },
     { href: "/campaign", label: t('nav.campaign') },
     { href: "/community", label: t('nav.community') },
     { href: "/volunteer", label: t('nav.volunteer') },
