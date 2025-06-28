@@ -203,6 +203,8 @@ export default function CampaignPage() {
             </div>
           </div>
 
+          <div className="py-12"></div>
+
           {/* Press Section */}
           <div className="bg-black border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
             <div className="text-center mb-12">
