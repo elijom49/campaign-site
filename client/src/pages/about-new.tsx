@@ -11,11 +11,11 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="section-spacing-loose bg-blue-600">
-        <div className="content-grid-advanced relative z-10">
-          <div className="col-span-12 lg:col-span-6 space-y-8">
+      <section className="py-8 lg:py-12">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-8 lg:p-12 flex flex-col justify-center">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.9]">
+              <h1 className="text-display text-4xl lg:text-5xl xl:text-6xl text-white leading-[0.9]">
                 {t('about.meetJump')}
               </h1>
               
@@ -37,19 +37,18 @@ export default function AboutPage() {
             </div>
           </div>
           
-          <div className="col-span-12 lg:col-span-6 flex items-stretch">
-            {/* Full Hero Size Picture Box */}
-            <div className="relative w-full">
-              <img 
-                src={candidatePhoto} 
-                alt="Jump - Candidate for U.S. Senate" 
-                className="w-full h-full min-h-[600px] object-cover object-center rounded-2xl" 
-                style={{
-                  objectPosition: 'center 20%',
-                  filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
-                }}
-              />
-            </div>
+          <div className="col-span-12 lg:col-span-6">
+            {/* Picture fills exact same height as text section */}
+            <img 
+              src={candidatePhoto} 
+              alt="Jump - Candidate for U.S. Senate" 
+              className="w-full h-full object-cover object-center" 
+              style={{
+                objectPosition: 'center 20%',
+                filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)',
+                minHeight: '400px'
+              }}
+            />
           </div>
         </div>
       </section>
