@@ -214,13 +214,13 @@ export default function CommunityPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="section-spacing-tight bg-gray-900">
+      <section className="section-spacing-tight bg-white">
         <div className="content-grid-advanced">
           <div className="col-span-12 mx-auto text-center space-y-8 max-w-4xl">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white">
+            <h2 className="text-display text-4xl lg:text-5xl text-black">
               Stay Informed
             </h2>
-            <p className="text-body-large text-gray-300">
+            <p className="text-body-large text-gray-700">
               Get weekly updates on campaign progress, policy positions, and upcoming events delivered to your inbox.
             </p>
             <div className="max-w-md mx-auto">
@@ -228,13 +228,13 @@ export default function CommunityPage() {
                 <input 
                   type="email" 
                   placeholder="Enter your email" 
-                  className="flex-1 px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                  className="flex-1 px-4 py-3 bg-white border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                 />
                 <Button className="bg-blue-600 hover:bg-blue-700 px-6">
                   Subscribe
                 </Button>
               </div>
-              <p className="text-gray-400 text-sm mt-2">
+              <p className="text-gray-600 text-sm mt-2">
                 We respect your privacy. Unsubscribe at any time.
               </p>
             </div>
