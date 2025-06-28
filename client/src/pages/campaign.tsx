@@ -115,9 +115,6 @@ export default function CampaignPage() {
           {/* Donations Section */}
           <div className="bg-black border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
             <div className="text-center mb-12">
-              <div className="flex justify-center mb-6">
-                <DollarSign className="w-16 h-16 text-yellow-400" />
-              </div>
               <h2 className="text-5xl font-bold text-yellow-400 mb-4">Donations</h2>
               <p className="text-xl text-white max-w-3xl mx-auto">
                 Your financial support helps us reach more voters, organize more events, 
@@ -179,20 +176,13 @@ export default function CampaignPage() {
             </div>
           </div>
 
-          {/* Media Section */}
+          {/* Press Section */}
           <div className="bg-black border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
             <div className="text-center mb-12">
-              <div className="flex justify-center mb-6">
-                <Camera className="w-16 h-16 text-yellow-400" />
-              </div>
-              <h2 className="text-5xl font-bold text-yellow-400 mb-4">Media</h2>
-              <p className="text-xl text-white max-w-3xl mx-auto">
-                Help spread our message through social media, content creation, 
-                and digital outreach efforts.
-              </p>
+              <h2 className="text-5xl font-bold text-yellow-400 mb-4">Press</h2>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {/* Social Media */}
               <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Share2 className="w-12 h-12 text-blue-400 mx-auto mb-4" />
@@ -216,48 +206,25 @@ export default function CampaignPage() {
                 </div>
               </div>
 
-              {/* Content Creation */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
-                <Camera className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Content Creation</h3>
-                <p className="text-gray-300 mb-6">
-                  Help create videos, graphics, and written content to support our campaign.
-                </p>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Content Guidelines
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Brand Assets
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Submit Content
-                  </a>
-                </div>
-              </div>
-
-              {/* Press & Outreach */}
+              {/* In the News */}
               <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Press & Outreach</h3>
+                <h3 className="text-2xl font-semibold text-white mb-4">In the News</h3>
                 <p className="text-gray-300 mb-6">
-                  Connect with local media, write letters to editors, and help amplify our message.
+                  Latest news coverage and press mentions about our campaign.
                 </p>
                 <div className="space-y-3">
+                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                    <ExternalLink className="w-4 h-4 inline mr-2" />
+                    Press Releases
+                  </a>
+                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                    <ExternalLink className="w-4 h-4 inline mr-2" />
+                    Media Coverage
+                  </a>
                   <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
                     <ExternalLink className="w-4 h-4 inline mr-2" />
                     Press Kit
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Letter Templates
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Media Contacts
                   </a>
                 </div>
               </div>
