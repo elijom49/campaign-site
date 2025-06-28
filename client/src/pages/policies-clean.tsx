@@ -8,7 +8,7 @@ export default function PoliciesPage() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-80 bg-black flex items-center">
+      <div className="relative h-80 flex items-center" style={{backgroundColor: '#4A6B8A'}}>
         <div className="w-full max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left: Text Content */}
           <div className="text-left">
