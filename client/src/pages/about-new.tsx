@@ -76,65 +76,21 @@ export default function AboutPage() {
           <div className="aclu-card">
             <div className="aclu-card-arrow">→</div>
             <h3>Economic Justice</h3>
-            <p>Fighting for fair wages, workers' rights, and economic policies that benefit working families across Illinois.</p>
-            <div className="space-y-3">
-              <div>
-                <strong className="text-gray-900">Living Wage</strong>
-                <p className="text-sm text-gray-600 mt-1">Ensuring all workers can afford basic necessities</p>
-              </div>
-              <div>
-                <strong className="text-gray-900">Worker Protection</strong>
-                <p className="text-sm text-gray-600 mt-1">Strengthening union rights and workplace safety</p>
-              </div>
-            </div>
           </div>
 
           <div className="aclu-card">
             <div className="aclu-card-arrow">→</div>
             <h3>Healthcare Access</h3>
-            <p>Expanding healthcare access and reducing costs for all Illinois families and small businesses.</p>
-            <div className="space-y-3">
-              <div>
-                <strong className="text-gray-900">Medicare for All</strong>
-                <p className="text-sm text-gray-600 mt-1">Universal healthcare as a human right</p>
-              </div>
-              <div>
-                <strong className="text-gray-900">Prescription Costs</strong>
-                <p className="text-sm text-gray-600 mt-1">Lowering medication prices for families</p>
-              </div>
-            </div>
           </div>
 
           <div className="aclu-card">
             <div className="aclu-card-arrow">→</div>
             <h3>Education Investment</h3>
-            <p>Making education affordable and accessible for every student in Illinois, from early childhood through college.</p>
-            <div className="space-y-3">
-              <div>
-                <strong className="text-gray-900">Free Public College</strong>
-                <p className="text-sm text-gray-600 mt-1">Removing barriers to higher education</p>
-              </div>
-              <div>
-                <strong className="text-gray-900">Student Debt Relief</strong>
-                <p className="text-sm text-gray-600 mt-1">Addressing the student loan crisis</p>
-              </div>
-            </div>
           </div>
 
           <div className="aclu-card">
             <div className="aclu-card-arrow">→</div>
             <h3>Climate Action</h3>
-            <p>Leading on environmental protection and creating green jobs for a sustainable future in Illinois.</p>
-            <div className="space-y-3">
-              <div>
-                <strong className="text-gray-900">Green New Deal</strong>
-                <p className="text-sm text-gray-600 mt-1">Comprehensive climate action plan</p>
-              </div>
-              <div>
-                <strong className="text-gray-900">Renewable Energy</strong>
-                <p className="text-sm text-gray-600 mt-1">Transitioning to clean energy sources</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

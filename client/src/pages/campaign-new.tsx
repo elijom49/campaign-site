@@ -27,21 +27,12 @@ export default function CampaignPage() {
             <div className="aclu-card">
               <div className="aclu-card-arrow">→</div>
               <h3>Environmental Policy</h3>
-              <p>Comprehensive climate action and environmental protection for Illinois communities.</p>
-              <div className="space-y-2">
-                <div>
-                  <strong className="text-gray-900">Green Infrastructure</strong>
-                  <p className="text-sm text-gray-600 mt-1">Clean energy jobs and sustainable development</p>
-                </div>
-              </div>
             </div>
 
             <div className="aclu-card">
               <div className="aclu-card-arrow">→</div>
               <h3>The Billionaire's Bill</h3>
-              <p>Tax Policy</p>
               <div className="space-y-2">
-                <strong className="text-gray-900">Progressive Taxation</strong>
                 <p className="text-sm text-gray-600 mt-1">
                   The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
                 </p>
@@ -51,9 +42,7 @@ export default function CampaignPage() {
             <div className="aclu-card">
               <div className="aclu-card-arrow">→</div>
               <h3>Elimination of The Pink Tax</h3>
-              <p>Women's Rights Policy</p>
               <div className="space-y-2">
-                <strong className="text-gray-900">Gender Equality</strong>
                 <p className="text-sm text-gray-600 mt-1">
                   The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
                 </p>
@@ -63,25 +52,11 @@ export default function CampaignPage() {
             <div className="aclu-card">
               <div className="aclu-card-arrow">→</div>
               <h3>Healthcare Policy</h3>
-              <p>Expanding healthcare access and reducing costs for all Illinois families.</p>
-              <div className="space-y-2">
-                <div>
-                  <strong className="text-gray-900">Universal Access</strong>
-                  <p className="text-sm text-gray-600 mt-1">Healthcare as a human right for all</p>
-                </div>
-              </div>
             </div>
 
             <div className="aclu-card">
               <div className="aclu-card-arrow">→</div>
               <h3>Education Funding</h3>
-              <p>Investing in quality education from early childhood through higher education.</p>
-              <div className="space-y-2">
-                <div>
-                  <strong className="text-gray-900">Public Investment</strong>
-                  <p className="text-sm text-gray-600 mt-1">Fully funded schools and affordable college</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
