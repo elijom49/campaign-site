@@ -18,7 +18,7 @@ export default function CampaignPage() {
             
             {/* Right Side - Text Content */}
             <div className="flex flex-col justify-center space-y-6">
-              <p className="text-2xl text-white leading-relaxed">
+              <p className="text-2xl text-black leading-relaxed">
                 Join our movement to bring real change to Illinois. Every contribution, 
                 every volunteer hour, and every voice matters in our fight for justice and equality.
               </p>
