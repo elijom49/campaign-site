@@ -877,7 +877,7 @@ img {
 /* Action sections with geometric elements */
 .aclu-action-section {
   background: #f8fafc;
-  padding: 4rem 0;
+  padding: 2rem 0 0 0;
   position: relative;
 }
 
