@@ -8,32 +8,24 @@ export default function PoliciesPage() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-80 flex items-center" style={{backgroundColor: '#4A6B8A'}}>
-        <div className="w-full max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left: Text Content */}
-          <div className="text-left">
+      <div 
+        className="relative h-80 flex items-center"
+        style={{
+          backgroundImage: `url(${heroPhoto})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
+          <div className="text-left max-w-2xl">
             <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
               POLICIES
             </h1>
             <p className="text-xl lg:text-2xl text-white font-medium">
               Our comprehensive policy platform for creating positive change in Illinois
             </p>
-          </div>
-          
-          {/* Right: Image */}
-          <div className="flex justify-end items-start">
-            <div className="relative mt-6">
-              <img 
-                src={heroPhoto} 
-                alt="Jump Shepherd - Working for Illinois" 
-                className="w-80 h-60 object-cover rounded-lg shadow-lg"
-                style={{
-                  filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)',
-                  objectPosition: 'center top'
-                }}
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg"></div>
-            </div>
           </div>
         </div>
       </div>
