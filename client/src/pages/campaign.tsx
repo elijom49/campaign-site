@@ -22,7 +22,7 @@ export default function CampaignPage() {
                 Join our movement to bring real change to Illinois. Every contribution, 
                 every volunteer hour, and every voice matters in our fight for justice and equality.
               </p>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-700">
                 Together, we can build a better future for all Illinoisans.
               </p>
             </div>

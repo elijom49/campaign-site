@@ -896,9 +896,6 @@ img {
   padding: 2rem;
   color: white;
   position: relative;
-  box-shadow: 
-    0 16px 32px -8px rgba(0, 0, 0, 0.3),
-    0 8px 16px -4px rgba(0, 0, 0, 0.2);
 }
 
 .aclu-action-card h3 {
