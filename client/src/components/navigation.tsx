@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 import LanguageToggle from "@/components/language-toggle";
-import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
+import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751143067393.png";
 
 export default function Navigation() {
   const [location] = useLocation();
