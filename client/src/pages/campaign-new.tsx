@@ -8,7 +8,7 @@ export default function CampaignPage() {
     <div className="bg-black text-white min-h-screen">
       <div className="content-grid-advanced py-16">
         {/* Page Header */}
-        <div className="col-span-12 text-center mb-16">
+        <div className="col-span-12 text-center mb-16 pt-8">
           <h1 className="text-6xl font-bold text-yellow-400 mb-4">Policies</h1>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Our comprehensive policy platform for creating positive change in Illinois
@@ -57,12 +57,12 @@ export default function CampaignPage() {
         {/* Bottom Section - Three Policy Boxes */}
         <div className="col-span-12 grid lg:grid-cols-3 gap-8">
           {/* Pink Tax Policy */}
-          <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl h-80 flex flex-col justify-center">
-            <div className="text-center mb-4">
-              <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Elimination of The Pink Tax</h2>
+          <div className="bg-black border-4 border-blue-500 rounded-2xl p-6 shadow-2xl drop-shadow-2xl h-80 flex flex-col justify-center">
+            <div className="text-center mb-3">
+              <h2 className="text-headline text-2xl font-bold text-yellow-400 mb-2">Elimination of The Pink Tax</h2>
             </div>
-            <h3 className="text-subheadline text-xl font-semibold text-white mb-4 text-center">Women's Rights Policy</h3>
-            <p className="text-body-large text-white text-center leading-relaxed">
+            <h3 className="text-subheadline text-lg font-semibold text-white mb-3 text-center">Women's Rights Policy</h3>
+            <p className="text-body text-white text-center leading-tight text-sm">
               The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
             </p>
           </div>

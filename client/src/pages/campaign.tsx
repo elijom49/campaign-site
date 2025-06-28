@@ -1,6 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
-import { ExternalLink, Heart, Megaphone, Users, DollarSign, Camera, Share2 } from "lucide-react";
+import { ExternalLink, Calendar, Megaphone, Users, DollarSign, Camera, Share2 } from "lucide-react";
 
 export default function CampaignPage() {
   const { t } = useLanguage();
@@ -9,7 +9,7 @@ export default function CampaignPage() {
     <div className="bg-black text-white min-h-screen">
       <div className="content-grid-advanced py-16">
         {/* Header Section */}
-        <div className="col-span-12 mb-16">
+        <div className="col-span-12 mb-16 pt-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left Side - Header and Photo */}
             <div>
@@ -93,7 +93,7 @@ export default function CampaignPage() {
 
               {/* Events */}
               <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
-                <Heart className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
                 <h3 className="text-2xl font-semibold text-white mb-4">Events</h3>
                 <p className="text-gray-300 mb-6">
                   Help organize and run campaign events, rallies, and community gatherings.
