@@ -11,27 +11,27 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="py-4 lg:py-6">
+      <section>
         <div className="content-grid-advanced">
-          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-4 lg:p-6 flex flex-col justify-center">
-            <div className="space-y-6">
-              <h1 className="text-display text-4xl lg:text-5xl xl:text-6xl text-white leading-[0.9]">
+          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-3 flex flex-col justify-center">
+            <div className="space-y-3">
+              <h1 className="text-display text-2xl lg:text-3xl text-white leading-tight">
                 {t('about.meetJump')}
               </h1>
               
               {/* Bio Space */}
-              <div className="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
-                <p className="text-body-large text-gray-300 leading-relaxed">
+              <div className="bg-gray-900/50 p-3 rounded-lg border border-gray-800">
+                <p className="text-sm text-gray-300 leading-relaxed">
                   XXXXXXXXXXXX
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Link href="/campaign">
-                  <span className="btn-primary-large">View Platform</span>
+                  <span className="inline-block bg-yellow-500 text-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
                 </Link>
                 <Link href="/volunteer">
-                  <span className="btn-secondary-large">Get Involved</span>
+                  <span className="inline-block border-2 border-white text-white px-4 py-2 text-sm font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
                 </Link>
               </div>
             </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
               style={{
                 objectPosition: 'center 20%',
                 filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)',
-                minHeight: '200px'
+                minHeight: '120px'
               }}
             />
           </div>
