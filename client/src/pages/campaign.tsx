@@ -10,27 +10,24 @@ export default function CampaignPage() {
       <div className="content-grid-advanced py-12">
         {/* Header Section */}
         <div className="col-span-12 mb-12 pt-4">
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
-            {/* Left Side - Header and Photo */}
-            <div>
-              <h1 className="text-5xl font-bold text-yellow-400 mb-6">How Can You Help?</h1>
-              <div className="relative">
-                <img 
-                  src={candidatePhoto} 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="w-full max-w-lg h-80 object-cover object-center shadow-2xl border-4 border-blue-500" 
-                  style={{objectPosition: 'center 20%'}}
-                />
-              </div>
+          <div className="text-center space-y-8 max-w-4xl mx-auto">
+            <h1 className="text-5xl font-bold text-yellow-400 mb-6">How Can You Help?</h1>
+            
+            <div className="relative inline-block">
+              <img 
+                src={candidatePhoto} 
+                alt="Jump - Candidate for U.S. Senate" 
+                className="w-80 h-80 object-cover object-center shadow-2xl border-4 border-blue-500 mx-auto" 
+                style={{objectPosition: 'center 20%'}}
+              />
             </div>
             
-            {/* Right Side - Introduction */}
-            <div className="flex flex-col justify-center space-y-6">
+            <div className="space-y-6">
               <p className="text-2xl text-white leading-relaxed">
                 Join our movement to bring real change to Illinois. Every contribution, 
                 every volunteer hour, and every voice matters in our fight for justice and equality.
               </p>
-              <p className="text-xl text-gray-300 mb-8">
+              <p className="text-xl text-gray-300">
                 Together, we can build a better future for all Illinoisans.
               </p>
             </div>
