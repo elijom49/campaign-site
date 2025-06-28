@@ -113,21 +113,8 @@ export default function CommunityPage() {
                   $100 entry, $300 prize. Events weekly. Join this skill-based competition supporting the Jump Shepherd for U.S. Senate campaign.
                 </p>
               </div>
-            </div>
-          </div>
-          
-          <div className="col-span-12 lg:col-span-6">
-            <div className="space-y-8">
-              {/* Tournament Poster */}
-              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl max-w-md mx-auto">
-                <img 
-                  src={senatorsCupPoster} 
-                  alt="The Senator's Cup Madden Tournament Fundraiser" 
-                  className="w-full h-auto rounded-xl"
-                />
-              </div>
               
-              {/* Calendar Section */}
+              {/* Event Calendar Section - Moved under tournament */}
               <div className="bg-blue-900/20 border border-blue-800 p-8 rounded-2xl">
                 <h3 className="text-headline text-2xl text-white mb-4 text-center">Event Calendar</h3>
                 <p className="text-gray-300 mb-6 text-center">
@@ -155,6 +142,19 @@ export default function CommunityPage() {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="col-span-12 lg:col-span-6">
+            <div className="space-y-8">
+              {/* Tournament Poster */}
+              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl max-w-md mx-auto">
+                <img 
+                  src={senatorsCupPoster} 
+                  alt="The Senator's Cup Madden Tournament Fundraiser" 
+                  className="w-full h-auto rounded-xl"
+                />
               </div>
             </div>
           </div>
