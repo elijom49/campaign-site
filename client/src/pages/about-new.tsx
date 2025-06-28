@@ -67,33 +67,48 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Policy Focus Section - ACLU-Inspired Design */}
-      <div className="aclu-blue-section">
-        <div className="aclu-geometric-accent top-left"></div>
-        <div className="aclu-geometric-accent bottom-right"></div>
-        <h2 className="aclu-section-title">
-          What We're Focused On
-        </h2>
-        
-        <div className="aclu-content-grid">
-          <div className="aclu-card">
-            <div className="aclu-card-arrow">→</div>
-            <h3>Economic Justice</h3>
-          </div>
+      {/* Policy Focus Section - Yellow Background */}
+      <div className="bg-yellow-500 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl font-bold text-black text-center mb-12">
+            What We're Focused On
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link href="/policies">
+                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
+              <h3 className="text-lg font-bold text-black">Economic Justice</h3>
+            </div>
 
-          <div className="aclu-card">
-            <div className="aclu-card-arrow">→</div>
-            <h3>Healthcare Access</h3>
-          </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link href="/policies">
+                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
+              <h3 className="text-lg font-bold text-black">Healthcare Access</h3>
+            </div>
 
-          <div className="aclu-card">
-            <div className="aclu-card-arrow">→</div>
-            <h3>Education Investment</h3>
-          </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link href="/policies">
+                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
+              <h3 className="text-lg font-bold text-black">Working Class Families</h3>
+            </div>
 
-          <div className="aclu-card">
-            <div className="aclu-card-arrow">→</div>
-            <h3>Climate Action</h3>
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link href="/policies">
+                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
+              <h3 className="text-lg font-bold text-black">Climate Action</h3>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <Link href="/policies">
+                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
+              <h3 className="text-lg font-bold text-black">Education</h3>
+            </div>
           </div>
         </div>
       </div>
