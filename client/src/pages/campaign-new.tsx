@@ -23,56 +23,59 @@ export default function CampaignPage() {
             Our Policy Platform
           </h2>
           
-          <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-8">
-            {/* Policy Cards - Left Side (2/3 width) */}
-            <div className="lg:col-span-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="aclu-card">
-                  <div className="aclu-card-arrow">→</div>
-                  <h3>Environmental Policy</h3>
-                </div>
+          <div className="max-w-7xl mx-auto px-8">
+            <div className="flex flex-col lg:flex-row gap-8 items-start">
+              {/* Policy Cards - Left Side */}
+              <div className="flex-1">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Environmental Policy</h3>
+                  </div>
 
-                <div className="aclu-card">
-                  <div className="aclu-card-arrow">→</div>
-                  <h3>The Billionaire's Bill</h3>
-                  <div className="space-y-2">
-                    <p className="text-sm text-gray-600 mt-1">
-                      The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
-                    </p>
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>The Billionaire's Bill</h3>
+                    <div className="mt-3">
+                      <p className="text-sm text-gray-600">
+                        The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Elimination of The Pink Tax</h3>
+                    <div className="mt-3">
+                      <p className="text-sm text-gray-600">
+                        The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="aclu-card">
+                    <div className="aclu-card-arrow">→</div>
+                    <h3>Healthcare Policy</h3>
                   </div>
                 </div>
-
-                <div className="aclu-card">
-                  <div className="aclu-card-arrow">→</div>
-                  <h3>Elimination of The Pink Tax</h3>
-                  <div className="space-y-2">
-                    <p className="text-sm text-gray-600 mt-1">
-                      The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="aclu-card">
-                  <div className="aclu-card-arrow">→</div>
-                  <h3>Healthcare Policy</h3>
-                </div>
-
-                <div className="aclu-card md:col-span-2">
+                
+                {/* Education Funding - Full Width Below */}
+                <div className="aclu-card mt-6">
                   <div className="aclu-card-arrow">→</div>
                   <h3>Education Funding</h3>
                 </div>
               </div>
-            </div>
 
-            {/* Candidate Image - Right Side (1/3 width) */}
-            <div className="lg:col-span-1 flex items-center justify-center">
-              <div className="relative">
-                <img 
-                  src={candidatePhoto} 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="w-full max-w-sm h-96 object-cover object-center shadow-2xl" 
-                  style={{objectPosition: 'center 20%'}}
-                />
+              {/* Candidate Image - Right Side */}
+              <div className="lg:w-80 flex-shrink-0">
+                <div className="relative">
+                  <img 
+                    src={candidatePhoto} 
+                    alt="Jump - Candidate for U.S. Senate" 
+                    className="w-full h-96 object-cover object-center shadow-2xl" 
+                    style={{objectPosition: 'center 20%'}}
+                  />
+                </div>
               </div>
             </div>
           </div>
