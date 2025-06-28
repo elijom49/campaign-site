@@ -12,31 +12,21 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Advanced Hero Section */}
-      <section 
-        className="hero-section-advanced min-h-screen flex items-center relative"
-        style={{
-          backgroundImage: `url(${victorianHouses})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Blue filter overlay */}
-        <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
+      <section className="hero-section-advanced min-h-screen flex items-center">
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.9] mt-12">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9] mt-12">
                 Your Future
                 <br />
-                <span className="text-yellow-400">U.S. Senator</span>
+                <span className="text-blue-600">U.S. Senator</span>
                 <br />
                 Lives Among
                 <br />
-                <span className="text-gray-200">the People</span>
+                <span className="text-gray-700">the People</span>
               </h1>
-              <p className="text-body-large text-white max-w-lg">
-                It's not <span className="text-red-400 font-bold">Red</span> vs. <span className="text-yellow-400 font-bold">Blue</span>, it's oligarchs vs. you.
+              <p className="text-body-large text-gray-600 max-w-lg">
+                It's not <span className="text-red-600 font-bold">Red</span> vs. <span className="text-blue-600 font-bold">Blue</span>, it's oligarchs vs. you.
               </p>
             </div>
             

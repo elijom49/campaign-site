@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Users, Heart, Target, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2354_1751141579485.jpg";
+import victorianHouses from "@assets/houses-890351_1280_1751145143497.jpg";
 
 export default function AboutPage() {
   const { t } = useLanguage();
@@ -10,8 +11,18 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="section-spacing-loose">
-        <div className="content-grid-advanced">
+      <section 
+        className="section-spacing-loose relative"
+        style={{
+          backgroundImage: `url(${victorianHouses})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Blue filter overlay */}
+        <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
+        <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-6 space-y-8">
             <div className="space-y-6">
               <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-[0.9]">
