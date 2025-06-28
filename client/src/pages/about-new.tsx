@@ -37,13 +37,13 @@ export default function AboutPage() {
             </div>
           </div>
           
-          <div className="col-span-12 lg:col-span-6 flex items-center justify-center">
-            {/* Bigger Picture Box - Parallel with text */}
-            <div className="relative">
+          <div className="col-span-12 lg:col-span-6 flex items-stretch">
+            {/* Full Hero Size Picture Box */}
+            <div className="relative w-full">
               <img 
                 src={candidatePhoto} 
                 alt="Jump - Candidate for U.S. Senate" 
-                className="w-full max-w-lg h-96 object-cover object-center rounded-2xl" 
+                className="w-full h-full min-h-[600px] object-cover object-center rounded-2xl" 
                 style={{
                   objectPosition: 'center 20%',
                   filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
