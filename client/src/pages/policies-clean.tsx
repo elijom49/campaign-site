@@ -29,7 +29,7 @@ export default function PoliciesPage() {
                 className="w-80 h-60 object-cover rounded-lg shadow-lg"
                 style={{
                   filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)',
-                  objectPosition: 'center bottom'
+                  objectPosition: 'center top'
                 }}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg"></div>
