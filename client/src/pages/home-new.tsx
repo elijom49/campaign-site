@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Heart, Zap } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import chicagoSkyline from "@assets/chicago-river-5249198_1280_1751144895089.jpg";
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -78,13 +79,24 @@ export default function HomePage() {
       </section>
 
       {/* Policy Platform Section */}
-      <section className="section-spacing-loose bg-gray-50">
-        <div className="content-grid-advanced">
+      <section 
+        className="section-spacing-loose relative"
+        style={{
+          backgroundImage: `url(${chicagoSkyline})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Blue filter overlay */}
+        <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
+        
+        <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-gray-900 mb-6">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
               {t('home.fightingTitle')}
             </h2>
-            <p className="text-body-large text-gray-600 max-w-2xl mx-auto">
+            <p className="text-body-large text-white max-w-2xl mx-auto">
               Real solutions for working families, not corporate interests.
             </p>
           </div>
