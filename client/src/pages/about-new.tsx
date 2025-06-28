@@ -10,12 +10,9 @@ export default function AboutPage() {
 
   return (
     <div className="bg-black text-white">
-      {/* Hero Section with Victorian Houses Background */}
+      {/* Hero Section with Black Background */}
       <section 
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${victorianHouses})`,
-        }}
+        className="relative min-h-screen bg-black"
       >
         {/* Blue overlay */}
         <div className="absolute inset-0 bg-blue-600/70"></div>
