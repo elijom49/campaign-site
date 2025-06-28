@@ -22,13 +22,15 @@ export default function PoliciesPage() {
         <div className="absolute inset-0 bg-black bg-opacity-75"></div>
         
         {/* Hero Content */}
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-            POLICIES
-          </h1>
-          <p className="text-xl lg:text-2xl text-white max-w-3xl mx-auto font-medium">
-            Our comprehensive policy platform for creating positive change in Illinois
-          </p>
+        <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
+          <div className="text-left">
+            <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+              POLICIES
+            </h1>
+            <p className="text-xl lg:text-2xl text-white max-w-2xl font-medium">
+              Our comprehensive policy platform for creating positive change in Illinois
+            </p>
+          </div>
         </div>
       </div>
 
