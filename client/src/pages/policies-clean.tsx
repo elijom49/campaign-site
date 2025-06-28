@@ -1,17 +1,34 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import heroPhoto from "@assets/Jump Shepherd America_1751141710805.jpg";
 
 export default function PoliciesPage() {
   const { t } = useLanguage();
 
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Header */}
-      <div className="text-center py-16">
-        <h1 className="text-5xl font-bold text-white mb-4">Policies</h1>
-        <p className="text-xl text-gray-300 max-w-2xl mx-auto px-4">
-          Our comprehensive policy platform for creating positive change in Illinois
-        </p>
+      {/* Hero Section with Background Image */}
+      <div 
+        className="relative h-96 flex items-center justify-center"
+        style={{
+          backgroundImage: `url(${heroPhoto})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        
+        {/* Hero Content */}
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+            POLICIES
+          </h1>
+          <p className="text-xl lg:text-2xl text-white max-w-3xl mx-auto font-medium">
+            Our comprehensive policy platform for creating positive change in Illinois
+          </p>
+        </div>
       </div>
 
       {/* Policy Section */}
