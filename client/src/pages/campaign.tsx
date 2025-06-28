@@ -6,7 +6,7 @@ export default function CampaignPage() {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-white text-black min-h-screen">
       <div className="content-grid-advanced py-12">
         {/* Header Section */}
         <div className="col-span-12 mb-12 pt-4">
@@ -68,23 +68,23 @@ export default function CampaignPage() {
 
         {/* Volunteer Opportunities Section */}
         <div className="col-span-12">
-          <div className="bg-black p-8 shadow-2xl">
+          <div className="bg-white p-8 shadow-2xl border border-gray-200">
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">
                 <Users className="w-12 h-12 text-yellow-400" />
               </div>
-              <h2 className="text-4xl font-bold text-yellow-400 mb-4">Volunteer Opportunities</h2>
-              <p className="text-lg text-white max-w-2xl mx-auto">
+              <h2 className="text-4xl font-bold text-blue-600 mb-4">Volunteer Opportunities</h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
                 Multiple ways to get involved and make a difference in our campaign.
               </p>
             </div>
             
             <div className="grid md:grid-cols-3 gap-8">
               {/* Phone Banking */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Phone Banking</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Phone Banking</h3>
+                <p className="text-gray-600 mb-6">
                   Connect with voters across Illinois and share our message of hope and change.
                 </p>
                 <div className="space-y-3">
@@ -100,10 +100,10 @@ export default function CampaignPage() {
               </div>
 
               {/* Canvassing */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <Users className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Canvassing</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Canvassing</h3>
+                <p className="text-gray-600 mb-6">
                   Go door-to-door in your neighborhood and have meaningful conversations with voters.
                 </p>
                 <div className="space-y-3">
@@ -119,10 +119,10 @@ export default function CampaignPage() {
               </div>
 
               {/* Events */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Events</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Events</h3>
+                <p className="text-gray-600 mb-6">
                   Help organize and run campaign events, rallies, and community gatherings.
                 </p>
                 <div className="space-y-3">
@@ -140,10 +140,10 @@ export default function CampaignPage() {
           </div>
 
           {/* Donations Section */}
-          <div className="bg-black border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
             <div className="text-center mb-12">
-              <h2 className="text-5xl font-bold text-yellow-400 mb-4">Donations</h2>
-              <p className="text-xl text-white max-w-3xl mx-auto">
+              <h2 className="text-5xl font-bold text-blue-600 mb-4">Donations</h2>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
                 Your financial support helps us reach more voters, organize more events, 
                 and amplify our message across Illinois.
               </p>
@@ -151,13 +151,13 @@ export default function CampaignPage() {
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* ActBlue Donation */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <div className="mb-6">
                   <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <DollarSign className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-3xl font-semibold text-white mb-4">Donate Now</h3>
-                  <p className="text-gray-300 mb-6">
+                  <h3 className="text-3xl font-semibold text-gray-900 mb-4">Donate Now</h3>
+                  <p className="text-gray-600 mb-6">
                     Make a secure donation through ActBlue and join thousands of supporters 
                     investing in Illinois' future.
                   </p>
@@ -174,13 +174,13 @@ export default function CampaignPage() {
               </div>
 
               {/* Fundraising */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <div className="mb-6">
                   <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-10 h-10 text-white" />
                   </div>
-                  <h3 className="text-3xl font-semibold text-white mb-4">Fundraise</h3>
-                  <p className="text-gray-300 mb-6">
+                  <h3 className="text-3xl font-semibold text-gray-900 mb-4">Fundraise</h3>
+                  <p className="text-gray-600 mb-6">
                     Host a fundraising event in your community or start your own 
                     peer-to-peer fundraising campaign.
                   </p>
@@ -206,17 +206,17 @@ export default function CampaignPage() {
           <div className="py-12"></div>
 
           {/* Press Section */}
-          <div className="bg-black border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12 shadow-2xl drop-shadow-2xl">
             <div className="text-center mb-12">
-              <h2 className="text-5xl font-bold text-yellow-400 mb-4">Press</h2>
+              <h2 className="text-5xl font-bold text-blue-600 mb-4">Press</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Social Media */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <Share2 className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">Social Media</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Social Media</h3>
+                <p className="text-gray-600 mb-6">
                   Share our content, engage with supporters, and help us reach new audiences online.
                 </p>
                 <div className="space-y-3">
@@ -236,10 +236,10 @@ export default function CampaignPage() {
               </div>
 
               {/* In the News */}
-              <div className="bg-gray-900 border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors shadow-lg">
                 <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-white mb-4">In the News</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">In the News</h3>
+                <p className="text-gray-600 mb-6">
                   Latest news coverage and press mentions about our campaign.
                 </p>
                 <div className="space-y-3">
