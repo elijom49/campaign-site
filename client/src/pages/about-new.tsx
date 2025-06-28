@@ -11,17 +11,7 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section 
-        className="section-spacing-loose relative"
-        style={{
-          backgroundImage: `url(${victorianHouses})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Blue filter overlay */}
-        <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
+      <section className="section-spacing-loose bg-blue-600">
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-6 space-y-8">
             <div className="space-y-6">
@@ -47,32 +37,18 @@ export default function AboutPage() {
             </div>
           </div>
           
-          <div className="col-span-12 lg:col-span-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Picture Box */}
-              <div className="relative">
-                <img 
-                  src={candidatePhoto} 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="w-full h-80 object-cover object-center rounded-2xl shadow-2xl" 
-                  style={{
-                    objectPosition: 'center 20%',
-                    filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
-                  }}
-                />
-              </div>
-              
-              {/* Video Box */}
-              <div className="relative">
-                <iframe
-                  className="w-full h-80 rounded-2xl shadow-2xl"
-                  src="https://www.youtube.com/embed/lcbYrTEnyOM"
-                  title="Jump for Senate Campaign Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+          <div className="col-span-12 lg:col-span-6 flex items-center justify-center">
+            {/* Bigger Picture Box - Parallel with text */}
+            <div className="relative">
+              <img 
+                src={candidatePhoto} 
+                alt="Jump - Candidate for U.S. Senate" 
+                className="w-full max-w-lg h-96 object-cover object-center rounded-2xl" 
+                style={{
+                  objectPosition: 'center 20%',
+                  filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
+                }}
+              />
             </div>
           </div>
         </div>
@@ -84,6 +60,20 @@ export default function AboutPage() {
           <h2 className="text-4xl font-bold text-white text-center mb-12">
             What We're Focused On
           </h2>
+          
+          {/* Campaign Video */}
+          <div className="flex justify-center mb-12">
+            <div className="relative max-w-2xl w-full">
+              <iframe
+                className="w-full h-80 rounded-2xl"
+                src="https://www.youtube.com/embed/lcbYrTEnyOM"
+                title="Jump for Senate Campaign Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             <div className="bg-white p-6 rounded-lg shadow-lg">
