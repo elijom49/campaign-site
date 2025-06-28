@@ -21,8 +21,8 @@ export default function PoliciesPage() {
           </div>
           
           {/* Right: Image */}
-          <div className="flex justify-end">
-            <div className="relative">
+          <div className="flex justify-end items-start">
+            <div className="relative -mt-4">
               <img 
                 src={heroPhoto} 
                 alt="Jump Shepherd - Working for Illinois" 
