@@ -33,10 +33,6 @@ export default function PoliciesPage() {
       {/* Policy Section */}
       <div className="bg-blue-600 py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-white text-center mb-12">
-            Our Policy Platform
-          </h2>
-          
           {/* First Row: Two policies + photo */}
           <div className="mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
