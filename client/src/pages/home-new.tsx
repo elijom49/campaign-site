@@ -43,7 +43,7 @@ export default function HomePage() {
               <img 
                 src={candidatePhoto} 
                 alt="Jump - Candidate for U.S. Senate" 
-                className="w-full h-auto rounded-2xl shadow-2xl" 
+                className="w-4/5 h-auto rounded-2xl shadow-2xl mx-auto" 
               />
               <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
                 <blockquote className="text-sm font-medium italic">
