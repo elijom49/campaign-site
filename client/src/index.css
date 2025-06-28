@@ -651,18 +651,12 @@ nav {
 
 /* ENHANCED VISUAL DESIGN ELEMENTS - ACLU-INSPIRED CLEAN GEOMETRY */
 
-/* Premium card styling with sophisticated shadows and straight edges */
+/* Premium card styling with straight edges - no shadows for flat design */
 .policy-card-advanced, 
 .bg-black, 
 .bg-white, 
 .bg-gray-900 {
   border-radius: 0 !important;
-  backdrop-filter: blur(20px);
-  box-shadow: 
-    0 8px 32px -8px rgba(0, 0, 0, 0.3),
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04),
-    0 0 0 1px rgba(255, 255, 255, 0.05);
   position: relative;
 }
 
