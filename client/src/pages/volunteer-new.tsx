@@ -280,10 +280,7 @@ export default function VolunteerPage() {
                     <Heart className="w-5 h-5 text-yellow-400" />
                     <span className="text-gray-300">Make a real difference in your community</span>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <Mail className="w-5 h-5 text-yellow-400" />
-                    <span className="text-gray-300">Volunteer appreciation events</span>
-                  </div>
+
                 </div>
               </div>
               
@@ -295,17 +292,9 @@ export default function VolunteerPage() {
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-blue-400" />
-                    <a href="mailto:volunteers@jump2026.com" className="text-blue-400 hover:underline">
-                      volunteers@jump2026.com
+                    <a href="mailto:sims@jump2026.com" className="text-blue-400 hover:underline">
+                      sims@jump2026.com
                     </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Phone className="w-5 h-5 text-blue-400" />
-                    <span className="text-gray-300">(312) 555-JUMP</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <MapPin className="w-5 h-5 text-blue-400" />
-                    <span className="text-gray-300">Campaign Office: Downtown Chicago</span>
                   </div>
                 </div>
               </div>
