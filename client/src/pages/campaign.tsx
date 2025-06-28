@@ -65,7 +65,8 @@ export default function CampaignPage() {
             </div>
           </div>
         </div>
-        {/* Volunteer Opportunities Section */}
+
+        {/* Volunteer Opportunities Section - Moved up */}
         <div className="col-span-12">
           <div className="bg-white p-8">
             <div className="text-center mb-8">
@@ -137,7 +138,10 @@ export default function CampaignPage() {
               </div>
             </div>
           </div>
+        </div>
 
+        {/* Donations Section */}
+        <div className="col-span-12">
           {/* Donations Section */}
           <div className="bg-white border-4 border-blue-500 rounded-3xl p-12">
             <div className="text-center mb-12">
@@ -258,6 +262,9 @@ export default function CampaignPage() {
               </div>
             </div>
           </div>
+          
+          {/* Space under press section */}
+          <div className="py-12"></div>
         </div>
       </div>
     </div>
