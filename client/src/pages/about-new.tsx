@@ -10,43 +10,53 @@ export default function AboutPage() {
 
   return (
     <div className="bg-black text-white">
-      {/* Hero Section - 4 inches (approximately 288px) */}
-      <section className="h-72">
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
-          <div className="bg-blue-600 p-4 flex flex-col justify-center">
-            <div className="space-y-2">
-              <h1 className="text-display text-xl lg:text-2xl text-white leading-tight">
+      {/* Hero Section with Victorian Houses Background */}
+      <section 
+        className="relative min-h-screen bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${victorianHouses})`,
+        }}
+      >
+        {/* Blue overlay */}
+        <div className="absolute inset-0 bg-blue-600/70"></div>
+        
+        {/* Content */}
+        <div className="relative content-grid-advanced min-h-screen">
+          <div className="col-span-12 lg:col-span-8 flex flex-col justify-center py-20">
+            <div className="space-y-6">
+              <h1 className="text-display text-4xl lg:text-6xl text-white leading-tight">
                 {t('about.meetJump')}
               </h1>
               
               {/* Bio Space */}
-              <div className="bg-gray-900/50 p-2 rounded-lg border border-gray-800">
-                <p className="text-xs text-gray-300 leading-relaxed">
+              <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800 max-w-3xl">
+                <p className="text-lg text-gray-300 leading-relaxed">
                   XXXXXXXXXXXX
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-1">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/campaign">
-                  <span className="inline-block bg-yellow-500 text-black px-3 py-1 text-xs font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
+                  <span className="inline-block bg-yellow-500 text-black px-6 py-3 text-lg font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
                 </Link>
                 <Link href="/volunteer">
-                  <span className="inline-block border-2 border-white text-white px-3 py-1 text-xs font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
+                  <span className="inline-block border-2 border-white text-white px-6 py-3 text-lg font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
                 </Link>
               </div>
             </div>
           </div>
           
-          <div className="h-full">
-            <img 
-              src={candidatePhoto} 
-              alt="Jump - Candidate for U.S. Senate" 
-              className="w-full h-full object-cover object-center" 
-              style={{
-                objectPosition: 'center 20%',
-                filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
-              }}
-            />
+          <div className="col-span-12 lg:col-span-4 flex items-center justify-center py-20">
+            <div className="max-w-md">
+              <img 
+                src={candidatePhoto} 
+                alt="Jump - Candidate for U.S. Senate" 
+                className="w-full rounded-lg" 
+                style={{
+                  filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -54,7 +64,7 @@ export default function AboutPage() {
       {/* Policy Focus Section - Yellow Background */}
       <div className="bg-yellow-500 py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-white text-center mb-12">
+          <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
             What We're Focused On
           </h2>
           
@@ -73,35 +83,35 @@ export default function AboutPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg">
               <Link href="/policies">
                 <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
               </Link>
               <h3 className="text-lg font-bold text-black">Economic Justice</h3>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg">
               <Link href="/policies">
                 <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
               </Link>
               <h3 className="text-lg font-bold text-black">Healthcare Access</h3>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg">
               <Link href="/policies">
                 <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
               </Link>
               <h3 className="text-lg font-bold text-black">Working Class Families</h3>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg">
               <Link href="/policies">
                 <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
               </Link>
               <h3 className="text-lg font-bold text-black">Climate Action</h3>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-lg">
+            <div className="bg-white p-6 rounded-lg">
               <Link href="/policies">
                 <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
               </Link>
@@ -115,7 +125,7 @@ export default function AboutPage() {
       <section className="cta-section-advanced">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
-            <h2 className="text-headline text-4xl lg:text-5xl mb-6">
+            <h2 className="text-display text-4xl lg:text-5xl mb-6">
               Ready to Fight Together?
             </h2>
             <p className="text-body-large mb-8 max-w-2xl mx-auto">
