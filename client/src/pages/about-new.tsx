@@ -11,9 +11,9 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="py-8 lg:py-12">
+      <section className="py-4 lg:py-6">
         <div className="content-grid-advanced">
-          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-8 lg:p-12 flex flex-col justify-center">
+          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-4 lg:p-6 flex flex-col justify-center">
             <div className="space-y-6">
               <h1 className="text-display text-4xl lg:text-5xl xl:text-6xl text-white leading-[0.9]">
                 {t('about.meetJump')}
@@ -46,7 +46,7 @@ export default function AboutPage() {
               style={{
                 objectPosition: 'center 20%',
                 filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)',
-                minHeight: '400px'
+                minHeight: '200px'
               }}
             />
           </div>
