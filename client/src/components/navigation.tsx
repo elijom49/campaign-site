@@ -32,13 +32,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/">
-              <div className="relative group cursor-pointer">
-                <img 
-                  src={jumpLogo} 
-                  alt="Jump for Senate - Chicago, Illinois" 
-                  className="h-16 w-auto transform group-hover:scale-105 transition-all duration-300"
-                />
-              </div>
+              <img 
+                src={jumpLogo} 
+                alt="Jump for Senate - Chicago, Illinois" 
+                className="h-16 w-auto transform hover:scale-105 transition-all duration-300"
+              />
             </Link>
           </div>
 

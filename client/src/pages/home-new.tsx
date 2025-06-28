@@ -45,8 +45,8 @@ export default function HomePage() {
                 alt="Jump - Candidate for U.S. Senate" 
                 className="w-full h-auto rounded-2xl shadow-2xl" 
               />
-              <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
-                <blockquote className="text-base font-medium text-gray-900 italic">
+              <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
+                <blockquote className="text-sm font-medium italic">
                   "I'm running for U.S. Senate because I believe the government should promote equality for everyone."
                 </blockquote>
               </div>
@@ -90,35 +90,38 @@ export default function HomePage() {
           </div>
           
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="policy-card-advanced interactive-element">
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Lowering Cost of Living</h3>
+                <h3 className="text-xl font-semibold">Lowering Cost of Living</h3>
               </div>
               <p className="text-gray-600 mb-4">Taking back single family homes from corporate ownership...</p>
-              <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
+              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
             
-            <div className="policy-card-advanced interactive-element">
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Environmental Policy</h3>
+                <h3 className="text-xl font-semibold">Environmental Policy</h3>
               </div>
               <p className="text-gray-600 mb-4">Championing environmental policy and supporting farmers...</p>
-              <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
+              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
             
-            <div className="policy-card-advanced interactive-element">
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold">Elimination of The Pink Tax</h3>
+                <h3 className="text-xl font-semibold">Elimination of The Pink Tax</h3>
               </div>
               <p className="text-gray-600 mb-4">Making women's essential products tax-deductible...</p>
-              <Link href="/campaign" className="text-blue-600 font-medium inline-flex items-center">
+              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
                 Learn more <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>

@@ -75,7 +75,7 @@ export default function CampaignPage() {
         </div>
 
         {/* Volunteer Opportunities Section */}
-        <div className="col-span-12 mt-16">
+        <div className="col-span-12">
           <div className="bg-black p-8 shadow-2xl">
             <div className="text-center mb-8">
               <div className="flex justify-center mb-4">

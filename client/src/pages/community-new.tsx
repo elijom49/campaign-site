@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag } from "lucide-react";
+import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
 import { FaTiktok, FaLinkedin } from "react-icons/fa";
 import { useLanguage } from "@/hooks/use-language";
 import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
@@ -11,7 +11,7 @@ export default function CommunityPage() {
   return (
     <div className="bg-black text-white">
       {/* Header Section */}
-      <section className="section-spacing-loose">
+      <section className="py-16">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
             <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
@@ -119,7 +119,7 @@ export default function CommunityPage() {
           <div className="col-span-12 lg:col-span-6">
             <div className="space-y-8">
               {/* Tournament Poster */}
-              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl">
+              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl max-w-md mx-auto">
                 <img 
                   src={senatorsCupPoster} 
                   alt="The Senator's Cup Madden Tournament Fundraiser" 
@@ -175,37 +175,37 @@ export default function CommunityPage() {
           
           <div className="col-span-12 grid md:grid-cols-3 gap-8">
             {/* T-Shirts */}
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center">
-              <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
+              <Shirt className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-4">T-Shirts</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-300 mb-6 flex-grow">
                 High-quality campaign t-shirts in various sizes and colors
               </p>
-              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
                 Shop T-Shirts
               </Button>
             </div>
 
             {/* Buttons & Stickers */}
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center">
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
               <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-4">Buttons & Stickers</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-300 mb-6 flex-grow">
                 Campaign buttons and bumper stickers
               </p>
-              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
                 Shop Accessories
               </Button>
             </div>
 
             {/* Order a Yard Sign */}
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center">
-              <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
+              <SignpostBig className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-4">Order a Yard Sign</h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-gray-300 mb-6 flex-grow">
                 Show your support with an official campaign yard sign
               </p>
-              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
                 Order Yard Sign
               </Button>
             </div>

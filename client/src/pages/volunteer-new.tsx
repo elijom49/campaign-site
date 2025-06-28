@@ -10,7 +10,7 @@ export default function VolunteerPage() {
   return (
     <div className="bg-black text-white">
       {/* Header Section */}
-      <section className="section-spacing-loose">
+      <section className="py-16">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
             <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
@@ -213,6 +213,16 @@ export default function VolunteerPage() {
                   <option value="evenings">Evenings</option>
                   <option value="flexible">Flexible</option>
                 </select>
+              </div>
+              
+              <div>
+                <label className="block text-white font-medium mb-2">Resume Upload (Optional)</label>
+                <input 
+                  type="file" 
+                  accept=".pdf,.doc,.docx"
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:bg-blue-600 file:text-white hover:file:bg-blue-700"
+                />
+                <p className="text-gray-400 text-sm mt-1">Accepted formats: PDF, DOC, DOCX</p>
               </div>
               
               <div>
