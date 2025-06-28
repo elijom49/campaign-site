@@ -191,22 +191,22 @@ export default function CommunityPage() {
               <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold text-white mb-4">Buttons & Stickers</h3>
               <p className="text-gray-300 mb-6">
-                Campaign buttons, bumper stickers, and yard signs
+                Campaign buttons and bumper stickers
               </p>
               <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">
                 Shop Accessories
               </Button>
             </div>
 
-            {/* Custom Items */}
+            {/* Order a Yard Sign */}
             <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center">
               <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-semibold text-white mb-4">Custom Items</h3>
+              <h3 className="text-2xl font-semibold text-white mb-4">Order a Yard Sign</h3>
               <p className="text-gray-300 mb-6">
-                Hats, bags, and other custom campaign merchandise
+                Show your support with an official campaign yard sign
               </p>
               <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full">
-                Shop Custom
+                Order Yard Sign
               </Button>
             </div>
           </div>
