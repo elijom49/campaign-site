@@ -13,7 +13,7 @@ export default function PoliciesPage() {
         style={{
           backgroundImage: `url(${heroPhoto})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center bottom',
+          backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
           filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
         }}
