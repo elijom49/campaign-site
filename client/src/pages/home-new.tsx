@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9]">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9] mt-12">
                 Your Future
                 <br />
                 <span className="text-blue-600">U.S. Senator</span>
