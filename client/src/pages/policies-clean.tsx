@@ -49,15 +49,11 @@ export default function PoliciesPage() {
               </div>
               
               <div className="flex justify-center">
-                <img 
-                  src={candidatePhoto} 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="w-48 h-64 object-cover rounded-lg shadow-lg"
-                  style={{
-                    objectPosition: 'center 20%',
-                    filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
-                  }}
-                />
+                <div className="w-48 h-64 bg-white rounded-lg shadow-lg flex items-center justify-center p-6">
+                  <h2 className="text-2xl font-bold text-black text-center leading-tight">
+                    Our Policy Platform
+                  </h2>
+                </div>
               </div>
               
               <div className="bg-white p-6 rounded-lg">
