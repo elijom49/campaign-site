@@ -129,8 +129,8 @@ export default function CommunityPage() {
               
               {/* Calendar Section */}
               <div className="bg-blue-900/20 border border-blue-800 p-8 rounded-2xl">
-                <h3 className="text-headline text-2xl text-white mb-4">Event Calendar</h3>
-                <p className="text-gray-300 mb-6">
+                <h3 className="text-headline text-2xl text-white mb-4 text-center">Event Calendar</h3>
+                <p className="text-gray-300 mb-6 text-center">
                   Stay updated with all upcoming campaign events and activities.
                 </p>
                 <div className="text-center">
@@ -216,7 +216,7 @@ export default function CommunityPage() {
       {/* Newsletter Section */}
       <section className="section-spacing-tight bg-gray-900">
         <div className="content-grid-advanced">
-          <div className="col-span-12 lg:col-span-8 mx-auto text-center space-y-8">
+          <div className="col-span-12 mx-auto text-center space-y-8 max-w-4xl">
             <h2 className="text-headline text-4xl lg:text-5xl text-white">
               Stay Informed
             </h2>

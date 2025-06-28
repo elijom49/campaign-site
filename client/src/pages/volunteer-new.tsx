@@ -38,13 +38,13 @@ export default function VolunteerPage() {
           </div>
           
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <Phone className="w-8 h-8 text-blue-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Phone Banking</h3>
+                <Phone className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Phone Banking</h3>
               </div>
-              <p className="text-gray-300 mb-4">Call voters across Illinois to share Jump's message and register new supporters.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Call voters across Illinois to share Jump's message and register new supporters.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• Flexible scheduling</li>
                 <li>• Training provided</li>
                 <li>• Work from home</li>
@@ -52,13 +52,13 @@ export default function VolunteerPage() {
               <Button className="w-full bg-blue-600 hover:bg-blue-700">Sign Up</Button>
             </div>
             
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <MapPin className="w-8 h-8 text-green-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Door Knocking</h3>
+                <MapPin className="w-8 h-8 text-green-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Door Knocking</h3>
               </div>
-              <p className="text-gray-300 mb-4">Go door-to-door in your neighborhood to meet voters and build grassroots support.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Go door-to-door in your neighborhood to meet voters and build grassroots support.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• Weekend shifts available</li>
                 <li>• Paired with experienced volunteers</li>
                 <li>• Local neighborhood focus</li>
@@ -66,13 +66,13 @@ export default function VolunteerPage() {
               <Button className="w-full bg-green-600 hover:bg-green-700">Sign Up</Button>
             </div>
             
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <Calendar className="w-8 h-8 text-yellow-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Event Support</h3>
+                <Calendar className="w-8 h-8 text-yellow-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Event Support</h3>
               </div>
-              <p className="text-gray-300 mb-4">Help organize and run campaign events, town halls, and community meetings.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Help organize and run campaign events, town halls, and community meetings.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• Setup and logistics</li>
                 <li>• Voter registration</li>
                 <li>• Event coordination</li>
@@ -80,13 +80,13 @@ export default function VolunteerPage() {
               <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-black">Sign Up</Button>
             </div>
             
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <Share2 className="w-8 h-8 text-purple-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Digital Organizing</h3>
+                <Share2 className="w-8 h-8 text-purple-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Digital Organizing</h3>
               </div>
-              <p className="text-gray-300 mb-4">Spread the word on social media and help manage our online presence.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Spread the word on social media and help manage our online presence.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• Content creation</li>
                 <li>• Social media management</li>
                 <li>• Online voter outreach</li>
@@ -94,13 +94,13 @@ export default function VolunteerPage() {
               <Button className="w-full bg-purple-600 hover:bg-purple-700">Sign Up</Button>
             </div>
             
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <Users className="w-8 h-8 text-red-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Community Organizing</h3>
+                <Users className="w-8 h-8 text-red-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Community Organizing</h3>
               </div>
-              <p className="text-gray-300 mb-4">Build coalitions and organize in your community around key issues.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Build coalitions and organize in your community around key issues.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• Coalition building</li>
                 <li>• Issue advocacy</li>
                 <li>• Leadership development</li>
@@ -108,13 +108,13 @@ export default function VolunteerPage() {
               <Button className="w-full bg-red-600 hover:bg-red-700">Sign Up</Button>
             </div>
             
-            <div className="policy-card-advanced bg-black border-gray-800">
+            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
               <div className="flex items-center mb-4">
-                <Heart className="w-8 h-8 text-pink-400 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">Fundraising</h3>
+                <Heart className="w-8 h-8 text-pink-600 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-black">Fundraising</h3>
               </div>
-              <p className="text-gray-300 mb-4">Help raise funds from small donors to power our people-funded campaign.</p>
-              <ul className="text-gray-400 text-sm space-y-1 mb-4">
+              <p className="text-black mb-4">Help raise funds from small donors to power our people-funded campaign.</p>
+              <ul className="text-gray-800 text-sm space-y-1 mb-4">
                 <li>• House parties</li>
                 <li>• Donor outreach</li>
                 <li>• Fundraising events</li>
@@ -187,16 +187,14 @@ export default function VolunteerPage() {
               
               <div>
                 <label className="block text-white font-medium mb-2">Volunteer Interests (Check all that apply)</label>
-                <div className="grid md:grid-cols-2 gap-3">
+                <div className="grid md:grid-cols-1 gap-3">
                   {[
-                    'Phone Banking',
-                    'Door Knocking',
-                    'Event Support',
-                    'Digital Organizing',
-                    'Community Organizing',
-                    'Fundraising',
-                    'Data Entry',
-                    'Translation Services'
+                    'Policywriter - (Topic: The Pink Tax Legislation)',
+                    'Discord Manager - (Remote Work)',
+                    'Sales Team - (Campaign items, Relationship Building)',
+                    'Media Coordinator - (Local, Chicago)',
+                    'Social Media Manager - (LinkedIn, YouTube, Facebook, Twitch, TikTok)',
+                    'Content Writers - (Writers, editors needed)'
                   ].map((interest) => (
                     <label key={interest} className="flex items-center space-x-2">
                       <input type="checkbox" className="rounded text-blue-600" />
