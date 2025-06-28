@@ -70,7 +70,7 @@ export default function AboutPage() {
       {/* Policy Focus Section - Yellow Background */}
       <div className="bg-yellow-500 py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-black text-center mb-12">
+          <h2 className="text-4xl font-bold text-white text-center mb-12">
             What We're Focused On
           </h2>
           
