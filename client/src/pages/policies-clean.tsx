@@ -48,12 +48,10 @@ export default function PoliciesPage() {
                 </p>
               </div>
               
-              <div className="flex justify-center">
-                <div className="w-48 h-64 bg-white border-4 border-yellow-500 rounded-lg shadow-lg flex items-center justify-center p-6">
-                  <h2 className="text-3xl font-black text-black text-center leading-tight uppercase tracking-wide">
-                    Our Policy Platform
-                  </h2>
-                </div>
+              <div className="bg-white border-4 border-yellow-500 rounded-lg p-6 flex items-center justify-center">
+                <h2 className="text-4xl lg:text-5xl font-bold text-black text-center leading-tight tracking-tight">
+                  OUR POLICY PLATFORM
+                </h2>
               </div>
               
               <div className="bg-white p-6 rounded-lg">
