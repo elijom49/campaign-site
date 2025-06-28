@@ -13,7 +13,7 @@ export default function CampaignPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Title Only */}
             <div className="flex items-center justify-center h-full">
-              <h1 className="text-7xl lg:text-8xl font-bold text-yellow-400 leading-tight">How Can You Help?</h1>
+              <h1 className="text-7xl lg:text-8xl font-bold text-yellow-400 leading-tight ml-24">How Can You Help?</h1>
             </div>
             
             {/* Right Side - Text Content */}
