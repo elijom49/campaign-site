@@ -12,7 +12,7 @@ export default function HomePage() {
       {/* Advanced Hero Section */}
       <section className="hero-section-advanced min-h-screen flex items-center">
         <div className="content-grid-advanced relative z-10">
-          <div className="col-span-12 lg:col-span-7 space-y-8">
+          <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
               <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9]">
                 Your Future
@@ -38,7 +38,7 @@ export default function HomePage() {
             </div>
           </div>
           
-          <div className="col-span-12 lg:col-span-5">
+          <div className="col-span-12 lg:col-span-5 lg:-ml-24">
             <div className="relative">
               <img 
                 src={candidatePhoto} 
