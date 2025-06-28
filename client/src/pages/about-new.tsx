@@ -64,68 +64,80 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Policies Section */}
-      <section className="section-spacing-loose bg-black">
-        <div className="content-grid-advanced">
-          <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
-              {t('about.policies')}
-            </h2>
-
+      {/* Policy Focus Section - ACLU-Inspired Design */}
+      <div className="aclu-blue-section">
+        <div className="aclu-geometric-accent top-left"></div>
+        <div className="aclu-geometric-accent bottom-right"></div>
+        <h2 className="aclu-section-title">
+          What We're Focused On
+        </h2>
+        
+        <div className="aclu-content-grid">
+          <div className="aclu-card">
+            <div className="aclu-card-arrow">→</div>
+            <h3>Economic Justice</h3>
+            <p>Fighting for fair wages, workers' rights, and economic policies that benefit working families across Illinois.</p>
+            <div className="space-y-3">
+              <div>
+                <strong className="text-gray-900">Living Wage</strong>
+                <p className="text-sm text-gray-600 mt-1">Ensuring all workers can afford basic necessities</p>
+              </div>
+              <div>
+                <strong className="text-gray-900">Worker Protection</strong>
+                <p className="text-sm text-gray-600 mt-1">Strengthening union rights and workplace safety</p>
+              </div>
+            </div>
           </div>
-          
-          {/* Vertical Timeline */}
-          <div className="col-span-12 lg:col-span-8 mx-auto">
-            <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-500"></div>
-              
-              {/* Timeline Items */}
-              <div className="space-y-12">
-                {/* Policy 1 */}
-                <div className="relative flex items-start">
-                  <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-black"></div>
-                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
-                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
-                  </div>
-                </div>
-                
-                {/* Policy 2 */}
-                <div className="relative flex items-start">
-                  <div className="absolute left-6 w-4 h-4 bg-yellow-500 rounded-full border-4 border-black"></div>
-                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
-                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
-                  </div>
-                </div>
-                
-                {/* Policy 3 */}
-                <div className="relative flex items-start">
-                  <div className="absolute left-6 w-4 h-4 bg-green-500 rounded-full border-4 border-black"></div>
-                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
-                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
-                  </div>
-                </div>
-                
-                {/* Policy 4 */}
-                <div className="relative flex items-start">
-                  <div className="absolute left-6 w-4 h-4 bg-purple-500 rounded-full border-4 border-black"></div>
-                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
-                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
-                  </div>
-                </div>
-                
-                {/* Policy 5 */}
-                <div className="relative flex items-start">
-                  <div className="absolute left-6 w-4 h-4 bg-red-500 rounded-full border-4 border-black"></div>
-                  <div className="ml-16 bg-gray-900 p-6 rounded-xl border border-gray-800 flex-1">
-                    <p className="text-body-large text-gray-300">XXXXXXXXXXXXX</p>
-                  </div>
-                </div>
+
+          <div className="aclu-card">
+            <div className="aclu-card-arrow">→</div>
+            <h3>Healthcare Access</h3>
+            <p>Expanding healthcare access and reducing costs for all Illinois families and small businesses.</p>
+            <div className="space-y-3">
+              <div>
+                <strong className="text-gray-900">Medicare for All</strong>
+                <p className="text-sm text-gray-600 mt-1">Universal healthcare as a human right</p>
+              </div>
+              <div>
+                <strong className="text-gray-900">Prescription Costs</strong>
+                <p className="text-sm text-gray-600 mt-1">Lowering medication prices for families</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="aclu-card">
+            <div className="aclu-card-arrow">→</div>
+            <h3>Education Investment</h3>
+            <p>Making education affordable and accessible for every student in Illinois, from early childhood through college.</p>
+            <div className="space-y-3">
+              <div>
+                <strong className="text-gray-900">Free Public College</strong>
+                <p className="text-sm text-gray-600 mt-1">Removing barriers to higher education</p>
+              </div>
+              <div>
+                <strong className="text-gray-900">Student Debt Relief</strong>
+                <p className="text-sm text-gray-600 mt-1">Addressing the student loan crisis</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="aclu-card">
+            <div className="aclu-card-arrow">→</div>
+            <h3>Climate Action</h3>
+            <p>Leading on environmental protection and creating green jobs for a sustainable future in Illinois.</p>
+            <div className="space-y-3">
+              <div>
+                <strong className="text-gray-900">Green New Deal</strong>
+                <p className="text-sm text-gray-600 mt-1">Comprehensive climate action plan</p>
+              </div>
+              <div>
+                <strong className="text-gray-900">Renewable Energy</strong>
+                <p className="text-sm text-gray-600 mt-1">Transitioning to clean energy sources</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Call to Action Section */}
       <section className="cta-section-advanced">

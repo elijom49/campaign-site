@@ -15,74 +15,86 @@ export default function CampaignPage() {
           </p>
         </div>
 
-        {/* Top Section - Two boxes on sides of picture */}
-        <div className="col-span-12 grid lg:grid-cols-3 gap-8 mb-16">
-          {/* Left Policy Box */}
-          <div className="flex items-center">
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl w-full h-80 flex flex-col justify-center">
-              <div className="text-center mb-4">
-                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Environmental Policy</h2>
-              </div>
-              <h3 className="text-subheadline text-xl font-semibold text-white mb-4 text-center">Policy Details</h3>
-              <p className="text-body-large text-white text-center">XXXXXXXX</p>
-            </div>
-          </div>
+        {/* Policy Focus Section - ACLU-Inspired Design */}
+        <div className="aclu-blue-section">
+          <div className="aclu-geometric-accent top-left"></div>
+          <div className="aclu-geometric-accent bottom-right"></div>
+          <h2 className="aclu-section-title">
+            Our Policy Platform
+          </h2>
           
-          {/* Center Column - Picture */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <img 
-                src={candidatePhoto} 
-                alt="Jump - Candidate for U.S. Senate" 
-                className="w-full max-w-md h-96 object-cover object-center rounded-2xl shadow-2xl drop-shadow-2xl" 
-                style={{objectPosition: 'center 20%'}}
-              />
-            </div>
-          </div>
-          
-          {/* Right Policy Box */}
-          <div className="flex items-center">
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl w-full h-80 flex flex-col justify-center">
-              <div className="text-center mb-4">
-                <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">The Billionaire's Bill</h2>
+          <div className="aclu-content-grid">
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
+              <h3>Environmental Policy</h3>
+              <p>Comprehensive climate action and environmental protection for Illinois communities.</p>
+              <div className="space-y-2">
+                <div>
+                  <strong className="text-gray-900">Green Infrastructure</strong>
+                  <p className="text-sm text-gray-600 mt-1">Clean energy jobs and sustainable development</p>
+                </div>
               </div>
-              <h3 className="text-subheadline text-xl font-semibold text-white mb-4 text-center">Tax Policy</h3>
-              <p className="text-body-large text-white text-center">
-                The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
-              </p>
+            </div>
+
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
+              <h3>The Billionaire's Bill</h3>
+              <p>Tax Policy</p>
+              <div className="space-y-2">
+                <strong className="text-gray-900">Progressive Taxation</strong>
+                <p className="text-sm text-gray-600 mt-1">
+                  The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
+                </p>
+              </div>
+            </div>
+
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
+              <h3>Elimination of The Pink Tax</h3>
+              <p>Women's Rights Policy</p>
+              <div className="space-y-2">
+                <strong className="text-gray-900">Gender Equality</strong>
+                <p className="text-sm text-gray-600 mt-1">
+                  The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
+                </p>
+              </div>
+            </div>
+
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
+              <h3>Healthcare Policy</h3>
+              <p>Expanding healthcare access and reducing costs for all Illinois families.</p>
+              <div className="space-y-2">
+                <div>
+                  <strong className="text-gray-900">Universal Access</strong>
+                  <p className="text-sm text-gray-600 mt-1">Healthcare as a human right for all</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="aclu-card">
+              <div className="aclu-card-arrow">→</div>
+              <h3>Education Funding</h3>
+              <p>Investing in quality education from early childhood through higher education.</p>
+              <div className="space-y-2">
+                <div>
+                  <strong className="text-gray-900">Public Investment</strong>
+                  <p className="text-sm text-gray-600 mt-1">Fully funded schools and affordable college</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        
-        {/* Bottom Section - Three Policy Boxes */}
-        <div className="col-span-12 grid lg:grid-cols-3 gap-8">
-          {/* Pink Tax Policy */}
-          <div className="bg-black border-4 border-blue-500 rounded-2xl p-6 shadow-2xl drop-shadow-2xl h-80 flex flex-col justify-center">
-            <div className="text-center mb-3">
-              <h2 className="text-headline text-2xl font-bold text-yellow-400 mb-2">Elimination of The Pink Tax</h2>
-            </div>
-            <h3 className="text-subheadline text-lg font-semibold text-white mb-3 text-center">Women's Rights Policy</h3>
-            <p className="text-body text-white text-center leading-tight text-sm">
-              The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
-            </p>
-          </div>
-          
-          {/* Additional Policy Box 1 */}
-          <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl h-80 flex flex-col justify-center">
-            <div className="text-center mb-4">
-              <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Healthcare Policy</h2>
-            </div>
-            <h3 className="text-subheadline text-xl font-semibold text-white mb-4 text-center">Policy Details</h3>
-            <p className="text-body-large text-white text-center">XXXXXXXX</p>
-          </div>
-          
-          {/* Additional Policy Box 2 */}
-          <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl h-80 flex flex-col justify-center">
-            <div className="text-center mb-4">
-              <h2 className="text-headline text-3xl font-bold text-yellow-400 mb-2">Education Policy</h2>
-            </div>
-            <h3 className="text-subheadline text-xl font-semibold text-white mb-4 text-center">Policy Details</h3>
-            <p className="text-body-large text-white text-center">XXXXXXXX</p>
+
+        {/* Candidate Image Section */}
+        <div className="col-span-12 flex justify-center py-16">
+          <div className="relative aclu-hero-image">
+            <img 
+              src={candidatePhoto} 
+              alt="Jump - Candidate for U.S. Senate" 
+              className="w-full max-w-md h-96 object-cover object-center shadow-2xl" 
+              style={{objectPosition: 'center 20%'}}
+            />
           </div>
         </div>
       </div>

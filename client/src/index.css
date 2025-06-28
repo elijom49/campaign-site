@@ -809,3 +809,195 @@ img {
     0 8px 16px -4px rgba(0, 0, 0, 0.2),
     0 4px 8px -2px rgba(0, 0, 0, 0.1);
 }
+
+/* ACLU-INSPIRED DESIGN SYSTEM */
+
+/* Blue background sections with white content cards */
+.aclu-blue-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  padding: 4rem 0;
+}
+
+.aclu-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.aclu-card {
+  background: white;
+  padding: 2rem;
+  box-shadow: 
+    0 16px 32px -8px rgba(0, 0, 0, 0.25),
+    0 8px 16px -4px rgba(0, 0, 0, 0.15);
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.aclu-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.aclu-card h3 {
+  color: #1f2937;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.aclu-card p {
+  color: #4b5563;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.aclu-card-arrow {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Action sections with geometric elements */
+.aclu-action-section {
+  background: #f8fafc;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.aclu-action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.aclu-action-card {
+  background: #1f2937;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  box-shadow: 
+    0 16px 32px -8px rgba(0, 0, 0, 0.3),
+    0 8px 16px -4px rgba(0, 0, 0, 0.2);
+}
+
+.aclu-action-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.aclu-action-button {
+  background: #fbbf24;
+  color: #1f2937;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1rem;
+  box-shadow: 
+    0 8px 16px -4px rgba(251, 191, 36, 0.3),
+    0 4px 8px -2px rgba(251, 191, 36, 0.2);
+}
+
+.aclu-action-button:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 24px -6px rgba(251, 191, 36, 0.4),
+    0 8px 16px -4px rgba(251, 191, 36, 0.3);
+}
+
+/* Hero image with geometric overlays */
+.aclu-hero-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.aclu-hero-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.7) 0%, rgba(29, 78, 216, 0.8) 100%);
+  z-index: 1;
+}
+
+.aclu-hero-image::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: #fbbf24;
+  transform: translate(-50%, -50%) rotate(45deg);
+  z-index: 2;
+  opacity: 0.7;
+}
+
+/* Geometric accent elements */
+.aclu-geometric-accent {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fbbf24;
+  opacity: 0.1;
+  transform: rotate(45deg);
+}
+
+.aclu-geometric-accent.top-left {
+  top: -50px;
+  left: -50px;
+}
+
+.aclu-geometric-accent.bottom-right {
+  bottom: -50px;
+  right: -50px;
+}
+
+/* Typography enhancements for ACLU style */
+.aclu-section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.aclu-page-header {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: -0.03em;
+}
