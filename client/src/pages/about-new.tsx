@@ -10,35 +10,35 @@ export default function AboutPage() {
 
   return (
     <div className="bg-black text-white">
-      {/* Hero Section - Exactly 4.5 inches */}
-      <section style={{ height: '4.5in' }}>
+      {/* Hero Section - Compact */}
+      <section className="h-80">
         <div className="content-grid-advanced h-full">
-          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-3 flex flex-col justify-center h-full">
-            <div className="space-y-2">
-              <h1 className="text-display text-xl lg:text-2xl text-white leading-tight">
+          <div className="col-span-12 lg:col-span-6 bg-blue-600 p-4 flex flex-col justify-center h-full">
+            <div className="space-y-3">
+              <h1 className="text-display text-2xl lg:text-3xl text-white leading-tight">
                 {t('about.meetJump')}
               </h1>
               
               {/* Bio Space */}
-              <div className="bg-gray-900/50 p-2 rounded-lg border border-gray-800">
-                <p className="text-xs text-gray-300 leading-relaxed">
+              <div className="bg-gray-900/50 p-3 rounded-lg border border-gray-800">
+                <p className="text-sm text-gray-300 leading-relaxed">
                   XXXXXXXXXXXX
                 </p>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-1">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Link href="/campaign">
-                  <span className="inline-block bg-yellow-500 text-black px-3 py-1 text-xs font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
+                  <span className="inline-block bg-yellow-500 text-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
                 </Link>
                 <Link href="/volunteer">
-                  <span className="inline-block border-2 border-white text-white px-3 py-1 text-xs font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
+                  <span className="inline-block border-2 border-white text-white px-4 py-2 text-sm font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
                 </Link>
               </div>
             </div>
           </div>
           
           <div className="col-span-12 lg:col-span-6 h-full">
-            {/* Picture fills exact 4.5 inch height */}
+            {/* Picture fills exact same height */}
             <img 
               src={candidatePhoto} 
               alt="Jump - Candidate for U.S. Senate" 
