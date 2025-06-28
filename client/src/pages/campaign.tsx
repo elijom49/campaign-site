@@ -7,18 +7,18 @@ export default function CampaignPage() {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      <div className="content-grid-advanced py-16">
+      <div className="content-grid-advanced py-12">
         {/* Header Section */}
-        <div className="col-span-12 mb-16 pt-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="col-span-12 mb-12 pt-4">
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* Left Side - Header and Photo */}
             <div>
-              <h1 className="text-6xl font-bold text-yellow-400 mb-8">How Can You Help?</h1>
+              <h1 className="text-5xl font-bold text-yellow-400 mb-6">How Can You Help?</h1>
               <div className="relative">
                 <img 
                   src={candidatePhoto} 
                   alt="Jump - Candidate for U.S. Senate" 
-                  className="w-full max-w-lg h-96 object-cover object-center rounded-2xl shadow-2xl drop-shadow-2xl border-4 border-blue-500" 
+                  className="w-full max-w-lg h-80 object-cover object-center shadow-2xl border-4 border-blue-500" 
                   style={{objectPosition: 'center 20%'}}
                 />
               </div>
@@ -30,59 +30,59 @@ export default function CampaignPage() {
                 Join our movement to bring real change to Illinois. Every contribution, 
                 every volunteer hour, and every voice matters in our fight for justice and equality.
               </p>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-300 mb-8">
                 Together, we can build a better future for all Illinoisans.
               </p>
             </div>
           </div>
-        </div>
-
-        {/* ACLU-Inspired Action Section */}
-        <div className="aclu-action-section">
-          <h2 className="aclu-page-header text-gray-900">Actions Needed Now</h2>
           
-          <div className="aclu-action-grid">
-            {/* Volunteering Action Card */}
-            <div className="aclu-action-card">
-              <div className="flex items-center mb-4">
-                <Users className="w-12 h-12 text-yellow-400 mr-4" />
-                <h3>Join Our Volunteer Team</h3>
+          {/* ACLU-Inspired Action Section - Moved directly under intro */}
+          <div className="aclu-action-section mt-12">
+            <h2 className="aclu-page-header text-gray-900">Actions Needed Now</h2>
+            
+            <div className="aclu-action-grid">
+              {/* Volunteering Action Card */}
+              <div className="aclu-action-card">
+                <div className="flex items-center mb-4">
+                  <Users className="w-12 h-12 text-yellow-400 mr-4" />
+                  <h3>Join Our Volunteer Team</h3>
+                </div>
+                <p className="text-gray-300 mb-6">
+                  Be the change you want to see. Join our dedicated team of volunteers 
+                  working to transform Illinois communities through grassroots organizing.
+                </p>
+                <button className="aclu-action-button">
+                  Get Involved
+                </button>
               </div>
-              <p className="text-gray-300 mb-6">
-                Be the change you want to see. Join our dedicated team of volunteers 
-                working to transform Illinois communities through grassroots organizing.
-              </p>
-              <button className="aclu-action-button">
-                Get Involved
-              </button>
-            </div>
 
-            {/* Donations Action Card */}
-            <div className="aclu-action-card">
-              <div className="flex items-center mb-4">
-                <DollarSign className="w-12 h-12 text-yellow-400 mr-4" />
-                <h3>Support the Campaign</h3>
+              {/* Donations Action Card */}
+              <div className="aclu-action-card">
+                <div className="flex items-center mb-4">
+                  <DollarSign className="w-12 h-12 text-yellow-400 mr-4" />
+                  <h3>Support the Campaign</h3>
+                </div>
+                <p className="text-gray-300 mb-6">
+                  Every contribution helps us reach more voters and build our movement. 
+                  Your donation directly supports organizing, outreach, and advocacy efforts.
+                </p>
+                <button className="aclu-action-button">
+                  Donate Now
+                </button>
               </div>
-              <p className="text-gray-300 mb-6">
-                Every contribution helps us reach more voters and build our movement. 
-                Your donation directly supports organizing, outreach, and advocacy efforts.
-              </p>
-              <button className="aclu-action-button">
-                Donate Now
-              </button>
             </div>
           </div>
         </div>
 
-        {/* Traditional Volunteering Section */}
-        <div className="col-span-12 space-y-16">
-          <div className="bg-black p-12 shadow-2xl">
-            <div className="text-center mb-12">
-              <div className="flex justify-center mb-6">
-                <Users className="w-16 h-16 text-yellow-400" />
+        {/* Volunteer Opportunities Section */}
+        <div className="col-span-12 mt-16">
+          <div className="bg-black p-8 shadow-2xl">
+            <div className="text-center mb-8">
+              <div className="flex justify-center mb-4">
+                <Users className="w-12 h-12 text-yellow-400" />
               </div>
-              <h2 className="text-5xl font-bold text-yellow-400 mb-4">Volunteer Opportunities</h2>
-              <p className="text-xl text-white max-w-3xl mx-auto">
+              <h2 className="text-4xl font-bold text-yellow-400 mb-4">Volunteer Opportunities</h2>
+              <p className="text-lg text-white max-w-2xl mx-auto">
                 Multiple ways to get involved and make a difference in our campaign.
               </p>
             </div>
