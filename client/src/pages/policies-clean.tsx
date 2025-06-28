@@ -48,7 +48,7 @@ export default function PoliciesPage() {
                 </p>
               </div>
               
-              <div className="bg-white border-4 border-yellow-500 rounded-lg p-6 flex items-center justify-center">
+              <div className="bg-yellow-500 rounded-lg p-6 flex items-center justify-center">
                 <h2 className="text-4xl lg:text-5xl font-bold text-black text-center leading-tight tracking-tight">
                   OUR POLICY PLATFORM
                 </h2>
