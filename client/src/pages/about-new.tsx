@@ -26,7 +26,7 @@ export default function AboutPage() {
               {/* Bio Space */}
               <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800 max-w-3xl">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  XXXXXXXXXXXX
+                  Jump was born and raised in Chicago. As an Illinois Native, he is uniquely equipped to understand and address the challenges of working class Illinoisans.
                 </p>
               </div>
               
