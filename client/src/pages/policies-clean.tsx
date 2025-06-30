@@ -21,10 +21,10 @@ export default function PoliciesPage() {
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
           <div className="text-left max-w-2xl">
             <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-              POLICIES
+              {t('policies.myPolicies').toUpperCase()}
             </h1>
             <p className="text-xl lg:text-2xl text-white font-medium">
-              Our comprehensive policy platform for creating positive change in Illinois
+              {t('policies.championing')}
             </p>
           </div>
         </div>
@@ -38,9 +38,9 @@ export default function PoliciesPage() {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg">
                 <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-                <h3 className="text-xl font-bold text-black mb-3">Environmental Policy</h3>
+                <h3 className="text-xl font-bold text-black mb-3">{t('policies.climateActionTitle')}</h3>
                 <p className="text-gray-700">
-                  Championing environmental policy and supporting farmers while protecting our natural resources for future generations.
+                  {t('policies.climateActionDesc')}
                 </p>
               </div>
               
@@ -52,9 +52,9 @@ export default function PoliciesPage() {
               
               <div className="bg-white p-6 rounded-lg">
                 <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-                <h3 className="text-xl font-bold text-black mb-3">The Billionaire's Bill</h3>
+                <h3 className="text-xl font-bold text-black mb-3">{t('policies.economicJusticeTitle')}</h3>
                 <p className="text-gray-700">
-                  The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
+                  {t('policies.economicJusticeDesc')}
                 </p>
               </div>
             </div>
@@ -64,25 +64,25 @@ export default function PoliciesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg">
               <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">Elimination of The Pink Tax</h3>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.workingFamiliesTitle')}</h3>
               <p className="text-gray-700">
-                The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
+                {t('policies.workingFamiliesDesc')}
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg">
               <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">Healthcare Policy</h3>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.healthcareAccessTitle')}</h3>
               <p className="text-gray-700">
-                Ensuring affordable, accessible healthcare for all Illinoisans with comprehensive coverage and reduced costs.
+                {t('policies.healthcareAccessDesc')}
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg">
               <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">Education Funding</h3>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.educationEquityTitle')}</h3>
               <p className="text-gray-700">
-                Investing in our children's future through proper school funding and educational opportunities for all communities.
+                {t('policies.educationEquityDesc')}
               </p>
             </div>
           </div>

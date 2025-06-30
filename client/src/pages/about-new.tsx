@@ -125,17 +125,17 @@ export default function AboutPage() {
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
             <h2 className="text-display text-4xl lg:text-5xl mb-6">
-              Ready to Fight Together?
+              {t('about.readyToFight')}
             </h2>
             <p className="text-body-large mb-8 max-w-2xl mx-auto">
-              This campaign is about building a movement for change. Join thousands of Illinois residents who are ready to fight for a better future.
+              {t('about.buildingMovement')}
             </p>
             <div className="cta-buttons">
               <Link href="/volunteer">
-                <span className="btn-primary-large">Join the Movement</span>
+                <span className="btn-primary-large">{t('about.joinMovement')}</span>
               </Link>
               <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer">
-                <span className="btn-secondary-large">Support the Campaign</span>
+                <span className="btn-secondary-large">{t('about.supportCampaign')}</span>
               </a>
             </div>
           </div>
