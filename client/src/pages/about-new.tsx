@@ -26,7 +26,7 @@ export default function AboutPage() {
               {/* Bio Space */}
               <div className="bg-gray-900/50 p-6 rounded-lg border border-gray-800 max-w-3xl">
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Jump was born and raised in Chicago. As an Illinois Native, he is uniquely equipped to understand and address the challenges of working class Illinoisans.
+                  {t('about.bioText')}
                 </p>
               </div>
               
@@ -60,7 +60,7 @@ export default function AboutPage() {
       <div className="bg-black py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
-            My Policies
+            {t('about.myPolicies')}
           </h2>
           
           {/* Policy Grid and Video Layout */}
@@ -71,28 +71,28 @@ export default function AboutPage() {
                 <Link href="/policies">
                   <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
                 </Link>
-                <h3 className="text-base font-bold text-black">Economic Justice</h3>
+                <h3 className="text-base font-bold text-black">{t('about.economicJustice')}</h3>
               </div>
 
               <div className="bg-white p-4 rounded-lg">
                 <Link href="/policies">
                   <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
                 </Link>
-                <h3 className="text-base font-bold text-black">Healthcare Access</h3>
+                <h3 className="text-base font-bold text-black">{t('about.healthcareAccess')}</h3>
               </div>
 
               <div className="bg-white p-4 rounded-lg">
                 <Link href="/policies">
                   <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
                 </Link>
-                <h3 className="text-base font-bold text-black">Working Class Families</h3>
+                <h3 className="text-base font-bold text-black">{t('about.workingClassFamilies')}</h3>
               </div>
 
               <div className="bg-white p-4 rounded-lg">
                 <Link href="/policies">
                   <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
                 </Link>
-                <h3 className="text-base font-bold text-black">Climate Action</h3>
+                <h3 className="text-base font-bold text-black">{t('about.climateAction')}</h3>
               </div>
 
               <div className="bg-white p-4 rounded-lg">

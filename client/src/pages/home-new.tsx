@@ -58,15 +58,15 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="stat-item">
                 <div className="stat-number">12.7M</div>
-                <div className="stat-label">Illinois Residents</div>
+                <div className="stat-label">{t('home.statsIllinois')}</div>
               </div>
               <div className="stat-item">
                 <div className="stat-number">2026</div>
-                <div className="stat-label">Election Year</div>
+                <div className="stat-label">{t('home.statsElection')}</div>
               </div>
               <div className="stat-item">
                 <div className="stat-number">1</div>
-                <div className="stat-label">Voice for Change</div>
+                <div className="stat-label">{t('home.statsVoice')}</div>
               </div>
             </div>
           </div>

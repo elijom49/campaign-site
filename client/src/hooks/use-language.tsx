@@ -15,6 +15,7 @@ const translations = {
     // Navigation
     'nav.home': 'Home',
     'nav.about': 'About',
+    'nav.policies': 'Policies',
     'nav.campaign': 'Campaign',
     'nav.community': 'Community',
     'nav.volunteer': 'Volunteer',
@@ -37,6 +38,12 @@ const translations = {
     'home.joinMovement': 'Join the Movement',
     'home.joinDesc': 'Together, we can build a future where every person has the opportunity to thrive.',
     'home.donateToday': 'Donate Today',
+    'home.statsIllinois': 'Illinois Residents',
+    'home.statsElection': 'Election Year',
+    'home.statsVoice': 'Voice for Change',
+    'home.readyFight': 'Ready to Fight Together?',
+    'home.fightDesc': 'This campaign is about building a movement for change. Join thousands of Illinois residents who are ready to fight for a better future.',
+    'home.supportCampaign': 'Support the Campaign',
     
     // About Page
     'about.meetJump': 'Meet Jump',
@@ -44,6 +51,13 @@ const translations = {
     'about.policiesDesc': "Jump's comprehensive policy platform focuses on economic justice, environmental responsibility, and equality for all Americans.",
     'about.viewPlatform': 'View Platform',
     'about.getInvolved': 'Get Involved',
+    'about.myPolicies': 'My Policies',
+    'about.bioText': 'Jump was born and raised in Chicago. As an Illinois Native, he is uniquely equipped to understand and address the challenges of working class Illinoisans.',
+    'about.economicJustice': 'Economic Justice',
+    'about.healthcareAccess': 'Healthcare Access',
+    'about.workingClassFamilies': 'Working Class Families',
+    'about.climateAction': 'Climate Action',
+    'about.reproductiveRights': 'Reproductive Rights',
     
     // Community Page
     'community.joinCommunity': 'Join Our Community',
@@ -102,6 +116,7 @@ const translations = {
     // Navigation
     'nav.home': 'Inicio',
     'nav.about': 'Acerca de',
+    'nav.policies': 'Políticas',
     'nav.campaign': 'Campaña',
     'nav.community': 'Comunidad',
     'nav.volunteer': 'Voluntario',
@@ -124,6 +139,12 @@ const translations = {
     'home.joinMovement': 'Únete al Movimiento',
     'home.joinDesc': 'Juntos, podemos construir un futuro donde cada persona tenga la oportunidad de prosperar.',
     'home.donateToday': 'Dona Hoy',
+    'home.statsIllinois': 'Residentes de Illinois',
+    'home.statsElection': 'Año Electoral',
+    'home.statsVoice': 'Voz para el Cambio',
+    'home.readyFight': '¿Listo para Luchar Juntos?',
+    'home.fightDesc': 'Esta campaña se trata de construir un movimiento para el cambio. Únete a miles de residentes de Illinois que están listos para luchar por un futuro mejor.',
+    'home.supportCampaign': 'Apoya la Campaña',
     
     // About Page
     'about.meetJump': 'Conoce a Jump',
@@ -131,6 +152,13 @@ const translations = {
     'about.policiesDesc': 'La plataforma política integral de Jump se enfoca en la justicia económica, la responsabilidad ambiental y la igualdad para todos los estadounidenses.',
     'about.viewPlatform': 'Ver Plataforma',
     'about.getInvolved': 'Participar',
+    'about.myPolicies': 'Mis Políticas',
+    'about.bioText': 'Jump nació y se crió en Chicago. Como nativo de Illinois, está excepcionalmente equipado para entender y abordar los desafíos de los illinoisanos de clase trabajadora.',
+    'about.economicJustice': 'Justicia Económica',
+    'about.healthcareAccess': 'Acceso a la Salud',
+    'about.workingClassFamilies': 'Familias de Clase Trabajadora',
+    'about.climateAction': 'Acción Climática',
+    'about.reproductiveRights': 'Derechos Reproductivos',
     
     // Community Page
     'community.joinCommunity': 'Únete a Nuestra Comunidad',
@@ -189,6 +217,7 @@ const translations = {
     // Navigation
     'nav.home': '首页',
     'nav.about': '关于',
+    'nav.policies': '政策',
     'nav.campaign': '竞选',
     'nav.community': '社区',
     'nav.volunteer': '志愿者',
@@ -211,6 +240,12 @@ const translations = {
     'home.joinMovement': '加入运动',
     'home.joinDesc': '团结起来，我们可以建设一个每个人都有机会繁荣发展的未来。',
     'home.donateToday': '今天捐赠',
+    'home.statsIllinois': '伊利诺伊州居民',
+    'home.statsElection': '选举年',
+    'home.statsVoice': '变革之声',
+    'home.readyFight': '准备好一起战斗吗？',
+    'home.fightDesc': '这场竞选是为了建立一个变革运动。加入数千名准备为更美好未来而战的伊利诺伊州居民。',
+    'home.supportCampaign': '支持竞选活动',
     
     // About Page
     'about.meetJump': '认识Jump',
@@ -218,6 +253,8 @@ const translations = {
     'about.policiesDesc': 'Jump的综合政策平台专注于经济正义、环境责任和所有美国人的平等。',
     'about.viewPlatform': '查看平台',
     'about.getInvolved': '参与其中',
+    'about.myPolicies': '我的政策',
+    'about.bioText': 'Jump在芝加哥出生长大。作为伊利诺伊州本地人，他具备独特的能力来理解和解决伊利诺伊州工人阶级面临的挑战。',
     
     // Community Page
     'community.joinCommunity': '加入我们的社区',
@@ -301,6 +338,7 @@ const translations = {
     // Navigation
     'nav.home': 'Główna',
     'nav.about': 'O nas',
+    'nav.policies': 'Polityki',
     'nav.campaign': 'Kampania',
     'nav.community': 'Społeczność',
     'nav.volunteer': 'Wolontariusz',
@@ -323,6 +361,12 @@ const translations = {
     'home.joinMovement': 'Dołącz do ruchu',
     'home.joinDesc': 'Razem możemy zbudować przyszłość, w której każda osoba ma szansę na rozwój.',
     'home.donateToday': 'Przekaż darowiznę dziś',
+    'home.statsIllinois': 'Mieszkańcy Illinois',
+    'home.statsElection': 'Rok Wyborczy',
+    'home.statsVoice': 'Głos dla Zmiany',
+    'home.readyFight': 'Gotowy na Walkę Razem?',
+    'home.fightDesc': 'Ta kampania dotyczy budowania ruchu na rzecz zmiany. Dołącz do tysięcy mieszkańców Illinois, którzy są gotowi walczyć o lepszą przyszłość.',
+    'home.supportCampaign': 'Wspieraj Kampanię',
     
     // About Page
     'about.meetJump': 'Poznaj Jump',
@@ -330,6 +374,8 @@ const translations = {
     'about.policiesDesc': 'Kompleksowa platforma polityczna Jump koncentruje się na sprawiedliwości ekonomicznej, odpowiedzialności środowiskowej i równości dla wszystkich Amerykanów.',
     'about.viewPlatform': 'Zobacz Platformę',
     'about.getInvolved': 'Zaangażuj się',
+    'about.myPolicies': 'Moje Polityki',
+    'about.bioText': 'Jump urodził się i wychował w Chicago. Jako rodowity mieszkaniec Illinois jest wyjątkowo przygotowany do zrozumienia i rozwiązania problemów mieszkańców Illinois z klasy robotniczej.',
     
     // Community Page
     'community.joinCommunity': 'Dołącz do naszej społeczności',
@@ -413,6 +459,7 @@ const translations = {
     // Navigation
     'nav.home': 'الرئيسية',
     'nav.about': 'عن',
+    'nav.policies': 'السياسات',
     'nav.campaign': 'الحملة',
     'nav.community': 'المجتمع',
     'nav.volunteer': 'متطوع',
@@ -435,6 +482,12 @@ const translations = {
     'home.joinMovement': 'انضم للحركة',
     'home.joinDesc': 'معًا، يمكننا بناء مستقبل حيث كل شخص لديه الفرصة للازدهار.',
     'home.donateToday': 'تبرع اليوم',
+    'home.statsIllinois': 'سكان إلينوي',
+    'home.statsElection': 'سنة الانتخابات',
+    'home.statsVoice': 'صوت للتغيير',
+    'home.readyFight': 'مستعد للقتال معًا؟',
+    'home.fightDesc': 'هذه الحملة تتعلق ببناء حركة للتغيير. انضم إلى آلاف سكان إلينوي الذين هم مستعدون للقتال من أجل مستقبل أفضل.',
+    'home.supportCampaign': 'ادعم الحملة',
     
     // About Page
     'about.meetJump': 'تعرف على Jump',
@@ -442,6 +495,8 @@ const translations = {
     'about.policiesDesc': 'منصة السياسة الشاملة لـ Jump تركز على العدالة الاقتصادية والمسؤولية البيئية والمساواة لجميع الأمريكيين.',
     'about.viewPlatform': 'عرض المنصة',
     'about.getInvolved': 'شارك',
+    'about.myPolicies': 'سياساتي',
+    'about.bioText': 'ولد وترعرع Jump في شيكاغو. كمواطن أصلي من إلينوي، فهو مجهز بشكل فريد لفهم ومعالجة تحديات سكان إلينوي من الطبقة العاملة.',
     
     // Community Page
     'community.joinCommunity': 'انضم إلى مجتمعنا',
