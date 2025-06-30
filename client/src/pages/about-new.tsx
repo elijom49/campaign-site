@@ -60,57 +60,61 @@ export default function AboutPage() {
       <div className="bg-black py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
-            What We're Focused On
+            My Policies
           </h2>
           
-          {/* Campaign Video */}
-          <div className="flex justify-center mb-12">
-            <div className="relative max-w-2xl w-full">
-              <iframe
-                className="w-full h-80 rounded-2xl"
-                src="https://www.youtube.com/embed/lcbYrTEnyOM"
-                title="Jump for Senate Campaign Video"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-            <div className="bg-white p-6 rounded-lg">
-              <Link href="/policies">
-                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-              </Link>
-              <h3 className="text-lg font-bold text-black">Economic Justice</h3>
-            </div>
+          {/* Policy Grid and Video Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            {/* Policy Blocks - Left Side */}
+            <div className="grid grid-cols-1 gap-4">
+              <div className="bg-white p-4 rounded-lg">
+                <Link href="/policies">
+                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
+                <h3 className="text-base font-bold text-black">Economic Justice</h3>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <Link href="/policies">
-                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-              </Link>
-              <h3 className="text-lg font-bold text-black">Healthcare Access</h3>
-            </div>
+              <div className="bg-white p-4 rounded-lg">
+                <Link href="/policies">
+                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
+                <h3 className="text-base font-bold text-black">Healthcare Access</h3>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <Link href="/policies">
-                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-              </Link>
-              <h3 className="text-lg font-bold text-black">Working Class Families</h3>
-            </div>
+              <div className="bg-white p-4 rounded-lg">
+                <Link href="/policies">
+                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
+                <h3 className="text-base font-bold text-black">Working Class Families</h3>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <Link href="/policies">
-                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-              </Link>
-              <h3 className="text-lg font-bold text-black">Climate Action</h3>
-            </div>
+              <div className="bg-white p-4 rounded-lg">
+                <Link href="/policies">
+                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
+                <h3 className="text-base font-bold text-black">Climate Action</h3>
+              </div>
 
-            <div className="bg-white p-6 rounded-lg">
-              <Link href="/policies">
-                <div className="text-blue-600 text-xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-              </Link>
-              <h3 className="text-lg font-bold text-black">Education</h3>
+              <div className="bg-white p-4 rounded-lg">
+                <Link href="/policies">
+                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
+                <h3 className="text-base font-bold text-black">Education</h3>
+              </div>
+            </div>
+            
+            {/* Campaign Video - Right Side */}
+            <div className="flex justify-center">
+              <div className="relative w-full max-w-lg">
+                <iframe
+                  className="w-full h-80 rounded-2xl"
+                  src="https://www.youtube.com/embed/lcbYrTEnyOM"
+                  title="Jump for Senate Campaign Video"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
