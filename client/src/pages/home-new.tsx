@@ -16,7 +16,7 @@ export default function HomePage() {
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9] mt-12" style={{fontFamily: "'Permanent Marker', cursive"}}>
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9] mt-12">
                 {t('home.title')}
               </h1>
               <p className="text-body-large text-gray-600 max-w-lg">
@@ -88,7 +88,7 @@ export default function HomePage() {
         
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6" style={{fontFamily: "'Permanent Marker', cursive"}}>
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
               {t('home.fightingTitle')}
             </h2>
             <p className="text-body-large text-white max-w-2xl mx-auto">
@@ -144,7 +144,7 @@ export default function HomePage() {
       <section className="cta-section-advanced">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
-            <h2 className="text-headline text-4xl lg:text-5xl mb-6" style={{fontFamily: "'Permanent Marker', cursive"}}>
+            <h2 className="text-headline text-4xl lg:text-5xl mb-6">
               {t('home.joinMovement')}
             </h2>
             <p className="text-body-large mb-8 max-w-2xl mx-auto">
