@@ -46,7 +46,7 @@ export default function PoliciesPage() {
               
               <div className="bg-yellow-500 rounded-lg p-6 flex items-center justify-center">
                 <h2 className="text-4xl lg:text-5xl font-bold text-black text-center leading-tight tracking-tight">
-                  OUR POLICY PLATFORM
+                  {t('policies.myPolicies').toUpperCase()}
                 </h2>
               </div>
               
