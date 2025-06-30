@@ -32,10 +32,10 @@ export default function AboutPage() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/campaign">
-                  <span className="inline-block bg-yellow-500 text-black px-6 py-3 text-lg font-bold hover:bg-yellow-400 transition-colors">View Platform</span>
+                  <span className="inline-block bg-yellow-500 text-black px-6 py-3 text-lg font-bold hover:bg-yellow-400 transition-colors">{t('about.viewPlatform')}</span>
                 </Link>
                 <Link href="/volunteer">
-                  <span className="inline-block border-2 border-white text-white px-6 py-3 text-lg font-bold hover:bg-white hover:text-black transition-colors">Get Involved</span>
+                  <span className="inline-block border-2 border-white text-white px-6 py-3 text-lg font-bold hover:bg-white hover:text-black transition-colors">{t('about.getInvolved')}</span>
                 </Link>
               </div>
             </div>

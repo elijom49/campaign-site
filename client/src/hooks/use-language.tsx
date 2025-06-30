@@ -42,6 +42,8 @@ const translations = {
     'about.meetJump': 'Meet Jump',
     'about.policies': 'Policies',
     'about.policiesDesc': "Jump's comprehensive policy platform focuses on economic justice, environmental responsibility, and equality for all Americans.",
+    'about.viewPlatform': 'View Platform',
+    'about.getInvolved': 'Get Involved',
     
     // Community Page
     'community.joinCommunity': 'Join Our Community',
@@ -127,6 +129,8 @@ const translations = {
     'about.meetJump': 'Conoce a Jump',
     'about.policies': 'Políticas',
     'about.policiesDesc': 'La plataforma política integral de Jump se enfoca en la justicia económica, la responsabilidad ambiental y la igualdad para todos los estadounidenses.',
+    'about.viewPlatform': 'Ver Plataforma',
+    'about.getInvolved': 'Participar',
     
     // Community Page
     'community.joinCommunity': 'Únete a Nuestra Comunidad',
@@ -212,6 +216,8 @@ const translations = {
     'about.meetJump': '认识Jump',
     'about.policies': '政策',
     'about.policiesDesc': 'Jump的综合政策平台专注于经济正义、环境责任和所有美国人的平等。',
+    'about.viewPlatform': '查看平台',
+    'about.getInvolved': '参与其中',
     
     // Community Page
     'community.joinCommunity': '加入我们的社区',
@@ -322,6 +328,8 @@ const translations = {
     'about.meetJump': 'Poznaj Jump',
     'about.policies': 'Polityki',
     'about.policiesDesc': 'Kompleksowa platforma polityczna Jump koncentruje się na sprawiedliwości ekonomicznej, odpowiedzialności środowiskowej i równości dla wszystkich Amerykanów.',
+    'about.viewPlatform': 'Zobacz Platformę',
+    'about.getInvolved': 'Zaangażuj się',
     
     // Community Page
     'community.joinCommunity': 'Dołącz do naszej społeczności',
@@ -432,6 +440,8 @@ const translations = {
     'about.meetJump': 'تعرف على Jump',
     'about.policies': 'السياسات',
     'about.policiesDesc': 'منصة السياسة الشاملة لـ Jump تركز على العدالة الاقتصادية والمسؤولية البيئية والمساواة لجميع الأمريكيين.',
+    'about.viewPlatform': 'عرض المنصة',
+    'about.getInvolved': 'شارك',
     
     // Community Page
     'community.joinCommunity': 'انضم إلى مجتمعنا',

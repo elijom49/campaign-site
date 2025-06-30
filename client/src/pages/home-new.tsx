@@ -17,16 +17,10 @@ export default function HomePage() {
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
               <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-[0.9] mt-12">
-                Your Future
-                <br />
-                <span className="text-blue-600">U.S. Senator</span>
-                <br />
-                Lives Among
-                <br />
-                <span className="text-gray-700">the People</span>
+                {t('home.title')}
               </h1>
               <p className="text-body-large text-gray-600 max-w-lg">
-                It's not <span className="text-red-600 font-bold">Red</span> vs. <span className="text-blue-600 font-bold">Blue</span>, it's oligarchs vs. you.
+                {t('home.tagline')}
               </p>
             </div>
             
@@ -49,7 +43,7 @@ export default function HomePage() {
               />
               <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
                 <blockquote className="text-sm font-medium italic">
-                  "I'm running for U.S. Senate because I believe the government should promote equality for everyone."
+                  "{t('home.quote')}"
                 </blockquote>
               </div>
             </div>
@@ -98,7 +92,7 @@ export default function HomePage() {
               {t('home.fightingTitle')}
             </h2>
             <p className="text-body-large text-white max-w-2xl mx-auto">
-              Real solutions for working families, not corporate interests.
+              {t('home.joinDesc')}
             </p>
           </div>
           
@@ -107,11 +101,11 @@ export default function HomePage() {
               <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">Lowering Cost of Living</h3>
+                <h3 className="text-xl font-semibold">{t('home.costOfLiving')}</h3>
               </div>
-              <p className="text-gray-600 mb-4">Taking back single family homes from corporate ownership...</p>
+              <p className="text-gray-600 mb-4">{t('home.costOfLivingDesc')}</p>
               <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
             
@@ -119,11 +113,11 @@ export default function HomePage() {
               <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">Environmental Policy</h3>
+                <h3 className="text-xl font-semibold">{t('home.environment')}</h3>
               </div>
-              <p className="text-gray-600 mb-4">Championing environmental policy and supporting farmers...</p>
+              <p className="text-gray-600 mb-4">{t('home.environmentDesc')}</p>
               <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
             
@@ -131,11 +125,11 @@ export default function HomePage() {
               <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">Elimination of The Pink Tax</h3>
+                <h3 className="text-xl font-semibold">{t('home.pinkTax')}</h3>
               </div>
-              <p className="text-gray-600 mb-4">Making women's essential products tax-deductible...</p>
+              <p className="text-gray-600 mb-4">{t('home.pinkTaxDesc')}</p>
               <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                Learn more <ArrowRight className="w-4 h-4 ml-1" />
+                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
           </div>
@@ -151,17 +145,17 @@ export default function HomePage() {
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
             <h2 className="text-headline text-4xl lg:text-5xl mb-6">
-              Ready to Join the Movement?
+              {t('home.joinMovement')}
             </h2>
             <p className="text-body-large mb-8 max-w-2xl mx-auto">
-              Your voice matters. Together, we can build a future that works for everyone, not just the wealthy few.
+              {t('home.joinDesc')}
             </p>
             <div className="cta-buttons">
               <Link href="/volunteer">
-                <span className="btn-primary-large">Get Involved Today</span>
+                <span className="btn-primary-large">{t('home.getInvolved')}</span>
               </Link>
               <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer">
-                <span className="btn-secondary-large">Support Our Campaign</span>
+                <span className="btn-secondary-large">{t('home.donateToday')}</span>
               </a>
             </div>
           </div>
