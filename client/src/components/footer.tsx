@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { SiTiktok, SiLinkedin, SiYoutube, SiInstagram } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
+import SignupModal from "@/components/signup-modal";
 import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function Footer() {
   const { t } = useLanguage();
+  const [showSignupModal, setShowSignupModal] = useState(false);
   
   return (
     <footer className="bg-gray-900 text-white py-12">
@@ -55,9 +58,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                  Resources
-                </span>
+                <Link href="/community">
+                  <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
+                    Voting Resources
+                  </span>
+                </Link>
               </li>
               <li>
                 <a 
@@ -92,7 +97,10 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-4">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold rounded-none">
+              <Button 
+                onClick={() => setShowSignupModal(true)}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold rounded-none"
+              >
                 {t('footer.signUpUpdates')}
               </Button>
             </div>
@@ -105,6 +113,11 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      
+      <SignupModal 
+        isOpen={showSignupModal} 
+        onClose={() => setShowSignupModal(false)} 
+      />
     </footer>
   );
 }

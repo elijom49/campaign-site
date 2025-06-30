@@ -67,6 +67,15 @@ export default function Navigation() {
               ))}
             </div>
             {showLanguageToggle && <LanguageToggle />}
+            <a 
+              href="https://secure.actblue.com/donate/jumpforsenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold rounded-none ml-4">
+                Donate
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -105,6 +114,18 @@ export default function Navigation() {
                 <LanguageToggle />
               </div>
             )}
+            <div className="px-3 py-2">
+              <a 
+                href="https://secure.actblue.com/donate/jumpforsenate" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold rounded-none w-full">
+                  Donate
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       )}

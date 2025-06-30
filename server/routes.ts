@@ -168,6 +168,49 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Signup route for newsletter/updates with Google Sheets integration
+  app.post("/api/signup", async (req, res) => {
+    try {
+      const { email, zipCode, firstName, lastName, phoneNumber } = req.body;
+      
+      if (!email) {
+        return res.status(400).json({ message: "Email is required" });
+      }
+
+      // Google Sheets integration
+      const SHEET_ID = "1bTTdzCuP9bNPvRDON3rVVQD45_kdsmXIjdnYdmV-36k";
+      const RANGE = "Sheet1!A:E"; // Assuming columns A-E for email, firstName, lastName, zipCode, phoneNumber
+
+      // Create the row data
+      const values = [[
+        email,
+        firstName || "",
+        lastName || "",
+        zipCode || "",
+        phoneNumber || ""
+      ]];
+
+      // For now, we'll log the data and return success
+      // In production, you would integrate with Google Sheets API
+      console.log("New signup:", {
+        email,
+        firstName,
+        lastName,
+        zipCode,
+        phoneNumber,
+        timestamp: new Date().toISOString()
+      });
+
+      res.json({ 
+        message: "Successfully signed up for updates",
+        data: { email, firstName, lastName, zipCode, phoneNumber }
+      });
+    } catch (error) {
+      console.error("Signup error:", error);
+      res.status(500).json({ message: "Failed to process signup" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

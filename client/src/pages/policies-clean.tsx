@@ -88,6 +88,61 @@ export default function PoliciesPage() {
           </div>
         </div>
       </div>
+
+      {/* New Timeline and Text Section */}
+      <div className="bg-black py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Timeline Section - Left */}
+            <div>
+              <h2 className="text-4xl font-bold text-white mb-8">Policies for the City of Chicago</h2>
+              <div className="relative">
+                {/* Vertical line */}
+                <div className="absolute left-4 top-0 bottom-0 w-1 bg-blue-600"></div>
+                
+                {/* Timeline items */}
+                <div className="space-y-8">
+                  <div className="relative flex items-start">
+                    <div className="absolute left-2 w-5 h-5 bg-blue-600 rounded-full border-4 border-black"></div>
+                    <div className="ml-12">
+                      <div className="bg-gray-800 p-4 rounded-lg">
+                        <p className="text-white text-lg">Timeline item 1 - Content to be added</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative flex items-start">
+                    <div className="absolute left-2 w-5 h-5 bg-blue-600 rounded-full border-4 border-black"></div>
+                    <div className="ml-12">
+                      <div className="bg-gray-800 p-4 rounded-lg">
+                        <p className="text-white text-lg">Timeline item 2 - Content to be added</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="relative flex items-start">
+                    <div className="absolute left-2 w-5 h-5 bg-blue-600 rounded-full border-4 border-black"></div>
+                    <div className="ml-12">
+                      <div className="bg-gray-800 p-4 rounded-lg">
+                        <p className="text-white text-lg">Timeline item 3 - Content to be added</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Text Box Section - Right */}
+            <div className="flex items-center">
+              <div className="border-4 border-yellow-500 bg-black p-8 rounded-lg w-full">
+                <h2 className="text-4xl font-bold text-white text-center">
+                  A Chicago Native, for the people of Illinois
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

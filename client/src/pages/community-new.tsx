@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
 import { FaTiktok, FaLinkedin } from "react-icons/fa";
+import SignupModal from "@/components/signup-modal";
 import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
 
 export default function CommunityPage() {
+  const [showSignupModal, setShowSignupModal] = useState(false);
 
   return (
     <div className="bg-black text-white">
@@ -211,6 +214,58 @@ export default function CommunityPage() {
         </div>
       </section>
 
+      {/* Voting Resources Section */}
+      <section className="section-spacing-tight bg-black">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center mb-16">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
+              Voting Resources
+            </h2>
+            <p className="text-body-large text-gray-300">
+              Everything you need to register, vote, and make your voice heard in Illinois
+            </p>
+          </div>
+          
+          <div className="col-span-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <a 
+              href="https://ova.elections.il.gov/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 transition-colors rounded-2xl p-8 text-center group"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <Users className="w-12 h-12 text-white mr-3" />
+                <ArrowUpRight className="w-6 h-6 text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                Illinois Online Voter Registration Application
+              </h3>
+              <p className="text-blue-100">
+                Register to vote or update your voter registration information online
+              </p>
+            </a>
+
+            <a 
+              href="https://chicagoelections.gov/voting" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-yellow-500 hover:bg-yellow-600 transition-colors rounded-2xl p-8 text-center group"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <MapPin className="w-12 h-12 text-black mr-3" />
+                <ArrowUpRight className="w-6 h-6 text-black group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+              <h3 className="text-2xl font-semibold text-black mb-4">
+                Chicago How to Vote
+              </h3>
+              <p className="text-black/80">
+                Find your polling place, voting dates, and instructions for Chicago elections
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Newsletter Section */}
       <section className="section-spacing-tight bg-white">
         <div className="content-grid-advanced">
@@ -222,17 +277,13 @@ export default function CommunityPage() {
               Get weekly updates on campaign progress, policy positions, and upcoming events delivered to your inbox.
             </p>
             <div className="max-w-md mx-auto">
-              <div className="flex gap-3">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="flex-1 px-4 py-3 bg-white border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
-                />
-                <Button className="bg-blue-600 hover:bg-blue-700 px-6">
-                  Subscribe
-                </Button>
-              </div>
-              <p className="text-gray-600 text-sm mt-2">
+              <Button 
+                onClick={() => setShowSignupModal(true)}
+                className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg font-semibold"
+              >
+                Sign Up for Updates
+              </Button>
+              <p className="text-gray-600 text-sm mt-4">
                 We respect your privacy. Unsubscribe at any time.
               </p>
             </div>
@@ -261,6 +312,11 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+      
+      <SignupModal 
+        isOpen={showSignupModal} 
+        onClose={() => setShowSignupModal(false)} 
+      />
     </div>
   );
 }

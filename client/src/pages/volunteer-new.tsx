@@ -331,6 +331,46 @@ export default function VolunteerPage() {
           </div>
         </div>
       </section>
+
+      {/* Meet the Campaign Team Section */}
+      <section className="bg-gray-900 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Meet the Campaign Team!
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Get to know the dedicated team working to bring change to Illinois
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Campaign Manager */}
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 text-center">
+              <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-white text-2xl font-bold">RB</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Robert Blue II</h3>
+              <p className="text-blue-400 text-lg font-semibold mb-4">Campaign Manager</p>
+              <p className="text-gray-300">
+                Leading our grassroots movement with strategic vision and community organizing expertise.
+              </p>
+            </div>
+
+            {/* Director of Information and Volunteer Coordinator */}
+            <div className="bg-black border-4 border-yellow-500 rounded-2xl p-8 text-center">
+              <div className="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="text-black text-2xl font-bold">S</span>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-2">Sims</h3>
+              <p className="text-yellow-400 text-lg font-semibold mb-4">Director of Information and Volunteer Coordinator</p>
+              <p className="text-gray-300">
+                Coordinating our volunteer efforts and managing information flow to keep our movement connected.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

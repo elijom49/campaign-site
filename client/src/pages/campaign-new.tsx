@@ -87,6 +87,33 @@ export default function CampaignPage() {
           </div>
         </div>
       </div>
+
+      {/* Endorsements Section */}
+      <div className="bg-black py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Endorsements
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Organizations and leaders who believe in our movement for change
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {/* Placeholder circles for endorsement logos */}
+            {Array.from({ length: 8 }, (_, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gray-800 border-4 border-blue-500 flex items-center justify-center mb-4">
+                  <span className="text-white text-center text-sm font-medium px-2">
+                    Coming Soon!
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
