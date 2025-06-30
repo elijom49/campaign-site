@@ -89,6 +89,8 @@ const translations = {
     'campaign.howCanHelp': 'How Can You Help?',
     'campaign.joinMovement': 'Join our movement to bring real change to Illinois. Every contribution, every volunteer hour, and every voice matters in our fight for justice and equality.',
     'campaign.buildFuture': 'Together, we can build a better future for all Illinoisans.',
+    'campaign.actionsNeeded': 'Actions Needed Now',
+    'campaign.joinVolunteerTeam': 'Join Our Volunteer Team',
     'campaign.volunteering': 'Volunteering',
     'campaign.beChange': 'Be the change you want to see. Join our dedicated team of volunteers working to transform Illinois communities.',
     'campaign.donations': 'Donations',

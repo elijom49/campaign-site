@@ -13,38 +13,36 @@ export default function CampaignPage() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             {/* Left Side - Title Only */}
             <div className="flex items-center justify-center h-full">
-              <h1 className="text-7xl lg:text-8xl font-bold text-yellow-400 leading-tight ml-24">How Can You Help?</h1>
+              <h1 className="text-7xl lg:text-8xl font-bold text-yellow-400 leading-tight ml-24">{t('campaign.howCanHelp')}</h1>
             </div>
             
             {/* Right Side - Text Content */}
             <div className="flex flex-col justify-center space-y-6">
               <p className="text-2xl text-black leading-relaxed">
-                Join our movement to bring real change to Illinois. Every contribution, 
-                every volunteer hour, and every voice matters in our fight for justice and equality.
+                {t('campaign.joinMovement')}
               </p>
               <p className="text-xl text-gray-700">
-                Together, we can build a better future for all Illinoisans.
+                {t('campaign.buildFuture')}
               </p>
             </div>
           </div>
           
           {/* ACLU-Inspired Action Section - Moved directly under intro */}
           <div className="aclu-action-section mt-12">
-            <h2 className="aclu-page-header text-gray-900">Actions Needed Now</h2>
+            <h2 className="aclu-page-header text-gray-900">{t('campaign.actionsNeeded')}</h2>
             
             <div className="aclu-action-grid">
               {/* Volunteering Action Card */}
               <div className="aclu-action-card">
                 <div className="flex items-center mb-4">
                   <Users className="w-12 h-12 text-yellow-400 mr-4" />
-                  <h3>Join Our Volunteer Team</h3>
+                  <h3>{t('campaign.joinVolunteerTeam')}</h3>
                 </div>
                 <p className="text-gray-300 mb-6">
-                  Be the change you want to see. Join our dedicated team of volunteers 
-                  working to transform Illinois communities through grassroots organizing.
+                  {t('campaign.beChange')}
                 </p>
                 <button className="aclu-action-button">
-                  Get Involved
+                  {t('volunteer.getInvolved')}
                 </button>
               </div>
 
