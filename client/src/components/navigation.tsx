@@ -26,6 +26,9 @@ export default function Navigation() {
     return false;
   };
 
+  // Only show language toggle on specific pages
+  const showLanguageToggle = location === "/" || location.startsWith("/about") || location.startsWith("/policies");
+
   return (
     <nav className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +66,7 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-            <LanguageToggle />
+            {showLanguageToggle && <LanguageToggle />}
           </div>
 
           {/* Mobile menu button */}
@@ -97,9 +100,11 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
-            <div className="px-3 py-2">
-              <LanguageToggle />
-            </div>
+            {showLanguageToggle && (
+              <div className="px-3 py-2">
+                <LanguageToggle />
+              </div>
+            )}
           </div>
         </div>
       )}

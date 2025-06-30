@@ -2,11 +2,9 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
 import { FaTiktok, FaLinkedin } from "react-icons/fa";
-import { useLanguage } from "@/hooks/use-language";
 import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
 
 export default function CommunityPage() {
-  const { t } = useLanguage();
 
   return (
     <div className="bg-black text-white">

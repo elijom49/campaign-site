@@ -2,10 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, Users, Calendar, MapPin, Heart, Target, Share2 } from "lucide-react";
-import { useLanguage } from "@/hooks/use-language";
-
 export default function VolunteerPage() {
-  const { t } = useLanguage();
 
   return (
     <div className="bg-black text-white">
