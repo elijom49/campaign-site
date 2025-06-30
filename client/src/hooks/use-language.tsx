@@ -22,7 +22,7 @@ const translations = {
     
     // Homepage
     'home.title': 'Your Future U.S. Senator Lives Among the People',
-    'home.tagline': "It's not Red vs. Blue, it's oligarchs vs. you.",
+    'home.tagline': "Power to the People, Not the Powerful",
     'home.getInvolved': 'Get Involved',
     'home.donate': 'Donate',
     'home.quote': "I'm running for U.S. Senate because I believe the government should promote equality for everyone.",
@@ -143,7 +143,7 @@ const translations = {
     
     // Homepage
     'home.title': 'Tu Futuro Senador de EE.UU. Vive Entre la Gente',
-    'home.tagline': 'No es Rojo contra Azul, son oligarcas contra ti.',
+    'home.tagline': 'Poder para el Pueblo, No para los Poderosos',
     'home.getInvolved': 'Participa',
     'home.donate': 'Donar',
     'home.quote': 'Me postulo para el Senado de EE.UU. porque creo que el gobierno debe promover la igualdad para todos.',
@@ -262,7 +262,7 @@ const translations = {
     
     // Homepage
     'home.title': '您未来的美国参议员生活在人民中间',
-    'home.tagline': '这不是红与蓝的对立，而是寡头与您的对立。',
+    'home.tagline': '权力归于人民，而非权势者',
     'home.getInvolved': '参与其中',
     'home.donate': '捐赠',
     'home.quote': '我竞选美国参议员是因为我相信政府应该促进每个人的平等。',
@@ -406,7 +406,7 @@ const translations = {
     
     // Homepage
     'home.title': 'Twój przyszły senator USA żyje wśród ludzi',
-    'home.tagline': 'To nie czerwoni kontra niebiescy, to oligarchowie kontra ty.',
+    'home.tagline': 'Władza dla Ludzi, Nie dla Władzy',
     'home.getInvolved': 'Zaangażuj się',
     'home.donate': 'Przekaż darowiznę',
     'home.quote': 'Kandyduję na senatora USA, bo wierzę, że rząd powinien promować równość dla wszystkich.',
@@ -550,7 +550,7 @@ const translations = {
     
     // Homepage
     'home.title': 'عضو مجلس الشيوخ الأمريكي المستقبلي يعيش بين الناس',
-    'home.tagline': 'ليس الأحمر ضد الأزرق، إنه أصحاب الاحتكار ضدك.',
+    'home.tagline': 'السلطة للشعب، وليس للأقوياء',
     'home.getInvolved': 'شارك',
     'home.donate': 'تبرع',
     'home.quote': 'أترشح لمجلس الشيوخ الأمريكي لأنني أؤمن أن الحكومة يجب أن تعزز المساواة للجميع.',
