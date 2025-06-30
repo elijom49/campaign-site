@@ -1,27 +1,33 @@
 import { useLanguage } from "@/hooks/use-language";
-import { Button } from "@/components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 export default function LanguageToggle() {
   const { language, setLanguage } = useLanguage();
 
+  const languages = [
+    { code: 'en', name: 'English' },
+    { code: 'es', name: 'Español' },
+    { code: 'zh', name: '中文' },
+    { code: 'pl', name: 'Polski' },
+    { code: 'ar', name: 'العربية' }
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === language);
+
   return (
-    <div className="flex items-center space-x-2">
-      <Button
-        variant={language === 'en' ? 'default' : 'outline'}
-        size="sm"
-        onClick={() => setLanguage('en')}
-        className="frame-blue-3d text-white px-3 py-1 text-sm font-semibold rounded-md transition-all duration-300"
-      >
-        EN
-      </Button>
-      <Button
-        variant={language === 'es' ? 'default' : 'outline'}
-        size="sm"
-        onClick={() => setLanguage('es')}
-        className="frame-yellow-3d text-white px-3 py-1 text-sm font-semibold rounded-md transition-all duration-300"
-      >
-        ES
-      </Button>
-    </div>
+    <Select value={language} onValueChange={(value) => setLanguage(value as any)}>
+      <SelectTrigger className="w-32 bg-white border-gray-300 text-black">
+        <SelectValue placeholder="Language">
+          {currentLanguage?.name || 'Language'}
+        </SelectValue>
+      </SelectTrigger>
+      <SelectContent>
+        {languages.map((lang) => (
+          <SelectItem key={lang.code} value={lang.code}>
+            {lang.name}
+          </SelectItem>
+        ))}
+      </SelectContent>
+    </Select>
   );
 }

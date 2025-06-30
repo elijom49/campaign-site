@@ -97,6 +97,9 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
+            <div className="px-3 py-2">
+              <LanguageToggle />
+            </div>
           </div>
         </div>
       )}
