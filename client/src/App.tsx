@@ -13,6 +13,8 @@ import Campaign from "@/pages/campaign";
 import Community from "@/pages/community-new";
 import About from "@/pages/about-new";
 import Volunteer from "@/pages/volunteer-new";
+import AdminLogin from "@/pages/admin-login";
+import AdminDashboard from "@/pages/admin-dashboard";
 import NotFound from "@/pages/not-found";
 
 function ScrollToTop() {
@@ -26,6 +28,22 @@ function ScrollToTop() {
 }
 
 function Router() {
+  const [location] = useLocation();
+  const isAdminRoute = location.startsWith('/admin');
+
+  if (isAdminRoute) {
+    return (
+      <>
+        <ScrollToTop />
+        <Switch>
+          <Route path="/admin/login" component={AdminLogin} />
+          <Route path="/admin/dashboard" component={AdminDashboard} />
+          <Route component={NotFound} />
+        </Switch>
+      </>
+    );
+  }
+
   return (
     <>
       <ScrollToTop />
