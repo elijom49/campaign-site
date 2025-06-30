@@ -14,8 +14,6 @@ export default function AboutPage() {
       <section 
         className="relative min-h-screen bg-black"
       >
-        {/* Blue overlay */}
-        <div className="absolute inset-0 bg-blue-600/70"></div>
         
         {/* Content */}
         <div className="relative content-grid-advanced min-h-screen">
@@ -58,8 +56,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Policy Focus Section - Yellow Background */}
-      <div className="bg-yellow-500 py-16">
+      {/* Policy Focus Section - Black Background */}
+      <div className="bg-black py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
             What We're Focused On
