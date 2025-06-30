@@ -56,65 +56,64 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Policy Focus Section - Black Background */}
-      <div className="bg-black py-16">
+      {/* Policy Focus Section - Blue Background */}
+      <div className="bg-blue-600 py-16">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
             {t('about.myPolicies')}
           </h2>
           
-          {/* Policy Grid and Video Layout */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            {/* Policy Blocks - Left Side */}
-            <div className="grid grid-cols-1 gap-4">
-              <div className="bg-white p-4 rounded-lg">
-                <Link href="/policies">
-                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-                </Link>
-                <h3 className="text-base font-bold text-black">{t('about.economicJustice')}</h3>
+          {/* First Row: Two policies + photo */}
+          <div className="mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-lg">
+                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+                <h3 className="text-xl font-bold text-black mb-3">{t('policies.climateActionTitle')}</h3>
+                <p className="text-gray-700">
+                  {t('policies.climateActionDesc')}
+                </p>
               </div>
-
-              <div className="bg-white p-4 rounded-lg">
-                <Link href="/policies">
-                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-                </Link>
-                <h3 className="text-base font-bold text-black">{t('about.healthcareAccess')}</h3>
+              
+              <div className="bg-yellow-500 rounded-lg p-6 flex items-center justify-center">
+                <h2 className="text-4xl lg:text-5xl font-bold text-black text-center leading-tight tracking-tight">
+                  {t('policies.myPolicies').toUpperCase()}
+                </h2>
               </div>
-
-              <div className="bg-white p-4 rounded-lg">
-                <Link href="/policies">
-                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-                </Link>
-                <h3 className="text-base font-bold text-black">{t('about.workingClassFamilies')}</h3>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg">
-                <Link href="/policies">
-                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-                </Link>
-                <h3 className="text-base font-bold text-black">{t('about.climateAction')}</h3>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg">
-                <Link href="/policies">
-                  <div className="text-blue-600 text-lg font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
-                </Link>
-                <h3 className="text-base font-bold text-black">Education</h3>
+              
+              <div className="bg-white p-6 rounded-lg">
+                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+                <h3 className="text-xl font-bold text-black mb-3">{t('policies.economicJusticeTitle')}</h3>
+                <p className="text-gray-700">
+                  {t('policies.economicJusticeDesc')}
+                </p>
               </div>
             </div>
+          </div>
+          
+          {/* Second Row: Three policies */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg">
+              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.workingFamiliesTitle')}</h3>
+              <p className="text-gray-700">
+                {t('policies.workingFamiliesDesc')}
+              </p>
+            </div>
             
-            {/* Campaign Video - Right Side */}
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-lg">
-                <iframe
-                  className="w-full h-80 rounded-2xl"
-                  src="https://www.youtube.com/embed/lcbYrTEnyOM"
-                  title="Jump for Senate Campaign Video"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
+            <div className="bg-white p-6 rounded-lg">
+              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.healthcareAccessTitle')}</h3>
+              <p className="text-gray-700">
+                {t('policies.healthcareAccessDesc')}
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg">
+              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <h3 className="text-xl font-bold text-black mb-3">{t('policies.educationEquityTitle')}</h3>
+              <p className="text-gray-700">
+                {t('policies.educationEquityDesc')}
+              </p>
             </div>
           </div>
         </div>

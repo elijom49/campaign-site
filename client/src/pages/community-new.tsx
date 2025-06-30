@@ -215,7 +215,7 @@ export default function CommunityPage() {
       </section>
 
       {/* Voting Resources Section */}
-      <section className="section-spacing-tight bg-black">
+      <section id="voting-resources" className="section-spacing-tight bg-black">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center mb-16">
             <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">

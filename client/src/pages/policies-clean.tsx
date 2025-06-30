@@ -21,7 +21,7 @@ export default function PoliciesPage() {
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
           <div className="text-left max-w-2xl">
             <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-              {t('policies.myPolicies').toUpperCase()}
+              POLICIES
             </h1>
             <p className="text-xl lg:text-2xl text-white font-medium">
               {t('policies.championing')}

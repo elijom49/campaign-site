@@ -362,7 +362,7 @@ export default function VolunteerPage() {
               <div className="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-black text-2xl font-bold">S</span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2">Sims</h3>
+              <h3 className="text-2xl font-bold text-white mb-2">James Sims</h3>
               <p className="text-yellow-400 text-lg font-semibold mb-4">Director of Information and Volunteer Coordinator</p>
               <p className="text-gray-300">
                 Coordinating our volunteer efforts and managing information flow to keep our movement connected.

@@ -58,7 +58,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/community">
+                <Link href="/community#voting-resources">
                   <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
                     Voting Resources
                   </span>
