@@ -987,4 +987,6 @@ img {
 .animate-marquee {
   animation: marquee 30s linear infinite;
   display: flex;
+  width: fit-content;
+  white-space: nowrap;
 }
