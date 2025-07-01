@@ -18,7 +18,7 @@ export default function CommunityPage() {
             <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
               Join Our
               <br />
-              <span className="text-blue-400">Community</span>
+              <span className="text-blue-600">Community</span>
             </h1>
             <p className="text-body-large text-gray-300 max-w-3xl mx-auto">
               Connect with Illinois residents building a grassroots movement for economic justice and progressive change.
