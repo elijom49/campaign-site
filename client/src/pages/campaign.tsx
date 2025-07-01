@@ -120,20 +120,12 @@ export default function CampaignPage() {
                     peer-to-peer fundraising campaign.
                   </p>
                 </div>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Host an Event
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Start a Fundraising Page
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Fundraising Toolkit
-                  </a>
-                </div>
+                <a 
+                  href="mailto:blue@jump2026.com" 
+                  className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
+                >
+                  Contact Us
+                </a>
               </div>
             </div>
           </div>
