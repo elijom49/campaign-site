@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="relative content-grid-advanced min-h-screen">
           <div className="col-span-12 lg:col-span-8 flex flex-col justify-center py-20">
             <div className="space-y-6">
-              <h1 className="text-display text-4xl lg:text-6xl text-white leading-tight">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight">
                 {t('about.meetJump')}
               </h1>
               

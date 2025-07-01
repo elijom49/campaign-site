@@ -27,8 +27,8 @@ export default function PoliciesPage() {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6">
           <div className="text-left max-w-2xl">
-            <h1 className="text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
-              POLICIES
+            <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mb-4">
+              Policies
             </h1>
             <p className="text-xl lg:text-2xl text-white font-medium">
               {t('policies.championing')}
