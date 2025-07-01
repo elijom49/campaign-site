@@ -41,7 +41,10 @@ export default function CampaignPage() {
                   Be the change you want to see. Join our dedicated team of volunteers 
                   working to transform Illinois communities through grassroots organizing.
                 </p>
-                <button className="aclu-action-button">
+                <button 
+                  className="aclu-action-button"
+                  onClick={() => window.location.href = '/volunteer'}
+                >
                   Get Involved
                 </button>
               </div>
@@ -56,7 +59,10 @@ export default function CampaignPage() {
                   Every contribution helps us reach more voters and build our movement. 
                   Your donation directly supports organizing, outreach, and advocacy efforts.
                 </p>
-                <button className="aclu-action-button">
+                <button 
+                  className="aclu-action-button"
+                  onClick={() => window.open('https://secure.actblue.com/donate/jumpforsenate', '_blank')}
+                >
                   Donate Now
                 </button>
               </div>
@@ -164,7 +170,7 @@ export default function CampaignPage() {
                   </p>
                 </div>
                 <a 
-                  href="https://secure.actblue.com/donate/jump2026" 
+                  href="https://secure.actblue.com/donate/jumpforsenate" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors"
