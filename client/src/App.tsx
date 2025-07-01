@@ -9,7 +9,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import Home from "@/pages/home-new";
 import Policies from "@/pages/policies-clean";
-import Campaign from "@/pages/campaign-new";
+import Campaign from "@/pages/campaign";
 import Community from "@/pages/community-new";
 import About from "@/pages/about-new";
 import Volunteer from "@/pages/volunteer-new";
