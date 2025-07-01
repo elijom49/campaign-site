@@ -974,16 +974,17 @@ img {
   letter-spacing: -0.03em;
 }
 
-/* Election Day Banner Animation */
+/* Election Day Banner Animation - Continuous Scroll */
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
+  display: flex;
 }
