@@ -15,6 +15,7 @@ import About from "@/pages/about-new";
 import Volunteer from "@/pages/volunteer-new";
 import AdminLogin from "@/pages/admin-login";
 import AdminDashboard from "@/pages/admin-dashboard";
+import AdminLogin from "@/pages/admin/Login";
 import NotFound from "@/pages/not-found";
 
 function ScrollToTop() {
