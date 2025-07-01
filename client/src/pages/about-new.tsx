@@ -56,18 +56,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Policy Focus Section - Blue Background */}
-      <div className="bg-blue-600 py-16">
+      {/* Policy Focus Section - Black Background */}
+      <div className="bg-black py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-display text-4xl font-bold text-white text-center mb-12">
-            {t('about.myPolicies')}
-          </h2>
           
           {/* First Row: Two policies + photo */}
           <div className="mb-12">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg">
-                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+                <Link href="/policies">
+                  <div className="text-blue-600 text-3xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
                 <h3 className="text-xl font-bold text-black mb-3">{t('policies.climateActionTitle')}</h3>
                 <p className="text-gray-700">
                   {t('policies.climateActionDesc')}
@@ -81,7 +80,9 @@ export default function AboutPage() {
               </div>
               
               <div className="bg-white p-6 rounded-lg">
-                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+                <Link href="/policies">
+                  <div className="text-blue-600 text-3xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+                </Link>
                 <h3 className="text-xl font-bold text-black mb-3">{t('policies.economicJusticeTitle')}</h3>
                 <p className="text-gray-700">
                   {t('policies.economicJusticeDesc')}
@@ -93,7 +94,9 @@ export default function AboutPage() {
           {/* Second Row: Three policies */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <Link href="/policies">
+                <div className="text-blue-600 text-3xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
               <h3 className="text-xl font-bold text-black mb-3">{t('policies.workingFamiliesTitle')}</h3>
               <p className="text-gray-700">
                 {t('policies.workingFamiliesDesc')}
@@ -101,7 +104,9 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <Link href="/policies">
+                <div className="text-blue-600 text-3xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
               <h3 className="text-xl font-bold text-black mb-3">{t('policies.healthcareAccessTitle')}</h3>
               <p className="text-gray-700">
                 {t('policies.healthcareAccessDesc')}
@@ -109,7 +114,9 @@ export default function AboutPage() {
             </div>
             
             <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
+              <Link href="/policies">
+                <div className="text-blue-600 text-3xl font-bold mb-2 cursor-pointer hover:text-blue-800">→</div>
+              </Link>
               <h3 className="text-xl font-bold text-black mb-3">{t('policies.educationEquityTitle')}</h3>
               <p className="text-gray-700">
                 {t('policies.educationEquityDesc')}

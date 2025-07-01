@@ -1,6 +1,12 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 import heroPhoto from "@assets/Jump Shepherd America_1751141710805.jpg";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function PoliciesPage() {
   const { t } = useLanguage();
@@ -30,62 +36,72 @@ export default function PoliciesPage() {
         </div>
       </div>
 
-      {/* Policy Section */}
+      {/* Policy Dropdowns Section */}
       <div className="bg-blue-600 py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* First Row: Two policies + photo */}
-          <div className="mb-12">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-lg">
-                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-                <h3 className="text-xl font-bold text-black mb-3">{t('policies.climateActionTitle')}</h3>
-                <p className="text-gray-700">
-                  {t('policies.climateActionDesc')}
+        <div className="max-w-4xl mx-auto px-6">
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {/* The Billionaire Tax */}
+            <AccordionItem value="billionaire-tax" className="bg-white rounded-lg px-6">
+              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
+                The Billionaire Tax
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 text-lg pt-4">
+                Billionaires pay their fair share.
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Elimination of The Pink Tax */}
+            <AccordionItem value="pink-tax" className="bg-white rounded-lg px-6">
+              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
+                Elimination of The Pink Tax
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 text-lg pt-4">
+                <p className="mb-6">
+                  The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
                 </p>
-              </div>
-              
-              <div className="bg-yellow-500 rounded-lg p-6 flex items-center justify-center">
-                <h2 className="text-4xl lg:text-5xl font-bold text-black text-center leading-tight tracking-tight">
-                  {t('policies.myPolicies').toUpperCase()}
-                </h2>
-              </div>
-              
-              <div className="bg-white p-6 rounded-lg">
-                <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-                <h3 className="text-xl font-bold text-black mb-3">{t('policies.economicJusticeTitle')}</h3>
-                <p className="text-gray-700">
-                  {t('policies.economicJusticeDesc')}
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          {/* Second Row: Three policies */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">{t('policies.workingFamiliesTitle')}</h3>
-              <p className="text-gray-700">
-                {t('policies.workingFamiliesDesc')}
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">{t('policies.healthcareAccessTitle')}</h3>
-              <p className="text-gray-700">
-                {t('policies.healthcareAccessDesc')}
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg">
-              <div className="text-blue-600 text-xl font-bold mb-2">→</div>
-              <h3 className="text-xl font-bold text-black mb-3">{t('policies.educationEquityTitle')}</h3>
-              <p className="text-gray-700">
-                {t('policies.educationEquityDesc')}
-              </p>
-            </div>
-          </div>
+                <div className="relative w-full max-w-2xl">
+                  <iframe
+                    className="w-full h-80 rounded-2xl"
+                    src="https://www.youtube.com/embed/lcbYrTEnyOM"
+                    title="Pink Tax Campaign Video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Affordable Housing */}
+            <AccordionItem value="affordable-housing" className="bg-white rounded-lg px-6">
+              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
+                Affordable Housing
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 text-lg pt-4">
+                Families are going to own their homes again, not corporate ownership. Prices are going down.
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Environmental Policy */}
+            <AccordionItem value="environmental-policy" className="bg-white rounded-lg px-6">
+              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
+                Environmental Policy
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 text-lg pt-4">
+                Legislation will be introduced in the area of environmental policy, global warming, agriculture, and supporting our farmers and educators.
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Working Families */}
+            <AccordionItem value="working-families" className="bg-white rounded-lg px-6">
+              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
+                Working Families
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-700 text-lg pt-4">
+                Fighting for fair wages, worker rights, and economic opportunities that build strong communities.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
 
