@@ -147,15 +147,15 @@ export default function CampaignPage() {
                   Share our content, engage with supporters, and help us reach new audiences online.
                 </p>
                 <div className="space-y-3">
-                  <a href="https://tiktok.com/@jump2026" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                  <a href="https://www.tiktok.com/@jumpforsenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
                     <ExternalLink className="w-4 h-4 inline mr-2" />
                     Follow on TikTok
                   </a>
-                  <a href="https://instagram.com/jump2026" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                  <a href="https://www.instagram.com/jumpforsenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
                     <ExternalLink className="w-4 h-4 inline mr-2" />
                     Follow on Instagram
                   </a>
-                  <a href="https://youtube.com/@jump2026" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                  <a href="https://www.youtube.com/@JumpForSenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
                     <ExternalLink className="w-4 h-4 inline mr-2" />
                     Subscribe on YouTube
                   </a>

@@ -123,7 +123,7 @@ export default function VolunteerPage() {
           </div>
           
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <Phone className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Phone Banking</h3>
@@ -137,7 +137,7 @@ export default function VolunteerPage() {
 
             </div>
             
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <MapPin className="w-8 h-8 text-green-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Door Knocking</h3>
@@ -150,7 +150,7 @@ export default function VolunteerPage() {
               </ul>
             </div>
             
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <Calendar className="w-8 h-8 text-yellow-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Event Support</h3>
@@ -163,7 +163,7 @@ export default function VolunteerPage() {
               </ul>
             </div>
             
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <Share2 className="w-8 h-8 text-purple-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Digital Organizing</h3>
@@ -176,7 +176,7 @@ export default function VolunteerPage() {
               </ul>
             </div>
             
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-red-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Community Organizing</h3>
@@ -189,7 +189,7 @@ export default function VolunteerPage() {
               </ul>
             </div>
             
-            <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
+            <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-pink-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Fundraising</h3>
@@ -321,7 +321,7 @@ export default function VolunteerPage() {
                         onChange={(e) => handleCheckboxChange('interests', team, e.target.checked)}
                         className="rounded text-blue-600" 
                       />
-                      <span className="text-gray-300">{team}</span>
+                      <span className="text-black">{team}</span>
                     </label>
                   ))}
                 </div>
@@ -343,7 +343,7 @@ export default function VolunteerPage() {
                         onChange={(e) => handleCheckboxChange('availability', availability, e.target.checked)}
                         className="rounded text-blue-600" 
                       />
-                      <span className="text-gray-300">{availability}</span>
+                      <span className="text-black">{availability}</span>
                     </label>
                   ))}
                 </div>
@@ -378,7 +378,7 @@ export default function VolunteerPage() {
               <Button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-semibold py-4 text-lg disabled:opacity-50"
+                className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 text-lg disabled:opacity-50 shadow-lg"
               >
                 {isSubmitting ? "Submitting..." : "Join the Movement"}
               </Button>
@@ -387,53 +387,53 @@ export default function VolunteerPage() {
           
           <div className="col-span-12 lg:col-span-6">
             <div className="space-y-8">
-              <div className="bg-blue-900/20 border border-blue-800 p-8 rounded-2xl">
-                <h3 className="text-headline text-2xl text-white mb-4">Volunteer Training</h3>
-                <p className="text-gray-300 mb-6">
+              <div className="bg-white border border-gray-300 p-8 rounded-2xl">
+                <h3 className="text-headline text-2xl text-black mb-4">Volunteer Training</h3>
+                <p className="text-gray-700 mb-6">
                   All volunteers receive comprehensive training to ensure you feel confident and prepared.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <div className="text-white font-medium">Orientation Session</div>
-                      <div className="text-gray-400 text-sm">Learn about Jump's platform and campaign goals</div>
+                      <div className="text-black font-medium">Orientation Session</div>
+                      <div className="text-gray-600 text-sm">Learn about Jump's platform and campaign goals</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <div className="text-white font-medium">Skills Training</div>
-                      <div className="text-gray-400 text-sm">Hands-on practice with experienced volunteers</div>
+                      <div className="text-black font-medium">Skills Training</div>
+                      <div className="text-gray-600 text-sm">Hands-on practice with experienced volunteers</div>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <div className="text-white font-medium">Ongoing Support</div>
-                      <div className="text-gray-400 text-sm">Regular check-ins and additional resources</div>
+                      <div className="text-black font-medium">Ongoing Support</div>
+                      <div className="text-gray-600 text-sm">Regular check-ins and additional resources</div>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-yellow-900/20 border border-yellow-800 p-8 rounded-2xl">
-                <h3 className="text-headline text-2xl text-white mb-4">Volunteer Benefits</h3>
-                <p className="text-gray-300 mb-6">
+              <div className="bg-blue-50 border border-blue-300 p-8 rounded-2xl">
+                <h3 className="text-headline text-2xl text-blue-900 mb-4">Volunteer Benefits</h3>
+                <p className="text-blue-800 mb-6">
                   As a campaign volunteer, you'll gain valuable experience and skills.
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <Target className="w-5 h-5 text-yellow-400" />
-                    <span className="text-gray-300">Political organizing experience</span>
+                    <Target className="w-5 h-5 text-blue-600" />
+                    <span className="text-blue-800">Political organizing experience</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Users className="w-5 h-5 text-yellow-400" />
-                    <span className="text-gray-300">Network with like-minded activists</span>
+                    <Users className="w-5 h-5 text-blue-600" />
+                    <span className="text-blue-800">Network with like-minded activists</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Heart className="w-5 h-5 text-yellow-400" />
-                    <span className="text-gray-300">Make a real difference in your community</span>
+                    <Heart className="w-5 h-5 text-blue-600" />
+                    <span className="text-blue-800">Make a real difference in your community</span>
                   </div>
 
                 </div>
@@ -494,7 +494,7 @@ export default function VolunteerPage() {
           
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* Campaign Manager */}
-            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 text-center">
+            <div className="bg-black border-2 border-blue-500 rounded-2xl p-8 text-center">
               <div className="w-24 h-24 bg-blue-600 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-white text-2xl font-bold">RB</span>
               </div>
@@ -506,7 +506,7 @@ export default function VolunteerPage() {
             </div>
 
             {/* Director of Information and Volunteer Coordinator */}
-            <div className="bg-black border-4 border-yellow-500 rounded-2xl p-8 text-center">
+            <div className="bg-black border-2 border-yellow-500 rounded-2xl p-8 text-center">
               <div className="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="text-black text-2xl font-bold">JS</span>
               </div>
