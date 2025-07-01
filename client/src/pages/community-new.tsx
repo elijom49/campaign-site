@@ -267,7 +267,7 @@ export default function CommunityPage() {
       <section className="section-spacing-tight bg-white">
         <div className="content-grid-advanced">
           <div className="col-span-12 mx-auto text-center space-y-8 max-w-4xl">
-            <h2 className="text-display text-4xl lg:text-5xl text-black">
+            <h2 className="text-headline text-4xl lg:text-5xl text-black">
               Stay Informed
             </h2>
             <p className="text-body-large text-gray-700">
