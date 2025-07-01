@@ -206,14 +206,14 @@ export default function VolunteerPage() {
       </section>
 
       {/* Volunteer Form Section */}
-      <section className="section-spacing-loose bg-black">
+      <section className="section-spacing-loose bg-white">
         <div className="content-grid-advanced">
           <div className="col-span-12 lg:col-span-6 space-y-8">
             <div className="space-y-6">
-              <h2 className="text-headline text-4xl lg:text-5xl text-white">
+              <h2 className="text-headline text-4xl lg:text-5xl text-black">
                 Join Our Team
               </h2>
-              <p className="text-body-large text-gray-300">
+              <p className="text-body-large text-gray-700">
                 Fill out the form below and we'll be in touch with volunteer opportunities that match your interests and availability.
               </p>
             </div>
@@ -221,23 +221,23 @@ export default function VolunteerPage() {
             <form className="space-y-6" onSubmit={handleFormSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-white font-medium mb-2">First Name *</label>
+                  <label className="block text-black font-medium mb-2">First Name *</label>
                   <input 
                     type="text" 
                     value={formData.firstName}
                     onChange={(e) => handleInputChange('firstName', e.target.value)}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                     placeholder="Enter your first name"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-medium mb-2">Last Name *</label>
+                  <label className="block text-black font-medium mb-2">Last Name *</label>
                   <input 
                     type="text" 
                     value={formData.lastName}
                     onChange={(e) => handleInputChange('lastName', e.target.value)}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                     placeholder="Enter your last name"
                     required
                   />
@@ -245,41 +245,41 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Email Address *</label>
+                <label className="block text-black font-medium mb-2">Email Address *</label>
                 <input 
                   type="email" 
                   value={formData.email}
                   onChange={(e) => handleInputChange('email', e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your email"
                   required
                 />
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Phone Number</label>
+                <label className="block text-black font-medium mb-2">Phone Number</label>
                 <input 
                   type="tel" 
                   value={formData.phone}
                   onChange={(e) => handleInputChange('phone', e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your phone number"
                 />
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">ZIP Code</label>
+                <label className="block text-black font-medium mb-2">ZIP Code</label>
                 <input 
                   type="text" 
                   value={formData.zipCode}
                   onChange={(e) => handleInputChange('zipCode', e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your ZIP code"
                 />
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Volunteer Interests (Check all that apply)</label>
+                <label className="block text-black font-medium mb-2">Volunteer Interests (Check all that apply)</label>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     'Phone Banking',
@@ -304,7 +304,7 @@ export default function VolunteerPage() {
               </div>
 
               <div>
-                <label className="block text-white font-medium mb-2">Campaign Team (Check all that apply)</label>
+                <label className="block text-black font-medium mb-2">Campaign Team (Check all that apply)</label>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     'Policywriter',
@@ -328,7 +328,7 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Availability (Check all that apply)</label>
+                <label className="block text-black font-medium mb-2">Availability (Check all that apply)</label>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     'Weekdays',
@@ -350,7 +350,7 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Do you speak any of these languages?</label>
+                <label className="block text-black font-medium mb-2">Do you speak any of these languages?</label>
                 <select 
                   value={formData.languagePreference}
                   onChange={(e) => handleInputChange('languagePreference', e.target.value)}
@@ -365,12 +365,12 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Additional Comments</label>
+                <label className="block text-black font-medium mb-2">Additional Comments</label>
                 <textarea 
                   rows={4}
                   value={formData.additionalInfo}
                   onChange={(e) => handleInputChange('additionalInfo', e.target.value)}
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 bg-gray-100 border border-gray-300 rounded-lg text-black placeholder-gray-500 focus:border-blue-500 focus:outline-none"
                   placeholder="Tell us about your experience or specific interests..."
                 />
               </div>

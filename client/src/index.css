@@ -33,27 +33,27 @@ h1, h2, h3, h4, h5, h6 {
   --ring: hsl(20, 14.3%, 4.1%);
   --radius: 0.5rem;
   
-  /* Professional campaign colors - Logo-inspired palette */
-  --campaign-black: hsl(0, 0%, 8%);
-  --campaign-grey-900: hsl(0, 0%, 12%);
-  --campaign-grey-800: hsl(0, 0%, 18%);
-  --campaign-grey-700: hsl(0, 0%, 25%);
-  --campaign-grey-600: hsl(0, 0%, 35%);
-  --campaign-grey-500: hsl(0, 0%, 50%);
-  --campaign-grey-400: hsl(0, 0%, 65%);
-  --campaign-grey-300: hsl(0, 0%, 75%);
-  --campaign-grey-200: hsl(0, 0%, 85%);
-  --campaign-grey-100: hsl(0, 0%, 92%);
-  --campaign-white: hsl(0, 0%, 100%);
+  /* Professional campaign colors - Standardized hex values */
+  --campaign-black: #000000;           /* Pure black */
+  --campaign-grey-900: #1f2937;        /* Dark grey */
+  --campaign-grey-800: #374151;        /* Medium dark grey */
+  --campaign-grey-700: #4b5563;        /* Medium grey */
+  --campaign-grey-600: #6b7280;        /* Light medium grey */
+  --campaign-grey-500: #9ca3af;        /* Light grey */
+  --campaign-grey-400: #d1d5db;        /* Very light grey */
+  --campaign-grey-300: #e5e7eb;        /* Extra light grey */
+  --campaign-grey-200: #f3f4f6;        /* Near white grey */
+  --campaign-grey-100: #f9fafb;        /* Almost white */
+  --campaign-white: #ffffff;           /* Pure white */
   
-  /* Logo-inspired colors */
-  --campaign-blue: hsl(217, 100%, 50%);
-  --campaign-blue-light: hsl(217, 100%, 65%);
-  --campaign-blue-dark: hsl(217, 100%, 35%);
-  --campaign-yellow: hsl(45, 100%, 50%);
-  --campaign-yellow-light: hsl(45, 100%, 65%);
-  --campaign-yellow-dark: hsl(45, 100%, 35%);
-  --campaign-red: hsl(0, 85%, 55%);
+  /* Logo-inspired colors - Standardized hex values */
+  --campaign-blue-dark: #1e3a8a;       /* Dark blue #1e3a8a */
+  --campaign-blue: #3b82f6;            /* Standard blue #3b82f6 */
+  --campaign-blue-light: #60a5fa;      /* Light blue #60a5fa */
+  --campaign-yellow-dark: #d97706;     /* Dark yellow #d97706 */
+  --campaign-yellow: #f59e0b;          /* Standard yellow #f59e0b */
+  --campaign-yellow-light: #fbbf24;    /* Light yellow #fbbf24 */
+  --campaign-red: #ef4444;             /* Standard red #ef4444 */
   
   /* Professional typography system */
   --font-heading: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
