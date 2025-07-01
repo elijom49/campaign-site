@@ -169,26 +169,29 @@ export default function CampaignPage() {
                 <p className="text-gray-600 mb-6">
                   Latest news coverage and press mentions about our campaign.
                 </p>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Press Releases
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Media Coverage
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Press Kit
-                  </a>
-                </div>
+                <a 
+                  href="mailto:blue@jump2026.com" 
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold transition-colors"
+                >
+                  Contact Press Team
+                </a>
               </div>
             </div>
           </div>
           
           {/* Space under press section */}
           <div className="py-12"></div>
+        </div>
+      </div>
+
+      {/* Thank You Banner */}
+      <div className="bg-yellow-500 py-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black">
+              Thank you to all of our donors, contributors, supporters, and volunteers!
+            </h2>
+          </div>
         </div>
       </div>
     </div>

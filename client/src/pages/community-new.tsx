@@ -212,13 +212,13 @@ export default function CommunityPage() {
       </section>
 
       {/* Voting Resources Section */}
-      <section id="voting-resources" className="section-spacing-tight bg-black">
+      <section id="voting-resources" className="section-spacing-tight bg-yellow-400">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
+            <h2 className="text-headline text-4xl lg:text-5xl text-black mb-6">
               Voting Resources
             </h2>
-            <p className="text-body-large text-gray-300">
+            <p className="text-body-large text-black">
               Everything you need to register, vote, and make your voice heard in Illinois
             </p>
           </div>

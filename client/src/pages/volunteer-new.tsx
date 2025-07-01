@@ -297,7 +297,7 @@ export default function VolunteerPage() {
                         onChange={(e) => handleCheckboxChange('interests', interest, e.target.checked)}
                         className="rounded text-blue-600" 
                       />
-                      <span className="text-gray-300">{interest}</span>
+                      <span className="text-black">{interest}</span>
                     </label>
                   ))}
                 </div>
