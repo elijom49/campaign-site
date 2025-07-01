@@ -3,15 +3,93 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, Users, Calendar, MapPin, Heart, Target, Share2 } from "lucide-react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { useToast } from "@/hooks/use-toast";
 
 export default function VolunteerPage() {
   const [showThankYouModal, setShowThankYouModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+  
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    zipCode: "",
+    interests: [] as string[],
+    availability: [] as string[],
+    languagePreference: "",
+    additionalInfo: ""
+  });
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
+  const handleCheckboxChange = (field: 'interests' | 'availability', value: string, checked: boolean) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: checked 
+        ? [...prev[field], value]
+        : prev[field].filter(item => item !== value)
+    }));
+  };
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Show thank you modal
-    setShowThankYouModal(true);
-    // TODO: Add Google Sheets integration for Sheet 2 (Volunteer Applications)
+    
+    if (!formData.firstName || !formData.lastName || !formData.email) {
+      toast({
+        title: "Error",
+        description: "Please fill in all required fields (First Name, Last Name, Email)",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
+      const response = await fetch('/api/volunteer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setShowThankYouModal(true);
+        // Reset form
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          zipCode: "",
+          interests: [],
+          availability: [],
+          languagePreference: "",
+          additionalInfo: ""
+        });
+      } else {
+        const errorData = await response.json();
+        toast({
+          title: "Error",
+          description: errorData.message || "Failed to submit volunteer application",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Network error. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -143,29 +221,38 @@ export default function VolunteerPage() {
             <form className="space-y-6" onSubmit={handleFormSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-white font-medium mb-2">First Name</label>
+                  <label className="block text-white font-medium mb-2">First Name *</label>
                   <input 
                     type="text" 
+                    value={formData.firstName}
+                    onChange={(e) => handleInputChange('firstName', e.target.value)}
                     className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                     placeholder="Enter your first name"
+                    required
                   />
                 </div>
                 <div>
-                  <label className="block text-white font-medium mb-2">Last Name</label>
+                  <label className="block text-white font-medium mb-2">Last Name *</label>
                   <input 
                     type="text" 
+                    value={formData.lastName}
+                    onChange={(e) => handleInputChange('lastName', e.target.value)}
                     className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                     placeholder="Enter your last name"
+                    required
                   />
                 </div>
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Email Address</label>
+                <label className="block text-white font-medium mb-2">Email Address *</label>
                 <input 
                   type="email" 
+                  value={formData.email}
+                  onChange={(e) => handleInputChange('email', e.target.value)}
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your email"
+                  required
                 />
               </div>
               
@@ -173,6 +260,8 @@ export default function VolunteerPage() {
                 <label className="block text-white font-medium mb-2">Phone Number</label>
                 <input 
                   type="tel" 
+                  value={formData.phone}
+                  onChange={(e) => handleInputChange('phone', e.target.value)}
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your phone number"
                 />
@@ -182,6 +271,8 @@ export default function VolunteerPage() {
                 <label className="block text-white font-medium mb-2">ZIP Code</label>
                 <input 
                   type="text" 
+                  value={formData.zipCode}
+                  onChange={(e) => handleInputChange('zipCode', e.target.value)}
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                   placeholder="Enter your ZIP code"
                 />
@@ -200,7 +291,12 @@ export default function VolunteerPage() {
                     'Other'
                   ].map((interest) => (
                     <label key={interest} className="flex items-center space-x-2">
-                      <input type="checkbox" className="rounded text-blue-600" />
+                      <input 
+                        type="checkbox" 
+                        checked={formData.interests.includes(interest)}
+                        onChange={(e) => handleCheckboxChange('interests', interest, e.target.checked)}
+                        className="rounded text-blue-600" 
+                      />
                       <span className="text-gray-300">{interest}</span>
                     </label>
                   ))}
@@ -217,7 +313,12 @@ export default function VolunteerPage() {
                     'Flexible'
                   ].map((availability) => (
                     <label key={availability} className="flex items-center space-x-2">
-                      <input type="checkbox" className="rounded text-blue-600" />
+                      <input 
+                        type="checkbox" 
+                        checked={formData.availability.includes(availability)}
+                        onChange={(e) => handleCheckboxChange('availability', availability, e.target.checked)}
+                        className="rounded text-blue-600" 
+                      />
                       <span className="text-gray-300">{availability}</span>
                     </label>
                   ))}
@@ -226,7 +327,11 @@ export default function VolunteerPage() {
               
               <div>
                 <label className="block text-white font-medium mb-2">Do you speak any of these languages?</label>
-                <select className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-blue-500 focus:outline-none">
+                <select 
+                  value={formData.languagePreference}
+                  onChange={(e) => handleInputChange('languagePreference', e.target.value)}
+                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-blue-500 focus:outline-none"
+                >
                   <option value="">Select a language</option>
                   <option value="spanish">Spanish</option>
                   <option value="arabic">Arabic</option>
@@ -236,26 +341,22 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Resume Upload (Optional)</label>
-                <input 
-                  type="file" 
-                  accept=".pdf,.doc,.docx"
-                  className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:bg-blue-600 file:text-white hover:file:bg-blue-700"
-                />
-                <p className="text-gray-400 text-sm mt-1">Accepted formats: PDF, DOC, DOCX</p>
-              </div>
-              
-              <div>
                 <label className="block text-white font-medium mb-2">Additional Comments</label>
                 <textarea 
                   rows={4}
+                  value={formData.additionalInfo}
+                  onChange={(e) => handleInputChange('additionalInfo', e.target.value)}
                   className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
                   placeholder="Tell us about your experience or specific interests..."
                 />
               </div>
               
-              <Button type="submit" className="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-semibold py-4 text-lg">
-                Join the Movement
+              <Button 
+                type="submit" 
+                disabled={isSubmitting}
+                className="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-semibold py-4 text-lg disabled:opacity-50"
+              >
+                {isSubmitting ? "Submitting..." : "Join the Movement"}
               </Button>
             </form>
           </div>

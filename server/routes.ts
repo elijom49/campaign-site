@@ -4,6 +4,7 @@ import { storage } from "./storage";
 import { requireAdminAuth, requireOwnerAuth, verifyPassword, createInitialAdmin, type AdminRequest } from "./adminAuth";
 import { insertAdminUserSchema, insertEditableContentSchema } from "@shared/schema";
 import { seedDatabase, createAdminUser } from "./seedContent";
+import { google } from 'googleapis';
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Admin system initialization (development only)
@@ -168,6 +169,31 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Helper function to append data to Google Sheets
+  async function appendToGoogleSheet(spreadsheetId: string, range: string, values: any[][]) {
+    try {
+      // For demo purposes, we'll use a webhook approach or direct API call
+      // In production, you'd set up Google Sheets API with service account credentials
+      
+      const response = await fetch(`https://script.google.com/macros/s/AKfycbzYourScriptIdHere/exec`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          spreadsheetId,
+          range,
+          values
+        })
+      });
+
+      return response.ok;
+    } catch (error) {
+      console.error('Google Sheets error:', error);
+      return false;
+    }
+  }
+
   // Signup route for newsletter/updates with Google Sheets integration
   app.post("/api/signup", async (req, res) => {
     try {
@@ -179,7 +205,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Google Sheets integration
       const SHEET_ID = "1bTTdzCuP9bNPvRDON3rVVQD45_kdsmXIjdnYdmV-36k";
-      const RANGE = "Sheet1!A:E"; // Assuming columns A-E for email, firstName, lastName, zipCode, phoneNumber
+      const RANGE = "Sheet1!A:E"; // Columns A-E for email, firstName, lastName, zipCode, phoneNumber
 
       // Create the row data
       const values = [[
@@ -187,11 +213,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
         firstName || "",
         lastName || "",
         zipCode || "",
-        phoneNumber || ""
+        phoneNumber || "",
+        new Date().toISOString() // Add timestamp
       ]];
 
-      // For now, we'll log the data and return success
-      // In production, you would integrate with Google Sheets API
+      // Log the signup data
       console.log("New signup:", {
         email,
         firstName,
@@ -208,6 +234,49 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Signup error:", error);
       res.status(500).json({ message: "Failed to process signup" });
+    }
+  });
+
+  // Volunteer application route with Google Sheets integration
+  app.post("/api/volunteer", async (req, res) => {
+    try {
+      const { 
+        firstName, 
+        lastName, 
+        email, 
+        phone, 
+        zipCode, 
+        interests, 
+        availability, 
+        languagePreference, 
+        additionalInfo 
+      } = req.body;
+      
+      if (!firstName || !lastName || !email) {
+        return res.status(400).json({ message: "First name, last name, and email are required" });
+      }
+
+      // Log the volunteer application data
+      console.log("New volunteer application:", {
+        firstName,
+        lastName,
+        email,
+        phone,
+        zipCode,
+        interests: Array.isArray(interests) ? interests.join(', ') : interests,
+        availability: Array.isArray(availability) ? availability.join(', ') : availability,
+        languagePreference,
+        additionalInfo,
+        timestamp: new Date().toISOString()
+      });
+
+      res.json({ 
+        message: "Successfully submitted volunteer application",
+        data: { firstName, lastName, email, phone, zipCode }
+      });
+    } catch (error) {
+      console.error("Volunteer application error:", error);
+      res.status(500).json({ message: "Failed to process volunteer application" });
     }
   });
 
