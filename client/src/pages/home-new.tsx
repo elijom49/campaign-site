@@ -162,8 +162,8 @@ export default function HomePage() {
       {/* Election Day Banner */}
       <div className="bg-orange-600 py-4 overflow-hidden">
         <div className="animate-marquee text-white font-bold text-xl md:text-2xl">
-          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
-          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
+          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
+          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
         </div>
       </div>
     </div>
