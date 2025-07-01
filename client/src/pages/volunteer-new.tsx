@@ -1,8 +1,18 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, Users, Calendar, MapPin, Heart, Target, Share2 } from "lucide-react";
+
 export default function VolunteerPage() {
+  const [showThankYouModal, setShowThankYouModal] = useState(false);
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    // Show thank you modal
+    setShowThankYouModal(true);
+    // TODO: Add Google Sheets integration for Sheet 2 (Volunteer Applications)
+  };
 
   return (
     <div className="bg-black text-white">
@@ -23,7 +33,7 @@ export default function VolunteerPage() {
       </section>
 
       {/* Volunteer Opportunities */}
-      <section className="section-spacing-tight bg-gray-900">
+      <section className="section-spacing-tight bg-blue-600">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center mb-16">
             <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
@@ -46,7 +56,7 @@ export default function VolunteerPage() {
                 <li>• Training provided</li>
                 <li>• Work from home</li>
               </ul>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">Sign Up</Button>
+
             </div>
             
             <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
@@ -60,7 +70,6 @@ export default function VolunteerPage() {
                 <li>• Paired with experienced volunteers</li>
                 <li>• Local neighborhood focus</li>
               </ul>
-              <Button className="w-full bg-green-600 hover:bg-green-700">Sign Up</Button>
             </div>
             
             <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
@@ -74,7 +83,6 @@ export default function VolunteerPage() {
                 <li>• Voter registration</li>
                 <li>• Event coordination</li>
               </ul>
-              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-black">Sign Up</Button>
             </div>
             
             <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
@@ -88,7 +96,6 @@ export default function VolunteerPage() {
                 <li>• Social media management</li>
                 <li>• Online voter outreach</li>
               </ul>
-              <Button className="w-full bg-purple-600 hover:bg-purple-700">Sign Up</Button>
             </div>
             
             <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
@@ -102,7 +109,6 @@ export default function VolunteerPage() {
                 <li>• Issue advocacy</li>
                 <li>• Leadership development</li>
               </ul>
-              <Button className="w-full bg-red-600 hover:bg-red-700">Sign Up</Button>
             </div>
             
             <div className="bg-white border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl">
@@ -116,7 +122,6 @@ export default function VolunteerPage() {
                 <li>• Donor outreach</li>
                 <li>• Fundraising events</li>
               </ul>
-              <Button className="w-full bg-pink-600 hover:bg-pink-700">Sign Up</Button>
             </div>
           </div>
         </div>
@@ -135,7 +140,7 @@ export default function VolunteerPage() {
               </p>
             </div>
             
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleFormSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-white font-medium mb-2">First Name</label>
@@ -184,14 +189,15 @@ export default function VolunteerPage() {
               
               <div>
                 <label className="block text-white font-medium mb-2">Volunteer Interests (Check all that apply)</label>
-                <div className="grid md:grid-cols-1 gap-3">
+                <div className="grid md:grid-cols-2 gap-3">
                   {[
-                    'Policywriter - (Topic: The Pink Tax Legislation)',
-                    'Discord Manager - (Remote Work)',
-                    'Sales Team - (Campaign items, Relationship Building)',
-                    'Media Coordinator - (Local, Chicago)',
-                    'Social Media Manager - (LinkedIn, YouTube, Facebook, Twitch, TikTok)',
-                    'Content Writers - (Writers, editors needed)'
+                    'Phone Banking',
+                    'Door Knocking',
+                    'Event Support',
+                    'Digital Organizing',
+                    'Community Organizing',
+                    'Fundraising',
+                    'Other'
                   ].map((interest) => (
                     <label key={interest} className="flex items-center space-x-2">
                       <input type="checkbox" className="rounded text-blue-600" />
@@ -202,13 +208,30 @@ export default function VolunteerPage() {
               </div>
               
               <div>
-                <label className="block text-white font-medium mb-2">Availability</label>
+                <label className="block text-white font-medium mb-2">Availability (Check all that apply)</label>
+                <div className="grid md:grid-cols-2 gap-3">
+                  {[
+                    'Weekdays',
+                    'Weekends',
+                    'Evenings',
+                    'Flexible'
+                  ].map((availability) => (
+                    <label key={availability} className="flex items-center space-x-2">
+                      <input type="checkbox" className="rounded text-blue-600" />
+                      <span className="text-gray-300">{availability}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-white font-medium mb-2">Do you speak any of these languages?</label>
                 <select className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white focus:border-blue-500 focus:outline-none">
-                  <option value="">Select your availability</option>
-                  <option value="weekdays">Weekdays</option>
-                  <option value="weekends">Weekends</option>
-                  <option value="evenings">Evenings</option>
-                  <option value="flexible">Flexible</option>
+                  <option value="">Select a language</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="arabic">Arabic</option>
+                  <option value="mandarin">Mandarin</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
               
@@ -231,7 +254,7 @@ export default function VolunteerPage() {
                 />
               </div>
               
-              <Button className="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-semibold py-4 text-lg">
+              <Button type="submit" className="w-full bg-yellow-600 hover:bg-yellow-700 text-black font-semibold py-4 text-lg">
                 Join the Movement
               </Button>
             </form>
@@ -360,7 +383,7 @@ export default function VolunteerPage() {
             {/* Director of Information and Volunteer Coordinator */}
             <div className="bg-black border-4 border-yellow-500 rounded-2xl p-8 text-center">
               <div className="w-24 h-24 bg-yellow-500 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="text-black text-2xl font-bold">S</span>
+                <span className="text-black text-2xl font-bold">JS</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-2">James Sims</h3>
               <p className="text-yellow-400 text-lg font-semibold mb-4">Director of Information and Volunteer Coordinator</p>
@@ -371,6 +394,31 @@ export default function VolunteerPage() {
           </div>
         </div>
       </section>
+
+      {/* Thank You Modal */}
+      {showThankYouModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
+              <p className="text-gray-600 mb-6">
+                Thank you for your interest in volunteering! We have received your application and will be in touch regarding the next steps.
+              </p>
+              <Button 
+                onClick={() => setShowThankYouModal(false)}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2"
+              >
+                Close
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

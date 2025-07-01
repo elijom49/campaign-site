@@ -178,6 +178,17 @@ export default function CampaignPage() {
           </div>
         </div>
       </div>
+
+      {/* Thank You Banner */}
+      <div className="bg-yellow-500 py-8">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-black">
+              Thank you to all of our donors, contributors, supporters, and volunteers!
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

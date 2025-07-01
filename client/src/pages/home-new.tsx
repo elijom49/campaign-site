@@ -161,6 +161,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Election Day Banner */}
+      <div className="bg-red-600 py-4 overflow-hidden">
+        <div className="animate-marquee whitespace-nowrap">
+          <span className="text-white font-bold text-2xl mx-8">
+            Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
