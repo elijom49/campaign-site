@@ -101,7 +101,7 @@ export default function VolunteerPage() {
             <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
               Volunteer
               <br />
-              <span className="text-yellow-400">for Change</span>
+              <span className="text-yellow-400 font-bold">for Change</span>
             </h1>
             <p className="text-body-large text-gray-300 max-w-3xl mx-auto">
               Join thousands of Illinois residents building a grassroots movement for economic justice, healthcare access, and progressive change.
