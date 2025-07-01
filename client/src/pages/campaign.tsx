@@ -70,79 +70,7 @@ export default function CampaignPage() {
           </div>
         </div>
 
-        {/* Volunteer Opportunities Section - Moved up */}
-        <div className="col-span-12">
-          <div className="bg-white p-8">
-            <div className="text-center mb-8">
-              <div className="flex justify-center mb-4">
-                <Users className="w-12 h-12 text-yellow-400" />
-              </div>
-              <h2 className="text-4xl font-bold text-blue-600 mb-4">Volunteer Opportunities</h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Multiple ways to get involved and make a difference in our campaign.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Phone Banking */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
-                <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Phone Banking</h3>
-                <p className="text-gray-600 mb-6">
-                  Connect with voters across Illinois and share our message of hope and change.
-                </p>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Sign Up for Phone Banking
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Training Materials
-                  </a>
-                </div>
-              </div>
 
-              {/* Canvassing */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
-                <Users className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Canvassing</h3>
-                <p className="text-gray-600 mb-6">
-                  Go door-to-door in your neighborhood and have meaningful conversations with voters.
-                </p>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Find Canvassing Events
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Canvassing Guide
-                  </a>
-                </div>
-              </div>
-
-              {/* Events */}
-              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
-                <Calendar className="w-12 h-12 text-blue-400 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Events</h3>
-                <p className="text-gray-600 mb-6">
-                  Help organize and run campaign events, rallies, and community gatherings.
-                </p>
-                <div className="space-y-3">
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Upcoming Events
-                  </a>
-                  <a href="#" className="block text-blue-400 hover:text-yellow-400 transition-colors">
-                    <ExternalLink className="w-4 h-4 inline mr-2" />
-                    Event Volunteer Form
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Donations Section */}
         <div className="col-span-12">
