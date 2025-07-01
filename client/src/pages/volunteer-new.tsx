@@ -139,7 +139,7 @@ export default function VolunteerPage() {
             
             <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
-                <MapPin className="w-8 h-8 text-green-600 mr-3" />
+                <MapPin className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Door Knocking</h3>
               </div>
               <p className="text-black mb-4">Go door-to-door in your neighborhood to meet voters and build grassroots support.</p>
@@ -165,7 +165,7 @@ export default function VolunteerPage() {
             
             <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
-                <Share2 className="w-8 h-8 text-purple-600 mr-3" />
+                <Share2 className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Digital Organizing</h3>
               </div>
               <p className="text-black mb-4">Spread the word on social media and help manage our online presence.</p>
@@ -178,7 +178,7 @@ export default function VolunteerPage() {
             
             <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
-                <Users className="w-8 h-8 text-red-600 mr-3" />
+                <Users className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Community Organizing</h3>
               </div>
               <p className="text-black mb-4">Build coalitions and organize in your community around key issues.</p>
@@ -191,7 +191,7 @@ export default function VolunteerPage() {
             
             <div className="bg-white border-2 border-blue-500 rounded-2xl p-8 ">
               <div className="flex items-center mb-4">
-                <Heart className="w-8 h-8 text-pink-600 mr-3" />
+                <Heart className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-black">Fundraising</h3>
               </div>
               <p className="text-black mb-4">Help raise funds from small donors to power our people-funded campaign.</p>
@@ -525,7 +525,7 @@ export default function VolunteerPage() {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl p-8 max-w-md w-full mx-auto">
             <div className="text-center">
-              <div className="w-16 h-16 bg-green-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+              <div className="w-16 h-16 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>

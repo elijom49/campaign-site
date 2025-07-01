@@ -111,7 +111,7 @@ export default function CampaignPage() {
               {/* Fundraising */}
               <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
                 <div className="mb-6">
-                  <div className="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Users className="w-10 h-10 text-white" />
                   </div>
                   <h3 className="text-3xl font-semibold text-gray-900 mb-4">Fundraise</h3>
@@ -122,7 +122,7 @@ export default function CampaignPage() {
                 </div>
                 <a 
                   href="mailto:blue@jump2026.com" 
-                  className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
                 >
                   Contact Us
                 </a>

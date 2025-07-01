@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   --campaign-yellow-dark: #d97706;     /* Dark yellow #d97706 */
   --campaign-yellow: #f59e0b;          /* Standard yellow #f59e0b */
   --campaign-yellow-light: #fbbf24;    /* Light yellow #fbbf24 */
-  --campaign-red: #ef4444;             /* Standard red #ef4444 */
+
   
   /* Professional typography system */
   --font-heading: 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
