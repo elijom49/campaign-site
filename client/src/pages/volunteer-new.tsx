@@ -302,6 +302,30 @@ export default function VolunteerPage() {
                   ))}
                 </div>
               </div>
+
+              <div>
+                <label className="block text-white font-medium mb-2">Campaign Team (Check all that apply)</label>
+                <div className="grid md:grid-cols-2 gap-3">
+                  {[
+                    'Policywriter',
+                    'Discord Manager',
+                    'Sales Team',
+                    'Media Coordinator (Must be local to Chicago)',
+                    'Social Media Manager',
+                    'Content Writer'
+                  ].map((team) => (
+                    <label key={team} className="flex items-center space-x-2">
+                      <input 
+                        type="checkbox" 
+                        checked={formData.interests.includes(team)}
+                        onChange={(e) => handleCheckboxChange('interests', team, e.target.checked)}
+                        className="rounded text-blue-600" 
+                      />
+                      <span className="text-gray-300">{team}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
               
               <div>
                 <label className="block text-white font-medium mb-2">Availability (Check all that apply)</label>

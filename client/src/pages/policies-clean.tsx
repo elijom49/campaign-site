@@ -1,6 +1,7 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 import heroPhoto from "@assets/Jump Shepherd America_1751141710805.jpg";
+import { DollarSign, Heart, Home, TreePine, Users } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -39,23 +40,29 @@ export default function PoliciesPage() {
       {/* Policy Dropdowns Section */}
       <div className="bg-blue-600 py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <Accordion type="single" collapsible className="w-full space-y-4">
+          <Accordion type="single" collapsible className="w-full space-y-6">
             {/* The Billionaire Tax */}
-            <AccordionItem value="billionaire-tax" className="bg-white rounded-lg px-6">
-              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
-                The Billionaire Tax
+            <AccordionItem value="billionaire-tax" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <DollarSign className="w-8 h-8 text-blue-600" />
+                  The Billionaire Tax
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-lg pt-4">
+              <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
                 Billionaires pay their fair share.
               </AccordionContent>
             </AccordionItem>
 
             {/* Elimination of The Pink Tax */}
-            <AccordionItem value="pink-tax" className="bg-white rounded-lg px-6">
-              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
-                Elimination of The Pink Tax
+            <AccordionItem value="pink-tax" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Heart className="w-8 h-8 text-blue-600" />
+                  Elimination of The Pink Tax
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-lg pt-4">
+              <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
                 <p className="mb-6">
                   The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
                 </p>
@@ -73,31 +80,40 @@ export default function PoliciesPage() {
             </AccordionItem>
 
             {/* Affordable Housing */}
-            <AccordionItem value="affordable-housing" className="bg-white rounded-lg px-6">
-              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
-                Affordable Housing
+            <AccordionItem value="affordable-housing" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Home className="w-8 h-8 text-blue-600" />
+                  Affordable Housing
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-lg pt-4">
+              <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
                 Families are going to own their homes again, not corporate ownership. Prices are going down.
               </AccordionContent>
             </AccordionItem>
 
             {/* Environmental Policy */}
-            <AccordionItem value="environmental-policy" className="bg-white rounded-lg px-6">
-              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
-                Environmental Policy
+            <AccordionItem value="environmental-policy" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <TreePine className="w-8 h-8 text-blue-600" />
+                  Environmental Policy
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-lg pt-4">
+              <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
                 Legislation will be introduced in the area of environmental policy, global warming, agriculture, and supporting our farmers and educators.
               </AccordionContent>
             </AccordionItem>
 
             {/* Working Families */}
-            <AccordionItem value="working-families" className="bg-white rounded-lg px-6">
-              <AccordionTrigger className="text-xl font-bold text-black hover:no-underline">
-                Working Families
+            <AccordionItem value="working-families" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Users className="w-8 h-8 text-blue-600" />
+                  Working Families
+                </div>
               </AccordionTrigger>
-              <AccordionContent className="text-gray-700 text-lg pt-4">
+              <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
                 Fighting for fair wages, worker rights, and economic opportunities that build strong communities.
               </AccordionContent>
             </AccordionItem>

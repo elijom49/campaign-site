@@ -98,7 +98,6 @@ export default function HomePage() {
           
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">{t('home.costOfLiving')}</h3>
@@ -110,7 +109,6 @@ export default function HomePage() {
             </div>
             
             <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">{t('home.environment')}</h3>
@@ -122,7 +120,6 @@ export default function HomePage() {
             </div>
             
             <div className="aclu-card">
-              <div className="aclu-card-arrow">→</div>
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">{t('home.pinkTax')}</h3>

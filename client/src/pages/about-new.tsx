@@ -31,7 +31,7 @@ export default function AboutPage() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/campaign">
+                <Link href="/policies">
                   <span className="inline-block bg-yellow-500 text-black px-6 py-3 text-lg font-bold hover:bg-yellow-400 transition-colors">{t('about.viewPlatform')}</span>
                 </Link>
                 <Link href="/volunteer">
