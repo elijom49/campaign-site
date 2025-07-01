@@ -1,4 +1,5 @@
 import { useLanguage } from "@/hooks/use-language";
+import { Link } from "wouter";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 
 export default function CampaignPage() {
@@ -112,9 +113,12 @@ export default function CampaignPage() {
               <p className="text-gray-600 mb-6">
                 Join our team of dedicated volunteers making a difference in communities across Illinois.
               </p>
-              <a href="/volunteer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+              <button 
+                onClick={() => window.location.href = '/volunteer'}
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors cursor-pointer"
+              >
                 Get Involved
-              </a>
+              </button>
             </div>
 
             {/* Donations */}
