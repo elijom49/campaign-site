@@ -1,169 +1,187 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, Heart, Zap } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Home, Leaf, Equal, ArrowRight, Star } from "lucide-react";
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
-import chicagoSkyline from "@assets/chicago-river-5249198_1280_1751144895089.jpg";
-import victorianHouses from "@assets/houses-890351_1280_1751145143497.jpg";
+import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function HomePage() {
   const { t } = useLanguage();
-
+  
   return (
-    <div className="bg-white">
-      {/* Advanced Hero Section */}
-      <section className="hero-section-advanced min-h-screen flex items-center">
-        <div className="content-grid-advanced relative z-10">
-          <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
-            <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-tight mt-12">
-                {t('home.title')}
-              </h1>
-              <p className="text-body-large text-gray-600 max-w-lg">
-                {t('home.tagline')}
-              </p>
+    <div className="bg-white min-h-screen">
+      {/* Hero Section - Presidential Quality Design */}
+      <div className="relative overflow-hidden bg-white">
+        {/* Clean decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {/* Elegant border frames */}
+          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-blue-500 opacity-30"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 border-4 border-yellow-500 opacity-30"></div>
+          <div className="absolute top-1/2 right-32 w-16 h-16 border-2 border-blue-500 opacity-40"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          {/* Hero Section - Flex layout with text and image side by side */}
+          <div className="flex flex-col lg:flex-row items-start gap-12 mb-12">
+            {/* Text Content */}
+            <div className="flex-1 lg:max-w-2xl space-y-8">
+              {/* Main Headline */}
+              <div className="space-y-4">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
+                  {t('home.title').split(' ').slice(0, 2).join(' ')}
+                  <br />
+                  <span className="font-black text-blue-600">{t('home.title').split(' ').slice(2, 4).join(' ')}</span>
+                  <br />
+                  <span className="font-light">{t('home.title').split(' ').slice(4, 6).join(' ')}</span>
+                  <br />
+                  <span className="font-black text-gray-800">{t('home.title').split(' ').slice(6).join(' ')}</span>
+                </h1>
+                
+                {/* Tagline under headline */}
+                <p className="text-lg md:text-xl text-gray-600 font-normal leading-relaxed mt-4">
+                  {t('home.tagline').split(' ').slice(0, 3).join(' ')} <span className="text-red-600 font-semibold">{t('home.tagline').split(' ')[3]}</span> {t('home.tagline').split(' ').slice(4, 6).join(' ')} <span className="text-blue-600 font-semibold">{t('home.tagline').split(' ')[6].replace(',', '')}</span>{t('home.tagline').split(' ').slice(7).join(' ')}.
+                </p>
+              </div>
+              
+              {/* Action Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/volunteer" className="group">
+                  <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
+                    <span>{t('home.getInvolved')}</span>
+                  </Button>
+                </Link>
+                <a 
+                  href="https://secure.actblue.com/donate/jumpforsenate" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group"
+                >
+                  <Button className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 shadow-elegant">
+                    <span>{t('home.donate')}</span>
+                  </Button>
+                </a>
+              </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/volunteer">
-                <span className="btn-primary-large">{t('home.getInvolved')}</span>
-              </Link>
-              <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer">
-                <span className="btn-secondary-large" style={{color: '#000', borderColor: '#000'}}>{t('home.donate')}</span>
-              </a>
-            </div>
-          </div>
-          
-          <div className="col-span-12 lg:col-span-5 lg:-ml-24">
-            <div className="relative">
-              <img 
-                src={candidatePhoto} 
-                alt="Jump - Candidate for U.S. Senate" 
-                className="w-4/5 h-auto rounded-2xl shadow-2xl mx-auto" 
-              />
-              <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
-                <blockquote className="text-sm font-medium italic">
+            {/* Candidate Image - Right side, shrink-0 to maintain size */}
+            <div className="flex-shrink-0 lg:w-96 space-y-4">
+              <div className="relative group">
+                <img 
+                  src={candidatePhoto} 
+                  alt="Jump - Candidate for U.S. Senate" 
+                  className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
+                />
+              </div>
+              
+              {/* Quote under image */}
+              <div className="accent-bar-blue bg-white p-6 shadow-lg border border-blue-100 rounded-lg">
+                <blockquote className="text-sm md:text-base text-gray-700 italic leading-relaxed pl-4">
                   "{t('home.quote')}"
                 </blockquote>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Stats Section */}
-      <section className="stats-section">
-        <div className="content-grid-advanced">
-          <div className="col-span-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="stat-item">
-                <div className="stat-number">12.7M</div>
-                <div className="stat-label">{t('home.statsIllinois')}</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">2026</div>
-                <div className="stat-label">{t('home.statsElection')}</div>
-              </div>
-              <div className="stat-item">
-                <div className="stat-number">1</div>
-                <div className="stat-label">{t('home.statsVoice')}</div>
-              </div>
+      {/* Fighting for Our Future - Professional Layout */}
+      <div className="relative py-16 bg-white">        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Header with beautiful frame */}
+          <div className="text-center mb-12">
+            <div className="inline-block relative">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-600 mb-8 px-12 py-6 bg-white rounded-xl shadow-2xl border-4 border-yellow-500 relative z-10">
+                {t('home.fightingTitle')}
+              </h2>
+              <div className="absolute inset-0 bg-blue-500 rounded-xl transform rotate-1 -z-10"></div>
             </div>
+          </div>
+
+          {/* Beautiful 3D Policy Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* Card 1 - Housing */}
+            <Link href="/campaign" className="group">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Lowering Cost of Living</h3>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
+                  Making housing, healthcare, and education affordable for every family through bold policy action.
+                </p>
+                <div className="mt-8 flex justify-center items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <span>Learn More</span>
+                </div>
+              </Card>
+            </Link>
+            
+            {/* Card 2 - Environment */}
+            <Link href="/campaign" className="group">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Environmental Policy</h3>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
+                  Protecting our planet while creating good-paying green jobs for the next generation.
+                </p>
+                <div className="mt-8 flex justify-center items-center text-yellow-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <span>Learn More</span>
+                </div>
+              </Card>
+            </Link>
+            
+            {/* Card 3 - Equality */}
+            <Link href="/campaign" className="group">
+              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Elimination of The Pink Tax</h3>
+                </div>
+                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
+                  Ending gender-based pricing discrimination once and for all through federal legislation.
+                </p>
+                <div className="mt-8 flex justify-center items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
+                  <span>Learn More</span>
+                </div>
+              </Card>
+            </Link>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center">
+            <Link href="/campaign" className="group inline-block">
+              <Button className="bg-black hover:bg-gray-800 text-white px-16 py-4 text-xl font-semibold rounded-none shadow-elegant transform hover:scale-105 transition-all duration-300">
+                <span>The Issues</span>
+              </Button>
+            </Link>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* Policy Platform Section */}
-      <section 
-        className="section-spacing-loose relative"
-        style={{
-          backgroundImage: `url(${chicagoSkyline})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
-        {/* Blue filter overlay */}
-        <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
-        
-        <div className="content-grid-advanced relative z-10">
-          <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
-              {t('home.fightingTitle')}
+      {/* Join the Movement - Final CTA */}
+      <div className="relative py-16 bg-blue-50">        
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="accent-bar-yellow bg-white p-8 rounded-xl shadow-2xl border-2 border-yellow-500 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-black text-blue-600 mb-6">
+              Join the Movement
             </h2>
-            <p className="text-body-large text-white max-w-2xl mx-auto">
-              {t('home.joinDesc')}
-            </p>
-          </div>
-          
-          <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="aclu-card">
-              <div className="flex items-center mb-4">
-                <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">{t('home.costOfLiving')}</h3>
-              </div>
-              <p className="text-gray-600 mb-4">{t('home.costOfLivingDesc')}</p>
-              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
             
-            <div className="aclu-card">
-              <div className="flex items-center mb-4">
-                <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">{t('home.environment')}</h3>
-              </div>
-              <p className="text-gray-600 mb-4">{t('home.environmentDesc')}</p>
-              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-            
-            <div className="aclu-card">
-              <div className="flex items-center mb-4">
-                <Zap className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold">{t('home.pinkTax')}</h3>
-              </div>
-              <p className="text-gray-600 mb-4">{t('home.pinkTaxDesc')}</p>
-              <Link href="/policies" className="text-blue-600 font-medium inline-flex items-center">
-                {t('home.learnMore')} <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-
-
-      {/* Call to Action Section */}
-      <section className="cta-section-advanced">
-        <div className="content-grid-advanced">
-          <div className="col-span-12 text-center">
-            <h2 className="text-headline text-4xl lg:text-5xl mb-6">
-              {t('home.joinMovement')}
-            </h2>
-            <p className="text-body-large mb-8 max-w-2xl mx-auto">
-              {t('home.joinDesc')}
+            <p className="text-xl md:text-2xl text-gray-600 mb-12 font-normal leading-relaxed pl-4">
+              Together, we can build a future where every person has the opportunity to thrive.
             </p>
-            <div className="cta-buttons">
-              <Link href="/volunteer">
-                <span className="btn-primary-large">{t('home.getInvolved')}</span>
-              </Link>
-              <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer">
-                <span className="btn-secondary-large">{t('home.donateToday')}</span>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSed0wqiVlDd5wSvYaq3TQ9iW2DsMZgLMko4ctt0SxrIQesMPA/viewform?usp=header" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <Button className="frame-blue-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
+                  <span>Sign Up for Updates</span>
+                </Button>
               </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Election Day Banner */}
-      <div className="bg-orange-600 py-4 overflow-hidden">
-        <div className="animate-marquee text-white font-bold text-xl md:text-2xl">
-          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
-          <span className="pr-20">Election Day is November 3, 2026! • Election Day is November 3, 2026! • Election Day is November 3, 2026! •</span>
         </div>
       </div>
     </div>
