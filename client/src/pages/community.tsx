@@ -1,190 +1,312 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Home, Leaf, Equal, ArrowRight, Star } from "lucide-react";
-import { useLanguage } from "@/hooks/use-language";
-import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
-import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
+import { Calendar, Users, MapPin, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
+import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
 
-export default function HomePage() {
-  const { t } = useLanguage();
-  
+export default function CommunityPage() {
   return (
-    <div className="bg-white min-h-screen">
-      {/* Hero Section - Presidential Quality Design */}
-      <div className="relative overflow-hidden bg-white">
-        {/* Clean decorative elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          {/* Elegant border frames */}
-          <div className="absolute top-10 left-10 w-32 h-32 border-4 border-blue-500 opacity-30"></div>
-          <div className="absolute bottom-10 right-10 w-24 h-24 border-4 border-yellow-500 opacity-30"></div>
-          <div className="absolute top-1/2 right-32 w-16 h-16 border-2 border-blue-500 opacity-40"></div>
+    <div className="bg-black text-white">
+      {/* Header Section */}
+      <section className="py-16">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center">
+            <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
+              Join Our
+              <br />
+              <span className="text-blue-600 font-bold">Community</span>
+            </h1>
+            <p className="text-body-large text-gray-300 max-w-3xl mx-auto">
+              Connect with Illinois residents building a grassroots movement for economic justice and progressive change.
+            </p>
+          </div>
         </div>
+      </section>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          {/* Hero Section - Flex layout with text and image side by side */}
-          <div className="flex flex-col lg:flex-row items-start gap-12 mb-12">
-            {/* Text Content */}
-            <div className="flex-1 lg:max-w-2xl space-y-8">
-              {/* Main Headline */}
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight text-gray-900">
-                  {t('home.title').split(' ').slice(0, 2).join(' ')}
-                  <br />
-                  <span className="font-black text-blue-600">{t('home.title').split(' ').slice(2, 4).join(' ')}</span>
-                  <br />
-                  <span className="font-light">{t('home.title').split(' ').slice(4, 6).join(' ')}</span>
-                  <br />
-                  <span className="font-black text-gray-800">{t('home.title').split(' ').slice(6).join(' ')}</span>
-                </h1>
-                
-                {/* Tagline under headline */}
-                <p className="text-lg md:text-xl text-gray-600 font-normal leading-relaxed mt-4">
-                  {t('home.tagline').split(' ').slice(0, 3).join(' ')} <span className="text-red-600 font-semibold">{t('home.tagline').split(' ')[3]}</span> {t('home.tagline').split(' ').slice(4, 6).join(' ')} <span className="text-blue-600 font-semibold">{t('home.tagline').split(' ')[6].replace(',', '')}</span>{t('home.tagline').split(' ').slice(7).join(' ')}.
+      {/* Social Media Section */}
+      <section className="section-spacing-tight bg-blue-600">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center mb-16">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
+              Follow the Campaign
+            </h2>
+            <p className="text-body-large text-gray-300">
+              Stay connected with daily updates, behind-the-scenes content, and live events
+            </p>
+          </div>
+          
+          <div className="col-span-12 grid md:grid-cols-3 gap-8">
+            <a 
+              href="https://www.tiktok.com/@jumpforsenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <FaTiktok className="w-8 h-8 text-pink-400 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-white">TikTok</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
+              </div>
+              <div className="text-blue-400 font-medium">@jumpforsenate</div>
+            </a>
+            
+            <a 
+              href="https://www.instagram.com/jumpforsenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <h3 className="text-subheadline text-xl font-semibold text-white">Instagram</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
+              </div>
+              <div className="text-blue-400 font-medium">@jumpforsenate</div>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/@JumpForSenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <Youtube className="w-8 h-8 text-red-500 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-white">YouTube</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
+              </div>
+              <div className="text-blue-400 font-medium">@JumpForSenate</div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section className="section-spacing-loose bg-black">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 lg:col-span-6 space-y-8">
+            <div className="space-y-6">
+              <h2 className="text-headline text-4xl lg:text-5xl text-white">
+                Upcoming Events
+              </h2>
+              <p className="text-body-large text-gray-300">
+                Join us at campaign events across Illinois to meet fellow supporters and learn more about our movement.
+              </p>
+            </div>
+            
+            <div className="space-y-6">
+              {/* Senator's Cup Event */}
+              <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    <Calendar className="w-6 h-6 text-blue-400" />
+                    <div>
+                      <div className="text-white font-semibold">The Senator's Cup Madden Tournament Fundraiser</div>
+                      <div className="text-gray-400 text-sm">8-Player Online Tournament</div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">
+                  $100 entry, $300 prize. Events weekly. Join this skill-based competition supporting the Jump Shepherd for U.S. Senate campaign.
                 </p>
               </div>
               
-              {/* Action Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/volunteer" className="group">
-                  <Button className="border-2 border-black text-black hover:bg-black hover:text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 bg-transparent">
-                    <span>{t('home.getInvolved')}</span>
-                  </Button>
-                </Link>
-                <a 
-                  href="https://secure.actblue.com/donate/jumpforsenate" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="group"
-                >
-                  <Button className="bg-black hover:bg-gray-800 text-white px-12 py-4 text-lg font-semibold rounded-none w-full sm:w-auto transform hover:scale-105 transition-all duration-300 shadow-elegant">
-                    <span>{t('home.donate')}</span>
-                  </Button>
-                </a>
+              {/* Event Calendar Section - Moved under tournament */}
+              <div className="bg-blue-900/20 border border-blue-800 p-8 rounded-2xl">
+                <h3 className="text-headline text-2xl text-white mb-4 text-center">Event Calendar</h3>
+                <p className="text-gray-300 mb-6 text-center">
+                  Stay updated with all upcoming campaign events and activities.
+                </p>
+                <div className="text-center">
+                  <p className="text-gray-300 mb-4">
+                    For the most up-to-date event information, please check our Google Calendar or contact our campaign office.
+                  </p>
+                  <div className="space-y-3">
+                    <Button className="bg-blue-600 hover:bg-blue-700 w-full" disabled>
+                      View Full Calendar
+                    </Button>
+                    <a href="mailto:blue@jump2026.com">
+                      <Button variant="outline" className="w-full border-gray-600 text-gray-300 hover:bg-gray-800">
+                        Contact for Events
+                      </Button>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
-            
-            {/* Candidate Image - Right side, shrink-0 to maintain size */}
-            <div className="flex-shrink-0 lg:w-96 space-y-4">
-              <div className="relative group">
+          </div>
+          
+          <div className="col-span-12 lg:col-span-6">
+            <div className="space-y-8">
+              {/* Tournament Poster */}
+              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl max-w-md mx-auto">
                 <img 
-                  src={candidatePhoto} 
-                  alt="Jump - Candidate for U.S. Senate" 
-                  className="rounded-none shadow-professional w-full h-auto hover:shadow-elegant transition-all duration-700" 
+                  src={senatorsCupPoster} 
+                  alt="The Senator's Cup Madden Tournament Fundraiser" 
+                  className="w-full h-auto rounded-xl"
                 />
               </div>
-              
-              {/* Quote under image */}
-              <div className="accent-bar-blue bg-white p-6 shadow-lg border border-blue-100 rounded-lg">
-                <blockquote className="text-sm md:text-base text-gray-700 italic leading-relaxed pl-4">
-                  "{t('home.quote')}"
-                </blockquote>
-              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Fighting for Our Future - Professional Layout */}
-      <div className="relative py-16 bg-white">        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Header with beautiful frame */}
-          <div className="text-center mb-12">
-            <div className="inline-block relative">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-blue-600 mb-8 px-12 py-6 bg-white rounded-xl shadow-2xl border-4 border-yellow-500 relative z-10">
-                {t('home.fightingTitle')}
-              </h2>
-              <div className="absolute inset-0 bg-blue-500 rounded-xl transform rotate-1 -z-10"></div>
-            </div>
-          </div>
-
-          {/* Beautiful 3D Policy Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Card 1 - Housing */}
-            <Link href="/campaign" className="group">
-              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Lowering Cost of Living</h3>
-                </div>
-                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
-                  Making housing, healthcare, and education affordable for every family through bold policy action.
-                </p>
-                <div className="mt-8 flex justify-center items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  <span>Learn More</span>
-                </div>
-              </Card>
-            </Link>
-            
-            {/* Card 2 - Environment */}
-            <Link href="/campaign" className="group">
-              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Environmental Policy</h3>
-                </div>
-                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
-                  Protecting our planet while creating good-paying green jobs for the next generation.
-                </p>
-                <div className="mt-8 flex justify-center items-center text-yellow-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  <span>Learn More</span>
-                </div>
-              </Card>
-            </Link>
-            
-            {/* Card 3 - Equality */}
-            <Link href="/campaign" className="group">
-              <Card className="card-elevated p-8 h-full cursor-pointer rounded-lg overflow-hidden text-center">
-                <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Elimination of The Pink Tax</h3>
-                </div>
-                <p className="text-gray-600 text-lg leading-relaxed flex-grow">
-                  Ending gender-based pricing discrimination once and for all through federal legislation.
-                </p>
-                <div className="mt-8 flex justify-center items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                  <span>Learn More</span>
-                </div>
-              </Card>
-            </Link>
-          </div>
-
-          {/* Call to Action */}
-          <div className="text-center">
-            <Link href="/campaign" className="group inline-block">
-              <Button className="bg-black hover:bg-gray-800 text-white px-16 py-4 text-xl font-semibold rounded-none shadow-elegant transform hover:scale-105 transition-all duration-300">
-                <span>The Issues</span>
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      {/* Join the Movement - Final CTA */}
-      <div className="relative py-16 bg-blue-50">        
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="accent-bar-yellow bg-white p-8 rounded-xl shadow-2xl border-2 border-yellow-500 max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-black text-blue-600 mb-6">
-              Join the Movement
+      {/* Merchandise Section - Hidden for now */}
+      <section className="section-spacing-tight bg-gray-900 hidden">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center mb-16">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
+              Order Merch
             </h2>
-            
-            <p className="text-xl md:text-2xl text-gray-600 mb-12 font-normal leading-relaxed pl-4">
-              Together, we can build a future where every person has the opportunity to thrive.
+            <p className="text-body-large text-gray-300">
+              Show your support with official campaign merchandise
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSed0wqiVlDd5wSvYaq3TQ9iW2DsMZgLMko4ctt0SxrIQesMPA/viewform?usp=header" 
-                target="_blank" 
+          </div>
+          
+          <div className="col-span-12 grid md:grid-cols-3 gap-8">
+            {/* T-Shirts */}
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
+              <Shirt className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold text-white mb-4">T-Shirts</h3>
+              <p className="text-gray-300 mb-6 flex-grow">
+                High-quality campaign t-shirts in various sizes and colors
+              </p>
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
+                Shop T-Shirts
+              </Button>
+            </div>
+
+            {/* Buttons & Stickers */}
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
+              <ShoppingBag className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold text-white mb-4">Buttons & Stickers</h3>
+              <p className="text-gray-300 mb-6 flex-grow">
+                Campaign buttons and bumper stickers
+              </p>
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
+                Shop Accessories
+              </Button>
+            </div>
+
+            {/* Order a Yard Sign */}
+            <div className="bg-black border-4 border-blue-500 rounded-2xl p-8 shadow-2xl drop-shadow-2xl text-center flex flex-col h-full">
+              <SignpostBig className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-semibold text-white mb-4">Order a Yard Sign</h3>
+              <p className="text-gray-300 mb-6 flex-grow">
+                Show your support with an official campaign yard sign
+              </p>
+              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 w-full mt-auto">
+                Order Yard Sign
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Voting Resources Section */}
+      <section id="voting-resources" className="section-spacing-tight bg-yellow-400">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center mb-16">
+            <h2 className="text-headline text-4xl lg:text-5xl text-black mb-6">
+              Voting Resources
+            </h2>
+            <p className="text-body-large text-black">
+              Everything you need to register, vote, and make your voice heard in Illinois
+            </p>
+          </div>
+          
+          <div className="col-span-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <a 
+              href="https://ova.elections.il.gov/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-600 hover:bg-blue-700 transition-colors rounded-2xl p-8 text-center group"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <Users className="w-12 h-12 text-white mr-3" />
+                <ArrowUpRight className="w-6 h-6 text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                Illinois Online Voter Registration Application
+              </h3>
+              <p className="text-blue-100">
+                Register to vote or update your voter registration information online
+              </p>
+            </a>
+
+            <a 
+              href="https://chicagoelections.gov/voting" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-blue-900 hover:bg-blue-800 transition-colors rounded-2xl p-8 text-center group"
+            >
+              <div className="flex items-center justify-center mb-4">
+                <MapPin className="w-12 h-12 text-white mr-3" />
+                <ArrowUpRight className="w-6 h-6 text-white group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </div>
+              <h3 className="text-2xl font-semibold text-white mb-4">
+                Chicago How to Vote
+              </h3>
+              <p className="text-blue-100">
+                Find your polling place, voting dates, and instructions for Chicago elections
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="section-spacing-tight bg-white">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 mx-auto text-center space-y-8 max-w-4xl">
+            <h2 className="text-headline text-4xl lg:text-5xl text-black">
+              Stay Informed
+            </h2>
+            <p className="text-body-large text-gray-700">
+              Get weekly updates on campaign progress, policy positions, and upcoming events delivered to your inbox.
+            </p>
+            <div className="max-w-md mx-auto">
+              <a
+                href="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/viewform"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="group"
+                className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg font-semibold text-white rounded"
               >
-                <Button className="frame-blue-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
-                  <span>Sign Up for Updates</span>
-                </Button>
+                Sign Up for Updates
+              </a>
+              <p className="text-gray-600 text-sm mt-4">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="cta-section-advanced">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center">
+            <h2 className="text-headline text-4xl lg:text-5xl mb-6">
+              Be Part of the Movement
+            </h2>
+            <p className="text-body-large mb-8 max-w-2xl mx-auto">
+              Real change happens when communities organize together. Join thousands of Illinois residents fighting for progressive policies.
+            </p>
+            <div className="cta-buttons">
+              <Link href="/volunteer">
+                <span className="btn-primary-large">Volunteer Today</span>
+              </Link>
+              <a href="mailto:blue@jump2026.com">
+                <span className="btn-secondary-large">Contact Us</span>
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
-
