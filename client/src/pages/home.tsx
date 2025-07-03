@@ -44,6 +44,8 @@ export default function HomePage() {
                 </p>
               </div>
               
+
+
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/volunteer" className="group">
@@ -82,6 +84,8 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+
+
         </div>
       </div>
 
@@ -171,15 +175,20 @@ export default function HomePage() {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSed0wqiVlDd5wSvYaq3TQ9iW2DsMZgLMko4ctt0SxrIQesMPA/viewform?usp=header" 
+                href="https://secure.actblue.com/donate" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group"
               >
                 <Button className="frame-blue-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
-                  <span>Sign Up for Updates</span>
+                  <span>Donate Today</span>
                 </Button>
               </a>
+              <Link href="/volunteer" className="group">
+                <Button className="frame-yellow-3d text-white px-16 py-6 text-xl font-semibold rounded-lg transform hover:scale-105 transition-all duration-300">
+                  <span>Get Involved</span>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -187,5 +196,6 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 
