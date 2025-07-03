@@ -1,15 +1,12 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import { SiTiktok, SiLinkedin, SiYoutube, SiInstagram } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
-import SignupModal from "@/components/signup-modal";
 import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751061793394.png";
 
 export default function Footer() {
   const { t } = useLanguage();
-  const [showSignupModal, setShowSignupModal] = useState(false);
-  
+
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -97,12 +94,15 @@ export default function Footer() {
               </li>
             </ul>
             <div className="mt-4">
-              <Button 
-                onClick={() => setShowSignupModal(true)}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold rounded-none"
+              <a 
+                href="https://forms.gle/bYsyVqDZFKm7TVZ36" 
+                target="_blank" 
+                rel="noopener noreferrer"
               >
-                {t('footer.signUpUpdates')}
-              </Button>
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 text-sm font-semibold rounded-none">
+                  {t('footer.signUpUpdates')}
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -113,11 +113,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      
-      <SignupModal 
-        isOpen={showSignupModal} 
-        onClose={() => setShowSignupModal(false)} 
-      />
     </footer>
   );
 }
+
