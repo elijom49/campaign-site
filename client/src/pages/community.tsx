@@ -1,163 +1,215 @@
+import { useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { SiTiktok, SiLinkedin, SiYoutube } from "react-icons/si";
-import { Calendar, Megaphone, Newspaper } from "lucide-react";
+import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
+import { FaTiktok, FaLinkedin } from "react-icons/fa";
+import SignupModal from "@/components/signup-modal";
+import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
 
 export default function CommunityPage() {
+  const [showSignupModal, setShowSignupModal] = useState(false);
+
   return (
     <div className="bg-black text-white">
-      <div className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-8">Community</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Connect with our movement, stay updated on events, and show your support.
+      {/* Header Section */}
+      <section className="py-16">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center">
+            <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white mb-8">
+              Join Our
+              <br />
+              <span className="text-blue-600 font-bold">Community</span>
+            </h1>
+            <p className="text-body-large text-gray-300 max-w-3xl mx-auto">
+              Connect with Illinois residents building a grassroots movement for economic justice and progressive change.
             </p>
           </div>
+        </div>
+      </section>
 
-          {/* Follow Us Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-center mb-12">Follow Us!</h2>
-            <div className="flex justify-center space-x-8">
-              <a href="#" className="bg-pink-600 hover:bg-pink-700 rounded-xl p-6 text-center transition-colors">
-                <SiTiktok size={48} className="mx-auto mb-4" />
-                <div className="font-bold">TikTok</div>
-              </a>
-              <a href="#" className="bg-blue-600 hover:bg-blue-700 rounded-xl p-6 text-center transition-colors">
-                <SiLinkedin size={48} className="mx-auto mb-4" />
-                <div className="font-bold">LinkedIn</div>
-              </a>
-              <a href="#" className="bg-red-600 hover:bg-red-700 rounded-xl p-6 text-center transition-colors">
-                <SiYoutube size={48} className="mx-auto mb-4" />
-                <div className="font-bold">YouTube</div>
-              </a>
-            </div>
+      {/* Social Media Section */}
+      <section className="section-spacing-tight bg-blue-600">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center mb-16">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6">
+              Follow the Campaign
+            </h2>
+            <p className="text-body-large text-gray-300">
+              Stay connected with daily updates, behind-the-scenes content, and live events
+            </p>
           </div>
-
-          {/* Fundraising Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-center mb-12">Fundraising</h2>
-            <Card className="bg-gray-900 border-gray-800 p-8 text-white">
-              {/* Fundraising Flyer */}
-              <div className="text-center mb-8">
-                <img 
-                  src="https://images.unsplash.com/photo-1546519638-68e109498ffc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                  alt="The Senator's Cup Basketball Tournament Flyer" 
-                  className="rounded-xl shadow-lg mx-auto w-full max-w-md" 
-                />
+          
+          <div className="col-span-12 grid md:grid-cols-3 gap-8">
+            <a 
+              href="https://www.tiktok.com/@jumpforsenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <FaTiktok className="w-8 h-8 text-pink-400 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-white">TikTok</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
               </div>
+              <div className="text-blue-400 font-medium">@jumpforsenate</div>
+            </a>
+            
+            <a 
+              href="https://www.instagram.com/jumpforsenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  </svg>
+                </div>
+                <h3 className="text-subheadline text-xl font-semibold text-white">Instagram</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
+              </div>
+              <div className="text-blue-400 font-medium">@jumpforsenate</div>
+            </a>
+            
+            <a 
+              href="https://www.youtube.com/@JumpForSenate" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="policy-card-advanced bg-black border-gray-800 interactive-element group"
+            >
+              <div className="flex items-center mb-4">
+                <Youtube className="w-8 h-8 text-red-500 mr-3" />
+                <h3 className="text-subheadline text-xl font-semibold text-white">YouTube</h3>
+                <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
+              </div>
+              <div className="text-blue-400 font-medium">@JumpForSenate</div>
+            </a>
+          </div>
+        </div>
+      </section>
 
-              <div className="max-w-4xl mx-auto">
-                <h3 className="text-2xl font-bold mb-6 text-center">Join The Senator's Cup</h3>
-                <p className="text-lg text-gray-300 mb-6">
-                  Join The Senator's Cup, our first fundraiser for the campaign.
+      {/* Events Section */}
+      <section className="section-spacing-loose bg-black">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 lg:col-span-6 space-y-8">
+            <div className="space-y-6">
+              <h2 className="text-headline text-4xl lg:text-5xl text-white">
+                Upcoming Events
+              </h2>
+              <p className="text-body-large text-gray-300">
+                Join us at campaign events across Illinois to meet fellow supporters and learn more about our movement.
+              </p>
+            </div>
+            
+            <div className="space-y-6">
+              {/* Senator's Cup Event */}
+              <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    <Calendar className="w-6 h-6 text-blue-400" />
+                    <div>
+                      <div className="text-white font-semibold">The Senator's Cup Madden Tournament Fundraiser</div>
+                      <div className="text-gray-400 text-sm">8-Player Online Tournament</div>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">
+                  $100 entry, $300 prize. Events weekly. Join this skill-based competition supporting the Jump Shepherd for U.S. Senate campaign.
                 </p>
-                <p className="text-lg text-gray-300 mb-6">
-                  Think you can ball? Put it to the test. 8-player tournament, $100 entry, $300 prizes. Remaining proceeds go to the campaign. We're running events three times a week throughout this election cycle, and we'll be adding bonus brackets for bigger challenges for those who can't get enough of winning.
-                </p>
-                <p className="text-lg text-gray-300 mb-6">
-                  In addition, join our the Cup Discord. A place for men who are serious about being a person of influence in their community. Hang with the guys, talk politics, sports, gaming, cash, and business as you get direct-from-Jump updates on the campaign while participating in a community of men with power and confidence.
-                </p>
-                <p className="text-lg text-gray-300 mb-8">
-                  Brackets will begin soon. If you'd like to be on the staff team for The Senator's Cup, please let us know. There are remote and local positions available.
+              </div>
+              
+              {/* Event Calendar Section */}
+              <div className="bg-blue-900/20 border border-blue-800 p-8 rounded-2xl">
+                <h3 className="text-headline text-2xl text-white mb-4 text-center">Event Calendar</h3>
+                <p className="text-gray-300 mb-6 text-center">
+                  Stay updated with all upcoming campaign events and activities.
                 </p>
                 <div className="text-center">
-                  <Button className="bg-campaign-blue hover:bg-blue-800 text-white px-8 py-4 text-lg font-bold">
-                    Register for Tournament
-                  </Button>
+                  <p className="text-gray-300 mb-4">
+                    For the most up-to-date event information, please check our Google Calendar or contact our campaign office.
+                  </p>
+                  <div className="space-y-3">
+                    <Button className="bg-blue-600 hover:bg-blue-700 w-full" disabled>
+                      View Full Calendar
+                    </Button>
+                    <a href="mailto:blue@jump2026.com">
+                      <Button variant="outline" className="w-full border-gray-600 text-gray-300 hover:bg-gray-800">
+                        Contact for Events
+                      </Button>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </Card>
-          </div>
-
-          {/* Merch Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-center mb-12">Merch</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="bg-gray-900 border-gray-800 p-6 text-center text-white">
-                <img 
-                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                  alt="Jump Campaign T-Shirt" 
-                  className="rounded-lg mb-4 w-full h-64 object-cover" 
-                />
-                <h3 className="text-xl font-bold mb-2">Campaign T-Shirt</h3>
-                <p className="text-gray-300 mb-4">Show your support with our signature tee</p>
-                <Button className="bg-campaign-blue hover:bg-blue-800 text-white px-6 py-3 font-bold">
-                  $25.00
-                </Button>
-              </Card>
-
-              <Card className="bg-gray-900 border-gray-800 p-6 text-center text-white">
-                <img 
-                  src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                  alt="Jump Campaign Tote Bag" 
-                  className="rounded-lg mb-4 w-full h-64 object-cover" 
-                />
-                <h3 className="text-xl font-bold mb-2">Tote Bag</h3>
-                <p className="text-gray-300 mb-4">Eco-friendly and campaign-ready</p>
-                <Button className="bg-campaign-blue hover:bg-blue-800 text-white px-6 py-3 font-bold">
-                  $15.00
-                </Button>
-              </Card>
-
-              <Card className="bg-gray-900 border-gray-800 p-6 text-center text-white">
-                <img 
-                  src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-                  alt="Jump Campaign Stickers" 
-                  className="rounded-lg mb-4 w-full h-64 object-cover" 
-                />
-                <h3 className="text-xl font-bold mb-2">Sticker Pack</h3>
-                <p className="text-gray-300 mb-4">Spread the message everywhere</p>
-                <Button className="bg-campaign-blue hover:bg-blue-800 text-white px-6 py-3 font-bold">
-                  $10.00
-                </Button>
-              </Card>
             </div>
           </div>
-
-          {/* Campaign Updates Section */}
-          <div>
-            <h2 className="text-4xl font-bold text-center mb-12">Campaign Updates</h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Calendar */}
-              <Card className="bg-gradient-to-br from-blue-600 to-blue-700 p-8 text-center text-white border-0">
-                <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                  <Calendar className="w-8 h-8 text-blue-600" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Calendar</h3>
-                <p className="text-blue-100 mb-6">Stay updated on all upcoming campaign events, rallies, and community meetings.</p>
-                <Button className="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 font-bold">
-                  View Events
-                </Button>
-              </Card>
-
-              {/* Main Updates */}
-              <Card className="bg-gradient-to-br from-green-600 to-green-700 p-8 text-center text-white border-0">
-                <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                  <Megaphone className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Main</h3>
-                <p className="text-green-100 mb-6">Latest campaign announcements, policy updates, and major developments.</p>
-                <Button className="bg-white text-green-600 hover:bg-gray-100 px-6 py-3 font-bold">
-                  Read Updates
-                </Button>
-              </Card>
-
-              {/* Press */}
-              <Card className="bg-gradient-to-br from-purple-600 to-purple-700 p-8 text-center text-white border-0">
-                <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                  <Newspaper className="w-8 h-8 text-purple-600" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Press</h3>
-                <p className="text-purple-100 mb-6">Media coverage, press releases, and official campaign statements.</p>
-                <Button className="bg-white text-purple-600 hover:bg-gray-100 px-6 py-3 font-bold">
-                  Press Room
-                </Button>
-              </Card>
+          
+          <div className="col-span-12 lg:col-span-6">
+            <div className="space-y-8">
+              {/* Tournament Poster */}
+              <div className="bg-black border-4 border-blue-500 rounded-2xl p-4 shadow-2xl drop-shadow-2xl max-w-md mx-auto">
+                <img 
+                  src={senatorsCupPoster} 
+                  alt="The Senator's Cup Madden Tournament Fundraiser" 
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Newsletter Section */}
+      <section className="section-spacing-tight bg-white">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 mx-auto text-center space-y-8 max-w-4xl">
+            <h2 className="text-headline text-4xl lg:text-5xl text-black">
+              Stay Informed
+            </h2>
+            <p className="text-body-large text-gray-700">
+              Get weekly updates on campaign progress, policy positions, and upcoming events delivered to your inbox.
+            </p>
+            <div className="max-w-md mx-auto">
+              <a
+                href="https://forms.gle/bYsyVqDZFKm7TVZ36"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button 
+                  className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg font-semibold w-full"
+                >
+                  Sign Up for Updates
+                </Button>
+              </a>
+              <p className="text-gray-600 text-sm mt-4">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="cta-section-advanced">
+        <div className="content-grid-advanced">
+          <div className="col-span-12 text-center">
+            <h2 className="text-headline text-4xl lg:text-5xl mb-6">
+              Be Part of the Movement
+            </h2>
+            <p className="text-body-large mb-8 max-w-2xl mx-auto">
+              Real change happens when communities organize together. Join thousands of Illinois residents fighting for progressive policies.
+            </p>
+            <div className="cta-buttons">
+              <Link href="/volunteer">
+                <span className="btn-primary-large">Volunteer Today</span>
+              </Link>
+              <a href="mailto:blue@jump2026.com">
+                <span className="btn-secondary-large">Contact Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
