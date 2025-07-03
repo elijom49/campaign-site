@@ -1,8 +1,44 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Phone, MapPin, Calendar, Share2, Car, Wrench } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 export default function VolunteerPage() {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    helpType: "",
+    description: ""
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    toast({
+      title: "Thank you for volunteering!",
+      description: "We'll be in touch with you soon about volunteer opportunities.",
+    });
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      helpType: "",
+      description: ""
+    });
+  };
+
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
+  };
+
   return (
     <div className="bg-white">
       <div className="py-16">
@@ -71,35 +107,127 @@ export default function VolunteerPage() {
             </Card>
           </div>
 
-          {/* Replace Volunteer Form with Google Form Button */}
-          <div className="text-center mb-16">
-            <Button
-              as="a"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeYck9CXsbD_F5L2vmrRAAuFKnja57TuZ9o4slpfcIDfIrdng/viewform?usp=header"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-800 text-white px-8 py-4 text-lg font-bold inline-block"
-            >
-              Apply to Volunteer or Join Our Campaign Team
-            </Button>
-          </div>
+          {/* Volunteer Form */}
+          <Card className="bg-gray-50 p-8">
+            <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Get Started Today</h2>
+            <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <Label htmlFor="firstName" className="block text-sm font-bold text-gray-900 mb-2">
+                    First Name
+                  </Label>
+                  <Input
+                    id="firstName"
+                    type="text"
+                    value={formData.firstName}
+                    onChange={(e) => handleInputChange("firstName", e.target.value)}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="lastName" className="block text-sm font-bold text-gray-900 mb-2">
+                    Last Name
+                  </Label>
+                  <Input
+                    id="lastName"
+                    type="text"
+                    value={formData.lastName}
+                    onChange={(e) => handleInputChange("lastName", e.target.value)}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required
+                  />
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <Label htmlFor="email" className="block text-sm font-bold text-gray-900 mb-2">
+                    Email
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={(e) => handleInputChange("email", e.target.value)}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required
+                  />
+                </div>
+                <div>
+                  <Label htmlFor="phone" className="block text-sm font-bold text-gray-900 mb-2">
+                    Phone
+                  </Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    value={formData.phone}
+                    onChange={(e) => handleInputChange("phone", e.target.value)}
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="mb-6">
+                <Label htmlFor="helpType" className="block text-sm font-bold text-gray-900 mb-2">
+                  How would you like to help?
+                </Label>
+                <Select value={formData.helpType} onValueChange={(value) => handleInputChange("helpType", value)}>
+                  <SelectTrigger className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    <SelectValue placeholder="Select an option" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="phone-banking">Phone Banking</SelectItem>
+                    <SelectItem value="canvassing">Canvassing</SelectItem>
+                    <SelectItem value="event-support">Event Support</SelectItem>
+                    <SelectItem value="digital-organizing">Digital Organizing</SelectItem>
+                    <SelectItem value="voter-transportation">Voter Transportation</SelectItem>
+                    <SelectItem value="other">Other</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className="mb-8">
+                <Label htmlFor="description" className="block text-sm font-bold text-gray-900 mb-2">
+                  Tell us about yourself (optional)
+                </Label>
+                <Textarea
+                  id="description"
+                  rows={4}
+                  value={formData.description}
+                  onChange={(e) => handleInputChange("description", e.target.value)}
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  placeholder="Any special skills, availability, or questions?"
+                />
+              </div>
+
+              <div className="text-center">
+                <Button type="submit" className="bg-blue-600 hover:bg-blue-800 text-white px-8 py-4 text-lg font-bold">
+                  Join the Movement
+                </Button>
+              </div>
+            </form>
+          </Card>
 
           {/* Community Photos */}
           <div className="mt-16">
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-8">Our Volunteers in Action</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <img 
-                src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
                 alt="Volunteers at campaign event" 
                 className="rounded-xl shadow-lg w-full h-64 object-cover" 
               />
+              
               <img 
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
                 alt="Volunteers phone banking" 
                 className="rounded-xl shadow-lg w-full h-64 object-cover" 
               />
+              
               <img 
-                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400" 
+                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400" 
                 alt="Volunteers canvassing" 
                 className="rounded-xl shadow-lg w-full h-64 object-cover" 
               />
