@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Calendar, Users, MapPin, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
+import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
+import { FaTiktok, FaLinkedin } from "react-icons/fa";
+import SignupModal from "@/components/signup-modal";
 import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
 
 export default function CommunityPage() {
+  const [showSignupModal, setShowSignupModal] = useState(false);
+
   return (
     <div className="bg-black text-white">
       {/* Header Section */}
@@ -270,14 +274,12 @@ export default function CommunityPage() {
               Get weekly updates on campaign progress, policy positions, and upcoming events delivered to your inbox.
             </p>
             <div className="max-w-md mx-auto">
-              <a
-                href="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg font-semibold text-white rounded"
+              <Button 
+                onClick={() => setShowSignupModal(true)}
+                className="bg-blue-600 hover:bg-blue-700 px-8 py-3 text-lg font-semibold"
               >
                 Sign Up for Updates
-              </a>
+              </Button>
               <p className="text-gray-600 text-sm mt-4">
                 We respect your privacy. Unsubscribe at any time.
               </p>
@@ -307,6 +309,11 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+      
+      <SignupModal 
+        isOpen={showSignupModal} 
+        onClose={() => setShowSignupModal(false)} 
+      />
     </div>
   );
 }
