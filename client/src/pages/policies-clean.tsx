@@ -1,7 +1,7 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 import heroPhoto from "@assets/Jump Shepherd America_1751141710805.jpg";
-import { DollarSign, Heart, Home, TreePine, Users, Gavel, Briefcase, GraduationCap, Building2 } from "lucide-react";
+import { DollarSign, Heart, Home, TreePine, Users, Briefcase, BookOpen, Gavel, Building2 } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -42,96 +42,107 @@ export default function PoliciesPage() {
         <div className="max-w-4xl mx-auto px-6">
           <Accordion type="single" collapsible className="w-full space-y-6">
             <AccordionItem value="billionaires-bill" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Billionaire’s Bill
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <DollarSign className="w-8 h-8 text-blue-600" />
+                  Billionaire’s Bill
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                In the 1950s, the richest Americans paid a 92% tax on income over a certain amount. This encouraged the wealthiest Americans to reinvest their money into their businesses through raising wages, improving working conditions, and offering better benefits. This proposal calls for taxing income over $10 million to once again encourage reinvestment into working-class employee wages, working conditions, and healthcare.
+                In the 1950s, the richest Americans paid a 92% tax on income over a certain threshold. This encouraged them to reinvest in workers through higher wages, improved working conditions, and better benefits. This bill proposes a tax on income over $10 million to incentivize similar reinvestment in today’s workforce.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="pro-union-policies" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Pro Union Policies
+            <AccordionItem value="pro-union" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Briefcase className="w-8 h-8 text-blue-600" />
+                  Pro Union Policies
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                Policies include stronger union protections nationwide, codifying Illinois’s Worker’s Rights Amendment into federal law, and permanently ending “Right To Work” legislation.
+                Expand union protections nationwide, codify Illinois’s “Worker’s Rights Amendment” into federal law, and eliminate anti-union “Right to Work” laws once and for all.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="pink-tax" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Pink Tax
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Heart className="w-8 h-8 text-blue-600" />
+                  Pink Tax
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                End the Pink Tax nationwide—women will no longer have to pay a tax just for being a woman. That includes increased prices on razors and deodorant, but also on the hidden costs of pregnancy, childbirth, and more.
+                End the Pink Tax nationwide—eliminating unfair price differences on razors, deodorant, and the hidden costs of pregnancy, childbirth, and more.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="teachers-and-farmers-bill" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Teachers and Farmers Bill
+            <AccordionItem value="teachers-farmers" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <BookOpen className="w-8 h-8 text-blue-600" />
+                  Teachers and Farmers Bill
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                Sets minimum wage for farm workers and provides subsidies for small farmers to purchase land, tools, and materials. Also establishes minimum education requirements to become a teacher and raises the minimum teacher wage to twice the state’s median household income.
+                Establishes minimum wages for farm workers, provides subsidies for small farmers, raises teacher salaries to twice the state’s median household income, and sets stronger educational requirements to ensure quality and dignity in both professions.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="private-prison-purchase-plan" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Private Prison Purchase Plan (P4)
+            <AccordionItem value="private-prison" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Gavel className="w-8 h-8 text-blue-600" />
+                  Private Prison Purchase Plan (P4)
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                <ul className="list-disc ml-6">
-                  <li>Nationalize all prisons</li>
-                  <li>End private ownership of all prisons in America</li>
-                  <li>End the preschool-to-prison pipeline</li>
-                </ul>
+                - Nationalize all prisons<br />
+                - End private prison ownership<br />
+                - Dismantle the preschool-to-prison pipeline
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="captain-planet-climate-policy" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Captain Planet’s Climate Policy
+            <AccordionItem value="climate-policy" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <TreePine className="w-8 h-8 text-blue-600" />
+                  Captain Planet’s Climate Policy
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                In America and abroad, we are facing:
-                <ul className="list-disc ml-6 mt-2">
-                  <li>Environmental collapse</li>
-                  <li>Destruction of the atmosphere/ozone</li>
-                </ul>
-                <p className="mt-4">We are out of time. We must act to save the only home we know.</p>
+                America faces environmental collapse. This policy addresses atmospheric destruction and climate urgency. Bold action is needed now to preserve our only home.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="working-families" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Working Families
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Users className="w-8 h-8 text-blue-600" />
+                  Working Families
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                Congress has stripped Medicaid and SNAP benefits from up to 19 million underserved Americans—including the disabled, seniors, and children. We estimate that 60–90 thousand people may die each year because of one law. They didn’t cut services directly—they made the paperwork harder, the hoops higher, and the process longer, knowing that the people most in need would give up in frustration.
-                <br /><br />
-                We need working-class people to represent working families. I’m standing in the gap to be a conduit for the unheard.
+                Congress has stripped Medicaid and SNAP from up to 19 million underserved Americans—including seniors, the disabled, and children. Bureaucratic hurdles now prevent access to critical aid. I will fight back against this cruelty, represent working people, and ensure government works for us—not against us.
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="housing-for-all" className="bg-white rounded-lg shadow-none border-0">
-              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6">
-                Housing for All
+            <AccordionItem value="housing" className="bg-white rounded-lg shadow-none border-0">
+              <AccordionTrigger className="text-2xl font-bold text-black hover:no-underline py-6 px-6 [&[data-state=open]>svg]:text-blue-600">
+                <div className="flex items-center gap-4">
+                  <Home className="w-8 h-8 text-blue-600" />
+                  Housing for All
+                </div>
               </AccordionTrigger>
               <AccordionContent className="text-gray-700 text-lg px-6 pb-6">
-                Build affordable housing on a national scale that doesn’t look or feel like affordable housing. I'm in construction—I have a plan and I know how to execute it. We can build a house in a factory in 24 hours for $10k, deliver and assemble it in under a day. It’s time to end the housing crisis.
-                <br /><br />
-                My proposal, “The Americana,” is a 3-bedroom, 2-bathroom, two-story, 2000 sq ft climate-resilient house with regional variants (heat/cold/fire/flood/earthquake resistant).
-                <br /><br />
-                The real estate lobby is fighting this, but when we increase affordable housing and end Citizens United, it will unleash an entire generation of new taxpayers and raise national revenue.
+                My plan: mass-manufactured affordable homes built in 24 hours, assembled on-site, durable and regionally climate-ready. My flagship design, “The Americana,” is a 2,000 sq ft, 3 bed/2 bath modern home built for all climates. We must overcome lobbyist pressure and deliver dignified, scalable housing solutions for working families nationwide.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
       </div>
 
-      {/* Policies for Chicago Section */}
+      {/* New Timeline and Text Section */}
       <div className="bg-black py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -144,15 +155,20 @@ export default function PoliciesPage() {
                     <div className="absolute left-2 w-5 h-5 bg-blue-600 rounded-full border-4 border-black"></div>
                     <div className="ml-12">
                       <div className="bg-gray-800 p-4 rounded-lg">
-                        <p className="text-white text-lg">Education starts at birth. Serious upgrades and updates to schools in underserved communities from Pre-K to university.</p>
+                        <p className="text-white text-lg">
+                          Education starts at birth. Serious upgrades and updates to schools in underserved communities from Pre-K to university.
+                        </p>
                       </div>
                     </div>
                   </div>
+
                   <div className="relative flex items-start">
                     <div className="absolute left-2 w-5 h-5 bg-blue-600 rounded-full border-4 border-black"></div>
                     <div className="ml-12">
                       <div className="bg-gray-800 p-4 rounded-lg">
-                        <p className="text-white text-lg">Beautification projects—trash cans on every block, public park restoration, and youth-centered community centers that promote safer and friendlier neighborhoods.</p>
+                        <p className="text-white text-lg">
+                          Beautification projects. Trash cans on every block, public park restoration, and community centers with engaging activities all contribute to safer, friendlier neighborhoods.
+                        </p>
                       </div>
                     </div>
                   </div>
