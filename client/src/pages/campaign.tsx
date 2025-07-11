@@ -1,193 +1,194 @@
-import { useLanguage } from "@/hooks/use-language";
-import { Link } from "wouter";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import { ExternalLink, Calendar, Megaphone, Users, DollarSign, Camera, Share2 } from "lucide-react";
 
 export default function CampaignPage() {
-  const { t } = useLanguage();
 
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="content-grid-advanced py-16">
-        {/* Page Header */}
-        <div className="col-span-12 text-center mb-16 pt-8">
-          <h1 className="text-6xl font-bold text-yellow-400 mb-4">Policies</h1>
-          <p className="text-xl text-white max-w-3xl mx-auto">
-            Our comprehensive policy platform for creating positive change in Illinois
-          </p>
-        </div>
-
-        {/* Policy Platform Section */}
-        <div className="bg-gradient-to-br from-blue-600 to-blue-800 py-20">
-          <div className="max-w-7xl mx-auto px-8">
-            <h2 className="text-4xl font-bold text-white text-center mb-16">
-              Our Policy Platform
-            </h2>
+    <div className="bg-white text-black min-h-screen">
+      <div className="content-grid-advanced py-12">
+        {/* Header Section */}
+        <div className="col-span-12 mb-12 pt-4">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Left Side - Title Only */}
+            <div className="flex items-center justify-center h-full">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-yellow-400 leading-tight ml-24">How Can You Help?</h1>
+            </div>
             
-            {/* Top Row - Two boxes flanking candidate photo */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-              {/* Left Policy Box */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
-                <div className="text-blue-600 font-bold text-lg mb-2">→</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Environmental Policy</h3>
-                <p className="text-gray-600">
-                  Championing environmental policy and supporting farmers while protecting our natural resources for future generations.
-                </p>
-              </div>
-
-              {/* Center - Candidate Image */}
-              <div className="flex justify-center items-center">
-                <div className="relative">
-                  <img 
-                    src={candidatePhoto} 
-                    alt="Jump - Candidate for U.S. Senate" 
-                    className="w-56 h-72 object-cover object-center shadow-2xl rounded-lg" 
-                    style={{
-                      objectPosition: 'center 20%',
-                      filter: 'sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)'
-                    }}
-                  />
-                </div>
-              </div>
-
-              {/* Right Policy Box */}
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
-                <div className="text-blue-600 font-bold text-lg mb-2">→</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">The Billionaire's Bill</h3>
-                <p className="text-gray-600">
-                  The Billionaire's Bill, where billionaires pay their fair share. They pay at a 92% tax rate after their first $10 million. We kickin' Walmart outta here.
-                </p>
-              </div>
+            {/* Right Side - Text Content */}
+            <div className="flex flex-col justify-center space-y-6">
+              <p className="text-2xl text-black leading-relaxed">
+                Join our movement to bring real change to Illinois. Every contribution, 
+                every volunteer hour, and every voice matters in our fight for justice and equality.
+              </p>
+              <p className="text-xl text-gray-700">
+                Together, we can build a better future for all Illinoisans.
+              </p>
             </div>
-
-            {/* Bottom Row - Three boxes below */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
-                <div className="text-blue-600 font-bold text-lg mb-2">→</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Elimination of The Pink Tax</h3>
-                <p className="text-gray-600">
-                  The Pink Tax includes women's products--when women have to pay for things men don't have to pay for, it's unfair. So we're talking about tampons, pads, period products, pregnancy, and childbirth products. Those are gonna be tax-deductible. Women will not have to pay to be women.
+          </div>
+          
+          {/* ACLU-Inspired Action Section - Moved directly under intro */}
+          <div className="aclu-action-section mt-12">
+            <h2 className="aclu-page-header text-gray-900">Actions Needed Now</h2>
+            
+            <div className="aclu-action-grid">
+              {/* Volunteering Action Card */}
+              <div className="aclu-action-card">
+                <div className="flex items-center mb-4">
+                  <Users className="w-12 h-12 text-yellow-400 mr-4" />
+                  <h3>Join Our Volunteer Team</h3>
+                </div>
+                <p className="text-gray-300 mb-6">
+                  Be the change you want to see. Join our dedicated team of volunteers 
+                  working to transform Illinois communities through grassroots organizing.
                 </p>
+                <button 
+                  className="aclu-action-button"
+                  onClick={() => window.location.href = '/volunteer'}
+                >
+                  Get Involved
+                </button>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
-                <div className="text-blue-600 font-bold text-lg mb-2">→</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Healthcare Policy</h3>
-                <p className="text-gray-600">
-                  Ensuring affordable, accessible healthcare for all Illinoisans with comprehensive coverage and reduced costs.
+              {/* Donations Action Card */}
+              <div className="aclu-action-card">
+                <div className="flex items-center mb-4">
+                  <DollarSign className="w-12 h-12 text-yellow-400 mr-4" />
+                  <h3>Support the Campaign</h3>
+                </div>
+                <p className="text-gray-300 mb-6">
+                  Every contribution helps us reach more voters and build our movement. 
+                  Your donation directly supports organizing, outreach, and advocacy efforts.
                 </p>
-              </div>
-
-              <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
-                <div className="text-blue-600 font-bold text-lg mb-2">→</div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Education Funding</h3>
-                <p className="text-gray-600">
-                  Investing in our children's future through proper school funding and educational opportunities for all communities.
-                </p>
+                <button 
+                  className="aclu-action-button"
+                  onClick={() => window.open('https://secure.actblue.com/donate/jumpforsenate', '_blank')}
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* How Can You Help Section */}
-      <div className="bg-black py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              How Can You Help?
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Join our movement to bring real change to Illinois. Every contribution and every voice matters.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Volunteering */}
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-              </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteering</h3>
-              <p className="text-gray-600 mb-6">
-                Join our team of dedicated volunteers making a difference in communities across Illinois.
+
+
+        {/* Donations Section */}
+        <div className="col-span-12">
+          {/* Donations Section */}
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl font-bold text-blue-600 mb-4">Donations</h2>
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                Your financial support helps us reach more voters, organize more events, 
+                and amplify our message across Illinois.
               </p>
-              <button 
-                onClick={() => window.location.href = '/volunteer'}
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors cursor-pointer"
-              >
-                Get Involved
-              </button>
             </div>
-
-            {/* Donations */}
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-              <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                </svg>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* ActBlue Donation */}
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+                <div className="mb-6">
+                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <DollarSign className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-3xl font-semibold text-gray-900 mb-4">Donate Now</h3>
+                  <p className="text-gray-600 mb-6">
+                    Make a secure donation through ActBlue and join thousands of supporters 
+                    investing in Illinois' future.
+                  </p>
+                </div>
+                <a 
+                  href="https://secure.actblue.com/donate/jumpforsenate" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center bg-yellow-400 text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-300 transition-colors"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Donate on ActBlue
+                </a>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Donations</h3>
-              <p className="text-gray-600 mb-6">
-                Support our grassroots movement with a contribution that helps us reach more voters.
-              </p>
-              <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                Donate Now
-              </a>
-            </div>
 
-            {/* Press */}
-            <div className="bg-white rounded-xl p-8 text-center shadow-lg">
-              <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
-                </svg>
+              {/* Fundraising */}
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+                <div className="mb-6">
+                  <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-10 h-10 text-white" />
+                  </div>
+                  <h3 className="text-3xl font-semibold text-gray-900 mb-4">Fundraise</h3>
+                  <p className="text-gray-600 mb-6">
+                    Host a fundraising event in your community or start your own 
+                    peer-to-peer fundraising campaign.
+                  </p>
+                </div>
+                <a 
+                  href="mailto:blue@jump2026.com" 
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-colors"
+                >
+                  Contact Us
+                </a>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Press</h3>
-              <p className="text-gray-600 mb-6">
-                Media inquiries and press-related questions for our campaign.
-              </p>
-              <a href="mailto:blue@jump2026.com" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                Contact Us
-              </a>
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Endorsements Section */}
-      <div className="bg-gray-900 py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Endorsements
-            </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Organizations and leaders who believe in our movement for change
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Placeholder circles for endorsement logos */}
-            {Array.from({ length: 8 }, (_, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gray-800 border-4 border-blue-500 flex items-center justify-center mb-4">
-                  <span className="text-white text-center text-sm font-medium px-2">
-                    Coming Soon!
-                  </span>
+          <div className="py-12"></div>
+
+          {/* Press Section */}
+          <div className="bg-white border-4 border-blue-500 rounded-3xl p-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl font-bold text-blue-600 mb-4">Press</h2>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Social Media */}
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+                <Share2 className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Social Media</h3>
+                <p className="text-gray-600 mb-6">
+                  Share our content, engage with supporters, and help us reach new audiences online.
+                </p>
+                <div className="space-y-3">
+                  <a href="https://www.tiktok.com/@jumpforsenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                    <ExternalLink className="w-4 h-4 inline mr-2" />
+                    Follow on TikTok
+                  </a>
+                  <a href="https://www.instagram.com/jumpforsenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                    <ExternalLink className="w-4 h-4 inline mr-2" />
+                    Follow on Instagram
+                  </a>
+                  <a href="https://www.youtube.com/@JumpForSenate" target="_blank" className="block text-blue-400 hover:text-yellow-400 transition-colors">
+                    <ExternalLink className="w-4 h-4 inline mr-2" />
+                    Subscribe on YouTube
+                  </a>
                 </div>
               </div>
-            ))}
+
+              {/* In the News */}
+              <div className="bg-white border-2 border-blue-400 rounded-2xl p-8 text-center hover:border-yellow-400 transition-colors">
+                <Megaphone className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">In the News</h3>
+                <p className="text-gray-600 mb-6">
+                  Latest news coverage and press mentions about our campaign.
+                </p>
+                <a 
+                  href="mailto:blue@jump2026.com" 
+                  className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-bold transition-colors"
+                >
+                  Contact Press Team
+                </a>
+              </div>
+            </div>
           </div>
+          
+          {/* Space under press section */}
+          <div className="py-12"></div>
         </div>
       </div>
 
       {/* Thank You Banner */}
-      <div className="bg-yellow-500 py-8">
+      <div className="bg-green-600 py-8">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-black">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">
               Thank you to all of our donors, contributors, supporters, and volunteers!
             </h2>
           </div>
