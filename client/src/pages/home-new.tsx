@@ -29,7 +29,16 @@ export default function HomePage() {
                 <span className="btn-primary-large">{t('home.getInvolved')}</span>
               </Link>
               <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer">
-                <span className="btn-secondary-large" style={{color: '#000', borderColor: '#000'}}>{t('home.donate')}</span>
+                <span
+                  className="btn-secondary-large"
+                  style={{
+                    backgroundColor: '#2479ff',
+                    color: '#fff',
+                    borderColor: '#2479ff'
+                  }}
+                >
+                  {t('home.donate')}
+                </span>
               </a>
             </div>
           </div>
@@ -133,10 +142,6 @@ export default function HomePage() {
         </div>
       </section>
 
-
-
-
-
       {/* Call to Action Section */}
       <section className="cta-section-advanced">
         <div className="content-grid-advanced">
@@ -169,3 +174,4 @@ export default function HomePage() {
     </div>
   );
 }
+
