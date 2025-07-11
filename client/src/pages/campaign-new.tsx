@@ -22,7 +22,7 @@ export default function CampaignPage() {
             <h2 className="text-4xl font-bold text-white text-center mb-16">
               Our Policy Platform
             </h2>
-
+            
             {/* Top Row - Two boxes flanking candidate photo */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
               {/* Left Policy Box */}
@@ -89,18 +89,18 @@ export default function CampaignPage() {
         </div>
       </div>
 
-      {/* ✅ Rebuilt Mobile-Friendly How Can You Help Section */}
-      <div className="bg-black py-16 px-4">
-        <div className="max-w-6xl mx-auto">
+      {/* How Can You Help Section */}
+      <div className="bg-black py-16">
+        <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               How Can You Help?
             </h2>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Join our movement to bring real change to Illinois. Every contribution and every voice matters.
             </p>
           </div>
-
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Volunteering */}
             <div className="bg-white rounded-xl p-8 text-center shadow-lg">
@@ -115,7 +115,7 @@ export default function CampaignPage() {
               </p>
               <button 
                 onClick={() => window.location.href = '/volunteer'}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors cursor-pointer"
               >
                 Get Involved
               </button>
@@ -132,12 +132,7 @@ export default function CampaignPage() {
               <p className="text-gray-600 mb-6">
                 Support our grassroots movement with a contribution that helps us reach more voters.
               </p>
-              <a 
-                href="https://secure.actblue.com/donate/jumpforsenate" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block"
-              >
+              <a href="https://secure.actblue.com/donate/jumpforsenate" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                 Donate Now
               </a>
             </div>
@@ -153,13 +148,37 @@ export default function CampaignPage() {
               <p className="text-gray-600 mb-6">
                 Media inquiries and press-related questions for our campaign.
               </p>
-              <a 
-                href="mailto:blue@jump2026.com"
-                className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block"
-              >
+              <a href="mailto:blue@jump2026.com" className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                 Contact Us
               </a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Endorsements Section */}
+      <div className="bg-gray-900 py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+              Endorsements
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Organizations and leaders who believe in our movement for change
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {/* Placeholder circles for endorsement logos */}
+            {Array.from({ length: 8 }, (_, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gray-800 border-4 border-blue-500 flex items-center justify-center mb-4">
+                  <span className="text-white text-center text-sm font-medium px-2">
+                    Coming Soon!
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
