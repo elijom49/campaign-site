@@ -111,6 +111,10 @@ export async function createAdminUser(email: string, password: string, role: 'ow
     console.log(`Created admin user: ${admin.email} (${admin.role})`);
     return admin;
   } catch (error) {
-    console.error('Error creating admin user:
+    console.error('Error creating admin user:', error);
+    throw error;
+  }
+}
+
 
 
