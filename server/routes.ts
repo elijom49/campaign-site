@@ -36,6 +36,17 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // NEW ROUTE: Seed database on demand (protected)
+  app.post("/api/admin/seed", requireAdminAuth, async (req: AdminRequest, res) => {
+    try {
+      await seedDatabase();
+      res.json({ message: "Database seeded successfully" });
+    } catch (error) {
+      console.error("Seed database error:", error);
+      res.status(500).json({ message: "Failed to seed database" });
+    }
+  });
+
   // Admin authentication routes
   app.post("/api/admin/login", async (req, res) => {
     try {
@@ -283,3 +294,4 @@ export async function registerRoutes(app: Express): Promise<Server> {
   const httpServer = createServer(app);
   return httpServer;
 }
+
