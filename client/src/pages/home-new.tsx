@@ -52,7 +52,7 @@ export default function HomePage() {
               />
               <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
                 <blockquote className="text-sm font-medium italic">
-                  "{t('home.quote')}"
+                  "It’s not Red vs. Blue, it’s Oligarchs vs. You 🫵🏽"
                 </blockquote>
               </div>
             </div>
@@ -174,4 +174,3 @@ export default function HomePage() {
     </div>
   );
 }
-
