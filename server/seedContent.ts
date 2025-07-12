@@ -1,4 +1,6 @@
-import { storage } from './storage';
+import { db } from "./db";
+import { eq } from "drizzle-orm";
+import { content } from "@shared/schema";
 import { createInitialAdmin } from './adminAuth';
 
 // Sample content that admins can edit
@@ -79,18 +81,24 @@ const initialContent = [
 
 export async function seedDatabase() {
   try {
-    console.log('Seeding database with initial content...');
-    
-    // Create initial content
-    for (const content of initialContent) {
+    console.log('Seeding database with initial content (upserting)...');
+
+    for (const item of initialContent) {
       try {
-        await storage.createContent(content);
-        console.log(`Created content: ${content.contentKey}`);
+        await db.insert(content).values(item).onConflictDoUpdate({
+          target: [content.contentKey],
+          set: {
+            contentValue: item.contentValue,
+            contentType: item.contentType,
+            section: item.section
+          }
+        });
+        console.log(`Upserted content: ${item.contentKey}`);
       } catch (error) {
-        console.log(`Content ${content.contentKey} already exists or failed to create`);
+        console.error(`Failed to upsert content: ${item.contentKey}`, error);
       }
     }
-    
+
     console.log('Database seeding completed!');
   } catch (error) {
     console.error('Error seeding database:', error);
@@ -103,8 +111,6 @@ export async function createAdminUser(email: string, password: string, role: 'ow
     console.log(`Created admin user: ${admin.email} (${admin.role})`);
     return admin;
   } catch (error) {
-    console.error('Error creating admin user:', error);
-    throw error;
-  }
-}
+    console.error('Error creating admin user:
+
 
