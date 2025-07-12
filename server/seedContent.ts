@@ -1,6 +1,6 @@
 import { db } from "./db";
 import { eq } from "drizzle-orm";
-import { content } from "@shared/schema";
+import { editableContent } from "@shared/schema";
 import { createInitialAdmin } from './adminAuth';
 
 // Sample content that admins can edit
@@ -85,8 +85,8 @@ export async function seedDatabase() {
 
     for (const item of initialContent) {
       try {
-        await db.insert(content).values(item).onConflictDoUpdate({
-          target: [content.contentKey],
+        await db.insert(editableContent).values(item).onConflictDoUpdate({
+          target: [editableContent.contentKey],
           set: {
             contentValue: item.contentValue,
             contentType: item.contentType,
@@ -115,6 +115,3 @@ export async function createAdminUser(email: string, password: string, role: 'ow
     throw error;
   }
 }
-
-
-
