@@ -11,7 +11,7 @@ const initialContent = [
   },
   {
     contentKey: 'homepage_tagline',
-    contentValue: 'Power to the People, Not the Powerful',
+    contentValue: 'It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽 ',
     contentType: 'text',
     section: 'homepage'
   },
