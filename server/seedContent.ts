@@ -11,7 +11,7 @@ const initialContent = [
   },
   {
     contentKey: 'homepage_tagline',
-    contentValue: 'It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽 ',
+    contentValue: "It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽",
     contentType: 'text',
     section: 'homepage'
   },
@@ -107,3 +107,4 @@ export async function createAdminUser(email: string, password: string, role: 'ow
     throw error;
   }
 }
+
