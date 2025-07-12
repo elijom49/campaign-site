@@ -22,7 +22,7 @@ const translations = {
     
     // Homepage
     'home.title': 'Your Future U.S. Senator Lives Among the People',
-    'home.tagline': "Power to the People, Not the Powerful",
+    'home.tagline': "It’s not Red vs. Blue, it’s Oligarchs vs. You 🫵🏽",
     'home.getInvolved': 'Get Involved',
     'home.donate': 'Donate',
     'home.quote': "I'm running for U.S. Senate because I believe the government should promote equality for everyone.",
