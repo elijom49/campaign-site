@@ -1,15 +1,33 @@
-import { Pool, neonConfig } from '@neondatabase/serverless';
-import { drizzle } from 'drizzle-orm/neon-serverless';
-import ws from "ws";
-import * as schema from "@shared/schema";
+import { eq } from "drizzle-orm";
+import { db } from "./your-db-file"; // adjust import path if needed
+import { content } from "@shared/schema"; // assuming this is your Drizzle table
 
-neonConfig.webSocketConstructor = ws;
+export async function seedDatabase() {
+  try {
+    console.log('Seeding database with initial content (upserting)...');
 
-if (!process.env.DATABASE_URL) {
-  throw new Error(
-    "DATABASE_URL must be set. Did you forget to provision a database?",
-  );
+    for (const item of initialContent) {
+      try {
+        await db
+          .insert(content)
+          .values(item)
+          .onConflictDoUpdate({
+            target: [content.contentKey],
+            set: {
+              contentValue: item.contentValue,
+              contentType: item.contentType,
+              section: item.section
+            }
+          });
+
+        console.log(`Upserted content: ${item.contentKey}`);
+      } catch (error) {
+        console.error(`Failed to upsert content: ${item.contentKey}`, error);
+      }
+    }
+
+    console.log('Database seeding completed!');
+  } catch (error) {
+    console.error('Error seeding database:', error);
+  }
 }
-
-export const pool = new Pool({ connectionString: process.env.DATABASE_URL });
-export const db = drizzle({ client: pool, schema });
