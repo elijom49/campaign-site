@@ -4,7 +4,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
 import LanguageToggle from "@/components/language-toggle";
-import jumpLogo from "@assets/Jump For Senate White Chicago Trans _1751143067393.png";
+import jumpLogo from "@assets/IMG_4083.jpg"; // ✅ New logo
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -12,12 +12,12 @@ export default function Navigation() {
   const { t } = useLanguage();
 
   const navItems = [
-    { href: "/", label: t('nav.home') },
-    { href: "/about", label: t('nav.about') },
-    { href: "/policies", label: t('nav.policies') },
-    { href: "/campaign", label: t('nav.campaign') },
-    { href: "/community", label: t('nav.community') },
-    { href: "/volunteer", label: t('nav.volunteer') },
+    { href: "/", label: t("nav.home") },
+    { href: "/about", label: t("nav.about") },
+    { href: "/policies", label: t("nav.policies") },
+    { href: "/campaign", label: t("nav.campaign") },
+    { href: "/community", label: t("nav.community") },
+    { href: "/volunteer", label: t("nav.volunteer") },
   ];
 
   const isActive = (href: string) => {
@@ -26,8 +26,10 @@ export default function Navigation() {
     return false;
   };
 
-  // Only show language toggle on specific pages
-  const showLanguageToggle = location === "/" || location.startsWith("/about") || location.startsWith("/policies");
+  const showLanguageToggle =
+    location === "/" ||
+    location.startsWith("/about") ||
+    location.startsWith("/policies");
 
   return (
     <nav className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 transition-all duration-300">
@@ -35,15 +37,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
             <Link href="/">
-              <img 
-                src={jumpLogo} 
-                alt="Jump for Senate - Chicago, Illinois" 
+              <img
+                src={jumpLogo}
+                alt="Jump for Senate - Chicago, Illinois"
                 className="h-16 w-auto"
                 style={{
-                  filter: 'none',
-                  boxShadow: 'none',
-                  border: 'none',
-                  background: 'transparent'
+                  filter: "none",
+                  boxShadow: "none",
+                  border: "none",
+                  background: "transparent",
                 }}
               />
             </Link>
@@ -67,9 +69,9 @@ export default function Navigation() {
               ))}
             </div>
             {showLanguageToggle && <LanguageToggle />}
-            <a 
-              href="https://secure.actblue.com/donate/jumpforsenate" 
-              target="_blank" 
+            <a
+              href="https://secure.actblue.com/donate/jumpforsenate"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold rounded-none ml-4">
@@ -115,9 +117,9 @@ export default function Navigation() {
               </div>
             )}
             <div className="px-3 py-2">
-              <a 
-                href="https://secure.actblue.com/donate/jumpforsenate" 
-                target="_blank" 
+              <a
+                href="https://secure.actblue.com/donate/jumpforsenate"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="block"
               >
