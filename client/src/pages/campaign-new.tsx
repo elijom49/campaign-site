@@ -1,5 +1,4 @@
 import { useLanguage } from "@/hooks/use-language";
-import { Link } from "wouter";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 
 export default function CampaignPage() {
@@ -7,24 +6,23 @@ export default function CampaignPage() {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Header */}
-      <div className="py-16 px-4 sm:px-6 lg:px-8 text-center">
+      {/* Page Header */}
+      <div className="px-4 py-16 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-yellow-400 mb-4">Policies</h1>
         <p className="text-lg sm:text-xl max-w-3xl mx-auto">
           Our comprehensive policy platform for creating positive change in Illinois
         </p>
       </div>
 
-      {/* Policy Platform Section */}
-      <div className="bg-gradient-to-br from-blue-600 to-blue-800 py-20 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-16">
+      {/* Policy Platform */}
+      <div className="bg-gradient-to-br from-blue-600 to-blue-800 py-20 px-4">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12">
           Our Policy Platform
         </h2>
 
-        {/* Top Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center mb-12">
+        <div className="flex flex-col lg:flex-row gap-8 items-center justify-center mb-12">
           {/* Left Box */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400 w-full">
+          <div className="bg-white w-full lg:w-1/3 rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
             <div className="text-blue-600 font-bold text-lg mb-2">→</div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">Environmental Policy</h3>
             <p className="text-gray-600">
@@ -32,22 +30,21 @@ export default function CampaignPage() {
             </p>
           </div>
 
-          {/* Candidate Image */}
-          <div className="flex justify-center">
+          {/* Center Image */}
+          <div className="w-48 h-64 lg:w-56 lg:h-72">
             <img
               src={candidatePhoto}
               alt="Jump - Candidate for U.S. Senate"
-              className="w-48 sm:w-56 h-64 sm:h-72 object-cover object-center shadow-2xl rounded-lg"
+              className="w-full h-full object-cover shadow-2xl rounded-lg"
               style={{
                 objectPosition: "center 20%",
-                filter:
-                  "sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)",
+                filter: "sepia(100%) saturate(200%) hue-rotate(200deg) brightness(0.9)",
               }}
             />
           </div>
 
           {/* Right Box */}
-          <div className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400 w-full">
+          <div className="bg-white w-full lg:w-1/3 rounded-xl p-6 shadow-lg border-l-4 border-yellow-400">
             <div className="text-blue-600 font-bold text-lg mb-2">→</div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">The Billionaire's Bill</h3>
             <p className="text-gray-600">
@@ -74,7 +71,7 @@ export default function CampaignPage() {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-xl p-6 shadow-lg border-l-4 border-yellow-400 w-full"
+              className="bg-white w-full rounded-xl p-6 shadow-lg border-l-4 border-yellow-400"
             >
               <div className="text-blue-600 font-bold text-lg mb-2">→</div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">{item.title}</h3>
@@ -84,12 +81,10 @@ export default function CampaignPage() {
         </div>
       </div>
 
-      {/* How Can You Help Section */}
-      <div className="bg-black py-16 px-4 sm:px-6 lg:px-8">
+      {/* How Can You Help */}
+      <div className="bg-black py-16 px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
-            How Can You Help?
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">How Can You Help?</h2>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
             Join our movement to bring real change to Illinois. Every contribution and every voice matters.
           </p>
@@ -100,7 +95,7 @@ export default function CampaignPage() {
           <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857..." />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteering</h3>
@@ -108,7 +103,7 @@ export default function CampaignPage() {
               Join our team of dedicated volunteers making a difference in communities across Illinois.
             </p>
             <button
-              onClick={() => window.location.href = "/volunteer"}
+              onClick={() => (window.location.href = "/volunteer")}
               className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
             >
               Get Involved
@@ -119,7 +114,7 @@ export default function CampaignPage() {
           <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2..." />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Donations</h3>
@@ -140,7 +135,7 @@ export default function CampaignPage() {
           <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0..." />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Press</h3>
@@ -157,27 +152,8 @@ export default function CampaignPage() {
         </div>
       </div>
 
-      {/* Endorsements Section */}
-      <div className="bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">Endorsements</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-            Organizations and leaders who believe in our movement for change
-          </p>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
-          {Array.from({ length: 8 }, (_, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-full bg-gray-800 border-4 border-blue-500 flex items-center justify-center mb-4">
-                <span className="text-white text-xs text-center px-2">Coming Soon!</span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Thank You Banner */}
-      <div className="bg-yellow-500 py-8 px-4 sm:px-6 lg:px-8 text-center">
+      {/* Thank You */}
+      <div className="bg-yellow-500 py-8 px-4 text-center">
         <h2 className="text-2xl sm:text-3xl font-bold text-black">
           Thank you to all of our donors, contributors, supporters, and volunteers!
         </h2>
@@ -185,6 +161,3 @@ export default function CampaignPage() {
     </div>
   );
 }
-
-
-
