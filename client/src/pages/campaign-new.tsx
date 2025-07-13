@@ -57,7 +57,7 @@ export default function CampaignPage() {
         </div>
 
         {/* Bottom Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
               title: "Elimination of The Pink Tax",
