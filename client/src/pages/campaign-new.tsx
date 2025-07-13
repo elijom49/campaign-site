@@ -90,12 +90,12 @@ export default function CampaignPage() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-3">
+        <div className="flex flex-col gap-8 md:flex-row md:justify-between">
           {/* Volunteering */}
-          <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
+          <div className="bg-white flex-1 rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857..." />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857" />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Volunteering</h3>
@@ -111,10 +111,10 @@ export default function CampaignPage() {
           </div>
 
           {/* Donations */}
-          <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
+          <div className="bg-white flex-1 rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2..." />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2" />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Donations</h3>
@@ -132,10 +132,10 @@ export default function CampaignPage() {
           </div>
 
           {/* Press */}
-          <div className="bg-white w-full rounded-xl p-8 text-center shadow-lg">
+          <div className="bg-white flex-1 rounded-xl p-8 text-center shadow-lg">
             <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
               <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0..." />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0" />
               </svg>
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Press</h3>
@@ -161,3 +161,4 @@ export default function CampaignPage() {
     </div>
   );
 }
+
