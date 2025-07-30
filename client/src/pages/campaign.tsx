@@ -155,11 +155,11 @@ export default function CampaignPage() {
                 />
               </div>
 
-              {/* Flyer image - no white box */}
+              {/* Flyer image - no white box or shadow */}
               <img
                 src={flyerImage}
                 alt="The Senator's Cup Flyer"
-                className="flex-1 rounded-xl shadow-md object-contain max-h-[360px]"
+                className="flex-1 rounded-xl object-contain max-h-[360px]"
               />
             </div>
 
@@ -265,6 +265,3 @@ export default function CampaignPage() {
     </div>
   );
 }
-
-
-
