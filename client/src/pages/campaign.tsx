@@ -141,55 +141,58 @@ export default function CampaignPage() {
               </p>
             </div>
 
-            {/* Video embed */}
-            <div className="aspect-w-9 aspect-h-16 max-w-md mx-auto mb-8">
-              <iframe
-                src="https://www.youtube.com/embed/shorts/HUH_y7UDAMk?si=nIMOyDbsu6N4BUdR"
-                title="The Senator's Cup Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full rounded-lg shadow-lg"
-              />
-            </div>
+            {/* Video and Flyer Side-by-Side */}
+            <div className="flex flex-col md:flex-row md:items-start md:justify-center gap-10 max-w-5xl mx-auto">
+              {/* Video */}
+              <div className="flex-1 aspect-w-9 aspect-h-16 rounded-lg shadow-lg overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/HUH_y7UDAMk"
+                  title="The Senator's Cup Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
 
-            {/* Flyer and Buttons */}
-            <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-10 max-w-4xl mx-auto">
               {/* Flyer image */}
               <img
                 src={flyerImage}
                 alt="The Senator's Cup Flyer"
-                className="max-w-xs rounded-xl shadow-md object-contain"
+                className="flex-1 rounded-xl shadow-md object-contain max-h-[360px]"
               />
+            </div>
 
-              {/* Buttons and links */}
-              <div className="flex flex-col space-y-6">
-                <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSeiepqjERqCgBrYhsZKawbjEZWECToNAgsxPqEP__u-UqbkyA/viewform?pli=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-lg rounded-xl px-8 py-4 text-center shadow-md transition-colors"
-                >
-                  Register Here
-                </a>
+            {/* Buttons side-by-side */}
+            <div className="flex justify-center gap-6 mt-8 flex-wrap max-w-md mx-auto">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeiepqjERqCgBrYhsZKawbjEZWECToNAgsxPqEP__u-UqbkyA/viewform?pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold text-lg rounded-xl px-8 py-4 text-center shadow-md transition-colors"
+              >
+                Register Here
+              </a>
 
-                <a
-                  href="https://discord.com/invite/fhWgytcNVg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-xl px-8 py-4 text-center shadow-md transition-colors"
-                >
-                  Join The Senator's Cup Discord Server!
-                </a>
+              <a
+                href="https://discord.com/invite/fhWgytcNVg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold text-lg rounded-xl px-8 py-4 text-center shadow-md transition-colors"
+              >
+                Join The Senator's Cup Discord Server!
+              </a>
+            </div>
 
-                <a
-                  href="https://docs.google.com/document/d/1yTfKDPhoPCdNliP-4DPByo_L3KUPCJtSPCHkVg6ceuw/edit?tab=t.0#heading=h.4h0dyumtx284"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-gray-600 hover:text-yellow-400 underline"
-                >
-                  Terms and Conditions
-                </a>
-              </div>
+            {/* Terms and Conditions link below buttons */}
+            <div className="text-center mt-4">
+              <a
+                href="https://docs.google.com/document/d/1yTfKDPhoPCdNliP-4DPByo_L3KUPCJtSPCHkVg6ceuw/edit?tab=t.0#heading=h.4h0dyumtx284"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-gray-700 hover:text-yellow-400 underline"
+              >
+                Terms and Conditions
+              </a>
             </div>
           </div>
 
@@ -261,4 +264,5 @@ export default function CampaignPage() {
     </div>
   );
 }
+
 
