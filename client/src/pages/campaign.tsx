@@ -144,17 +144,18 @@ export default function CampaignPage() {
             {/* Video and Flyer Side-by-Side */}
             <div className="flex flex-col md:flex-row md:items-start md:justify-center gap-10 max-w-5xl mx-auto">
               {/* Video */}
-              <div className="flex-1 aspect-w-9 aspect-h-16 rounded-lg shadow-lg overflow-hidden">
+              <div className="flex-1 rounded-lg shadow-lg overflow-hidden" style={{ aspectRatio: '9 / 16', maxHeight: '360px' }}>
                 <iframe
                   src="https://www.youtube.com/embed/HUH_y7UDAMk"
                   title="The Senator's Cup Video"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="w-full h-full"
+                  style={{ border: 'none' }}
                 />
               </div>
 
-              {/* Flyer image */}
+              {/* Flyer image - no white box */}
               <img
                 src={flyerImage}
                 alt="The Senator's Cup Flyer"
@@ -264,5 +265,6 @@ export default function CampaignPage() {
     </div>
   );
 }
+
 
 
