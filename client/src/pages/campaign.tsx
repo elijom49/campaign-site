@@ -1,5 +1,5 @@
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
-import flyerImage from "@attached_assets/Logo Flyer.png";
+import flyerImage from "@attached_assets/Sen Logo Flyer.png";
 import { ExternalLink, Calendar, Megaphone, Users, DollarSign, Camera, Share2 } from "lucide-react";
 
 export default function CampaignPage() {
