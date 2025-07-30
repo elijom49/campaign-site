@@ -1,6 +1,6 @@
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
-import flyerImage from "@attached_assets/Logo Flyer.png"; // This is the flyer you uploaded
+import flyerImage from "@assets/Logo Flyer.png"; // This is the flyer you uploaded
 
 export default function CampaignPage() {
   const { t } = useLanguage();
