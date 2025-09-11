@@ -192,7 +192,7 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#2479ff", color: "#fff" }}
+                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
                 Donate Today
               </a>
