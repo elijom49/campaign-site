@@ -19,11 +19,12 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Four CTA Buttons */}
-            <div className="flex flex-col gap-4 w-full sm:w-64 mt-6">
+            {/* Four CTA Buttons in 2x2 Grid */}
+            <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mt-6">
               <a
                 href="https://jump4senate.com/volunteer"
-                className="btn-primary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
                 Get Involved
               </a>
@@ -31,19 +32,22 @@ export default function HomePage() {
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#2479ff", color: "#fff" }}
               >
                 Donate
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
                 Follow Us on Socials
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
                 Sign Petition
               </a>
@@ -174,11 +178,12 @@ export default function HomePage() {
               Be part of the campaign that puts people before profits.
             </p>
 
-            {/* Four CTA Buttons */}
-            <div className="flex flex-col gap-4 w-full sm:w-64 mx-auto">
+            {/* Four CTA Buttons in 2x2 Grid */}
+            <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mx-auto">
               <a
                 href="https://jump4senate.com/volunteer"
-                className="btn-primary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
                 Get Involved
               </a>
@@ -186,19 +191,22 @@ export default function HomePage() {
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#2479ff", color: "#fff" }}
               >
                 Donate Today
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
                 Follow Us on Socials
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
-                className="btn-secondary-large text-center"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
+                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
                 Sign Petition
               </a>
