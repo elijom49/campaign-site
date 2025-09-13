@@ -59,11 +59,11 @@ export default function HomePage() {
 
           <div className="col-span-12 lg:col-span-5 lg:-ml-24">
             <div className="relative">
-              {/* CHANGED TO NEW HEADSHOT IMAGE */}
+              {/* CHANGED TO NEW HEADSHOT IMAGE - REMOVED SHADOW */}
               <img
                 src={candidatePhoto}
                 alt="Jump - Candidate for U.S. Senate"
-                className="w-4/5 h-auto rounded-2xl shadow-2xl mx-auto"
+                className="w-4/5 h-auto rounded-2xl mx-auto"
               />
               {/* CHANGED QUOTE BOX - BIG YELLOW BOX, WHITE TEXT, GREEN QUOTES, 3X BIGGER */}
               <div className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md text-2xl" style={{ backgroundColor: "#fed709" }}>
