@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Advanced Hero Section - CHANGED BACKGROUND TO BLUE */}
-      <section className="hero-section-advanced min-h-screen flex items-center" style={{ backgroundColor: "#1e75ff" }}>
+      <section className="hero-section-advanced min-h-screen flex items-center" style={{ backgroundColor: "#1e75ff", backgroundImage: "none" }}>
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
