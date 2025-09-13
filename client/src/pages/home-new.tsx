@@ -65,9 +65,12 @@ export default function HomePage() {
                 alt="Jump - Candidate for U.S. Senate"
                 className="w-4/5 h-auto rounded-2xl mx-auto"
               />
-              {/* CHANGED QUOTE BOX - BIG YELLOW BOX, WHITE TEXT, GREEN QUOTES, 3X BIGGER */}
-              <div className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md text-2xl" style={{ backgroundColor: "#fed709" }}>
-                <blockquote className="font-bold text-white">
+              {/* CHANGED QUOTE BOX - WHITE BOX, YELLOW BORDER, WHITE TEXT, GREEN QUOTES, 3X BIGGER */}
+              <div className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md text-2xl" style={{ 
+                backgroundColor: "white", 
+                border: "4px solid #fed709" 
+              }}>
+                <blockquote className="font-bold" style={{ color: "black" }}>
                   <span className="text-4xl font-black" style={{ color: "#2E8B57" }}>"</span>
                   It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽
                   <span className="text-4xl font-black" style={{ color: "#2E8B57" }}>"</span>
