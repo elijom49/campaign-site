@@ -25,11 +25,6 @@ export default function Navigation() {
     return false;
   };
 
-  const showLanguageToggle =
-    location === "/" ||
-    location.startsWith("/about") ||
-    location.startsWith("/policies");
-
   return (
     <nav className="bg-white/95 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-100 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +62,6 @@ export default function Navigation() {
                 </Link>
               ))}
             </div>
-            {showLanguageToggle && <LanguageToggle />}
             <a
               href="https://secure.actblue.com/donate/jumpforsenate"
               target="_blank"
@@ -110,11 +104,6 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
-            {showLanguageToggle && (
-              <div className="px-3 py-2">
-                <LanguageToggle />
-              </div>
-            )}
             <div className="px-3 py-2">
               <a
                 href="https://secure.actblue.com/donate/jumpforsenate"
