@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { useLanguage } from "@/hooks/use-language";
 import candidatePhoto from "@assets/IMG_2354_1751141579485.jpg";
+import campaignFlyer from "@assets/Jump for Senate Flyer.pdf";
 
 export default function AboutPage() {
   const { t } = useLanguage();
@@ -17,7 +18,7 @@ export default function AboutPage() {
             </h1>
 
             {/* Updated Bio Section */}
-            <div className="bg-black border border-white p-6 rounded-lg max-w-3xl">
+            <div className="bg-[#1e75ff] p-6 rounded-lg max-w-3xl">
               <p className="text-lg text-white leading-relaxed">
                 Formerly known as Wesley Red—educator, astronomer, and electrician — but certainly not a politician. An active speaker and community organizer, Chicago Federation of Labor delegate, and Electrical Workers Minority Caucus member who frequently donates his Saturdays giving back to the community through volunteer electrical work, engagement through the church, and volunteering at food pantries. He's no stranger to the neighborhood!
               </p>
@@ -31,10 +32,18 @@ export default function AboutPage() {
                 </span>
               </Link>
               <Link href="/volunteer">
-                <span className="inline-block border-2 border-white text-white px-6 py-3 text-lg font-bold hover:bg-white hover:text-black transition-colors">
+                <span className="inline-block bg-[#2e8b58] text-white px-6 py-3 text-lg font-bold hover:bg-green-600 transition-colors">
                   {t("about.getInvolved")}
                 </span>
               </Link>
+              <a
+                href={campaignFlyer}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#ff7600] text-white px-6 py-3 text-lg font-bold hover:bg-orange-500 transition-colors"
+              >
+                Download Campaign Flyer
+              </a>
             </div>
 
             {/* Jump Quote Section (no box) */}
@@ -62,7 +71,10 @@ export default function AboutPage() {
 
           {/* Right Side Image */}
           <div className="col-span-12 lg:col-span-4 flex items-center justify-center py-20">
-            <div className="max-w-md">
+            <div
+              className="max-w-md"
+              style={{ transform: "translateY(-2in)" }}
+            >
               <img
                 src={candidatePhoto}
                 alt="Jump - Candidate for U.S. Senate"
