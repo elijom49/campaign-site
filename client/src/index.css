@@ -1,3 +1,23 @@
+/* Load Greve variable font */
+@font-face {
+  font-family: 'Greve';
+  src: url('/fonts/greve-variable.ttf') format('truetype');
+  font-weight: 100 900; /* variable weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Utility class */
+.font-greve {
+  font-family: 'Greve', ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Force hero background */
+.hero-section-advanced {
+  background-color: #1e75ff !important;
+  background-image: none !important;
+}
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* Font assignments based on user specifications */
