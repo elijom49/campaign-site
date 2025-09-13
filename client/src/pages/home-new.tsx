@@ -10,8 +10,11 @@ export default function HomePage() {
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              {/* CHANGED TEXT TO WHITE */}
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mt-12">
+              {/* CHANGED TEXT TO WHITE & FONT TO GREVE */}
+              <h1
+                className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mt-12"
+                style={{ fontFamily: "Greve, sans-serif" }}
+              >
                 Fighting for Working Families in Illinois
               </h1>
               {/* CHANGED TEXT TO YELLOW, BIGGER, BOLD */}
