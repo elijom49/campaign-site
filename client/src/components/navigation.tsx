@@ -3,7 +3,6 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/hooks/use-language";
-import LanguageToggle from "@/components/language-toggle";
 import jumpLogo from "@assets/IMG_4083.jpg"; // ✅ Correctly imported logo from src/assets
 
 export default function Navigation() {
