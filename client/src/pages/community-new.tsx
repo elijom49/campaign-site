@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Calendar, Users, MapPin, Share2, ArrowUpRight, Youtube, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
+import { Calendar, Users, MapPin, Share2, ArrowUpRight, ShoppingBag, Shirt, SignpostBig } from "lucide-react";
 import { FaTiktok, FaLinkedin } from "react-icons/fa";
 import senatorsCupPoster from "@assets/Sen-Cup-Flyer-Official_1751137281159.png";
+import threadsIcon from "@assets/threads.png";
 
 export default function CommunityPage() {
   return (
@@ -20,6 +21,18 @@ export default function CommunityPage() {
             <p className="text-body-large text-gray-300 max-w-3xl mx-auto">
               Connect with Illinois residents building a grassroots movement for economic justice and progressive change.
             </p>
+
+            {/* Google Calendar Section */}
+            <div className="mt-12 max-w-5xl mx-auto">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?src=elisejonesms@gmail.com&ctz=America%2FChicago"
+                style={{ border: 0, width: "100%", minHeight: "60vh" }}
+                frameBorder="0"
+                scrolling="no"
+                className="rounded-lg"
+                title="Community Calendar"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
@@ -70,23 +83,21 @@ export default function CommunityPage() {
             </a>
             
             <a 
-              href="https://www.youtube.com/@JumpForSenate" 
+              href="https://www.threads.com/@jumpforsenate" 
               target="_blank" 
               rel="noopener noreferrer"
               className="policy-card-advanced bg-black border-gray-800 interactive-element group"
             >
               <div className="flex items-center mb-4">
-                <Youtube className="w-8 h-8 text-red-500 mr-3" />
-                <h3 className="text-subheadline text-xl font-semibold text-white">YouTube</h3>
+                <img src={threadsIcon} alt="Threads" className="w-8 h-8 mr-3" style={{ filter: "invert(33%) sepia(86%) saturate(7400%) hue-rotate(357deg) brightness(100%) contrast(104%)" }} />
+                <h3 className="text-subheadline text-xl font-semibold text-white">Threads</h3>
                 <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
               </div>
-              <div className="text-blue-400 font-medium">@JumpForSenate</div>
+              <div className="text-blue-400 font-medium">@jumpforsenate</div>
             </a>
           </div>
         </div>
       </section>
-
-      {/* Events and all remaining content unchanged */}
 
       {/* Newsletter Section */}
       <section className="section-spacing-tight bg-white">
