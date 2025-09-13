@@ -1,4 +1,3 @@
-import { Link } from "wouter";
 import { ArrowRight, Users, Heart, Zap } from "lucide-react";
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 import chicagoSkyline from "@assets/chicago-river-5249198_1280_1751144895089.jpg";
@@ -23,6 +22,8 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mt-6">
               <a
                 href="https://jump4senate.com/volunteer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
@@ -39,6 +40,8 @@ export default function HomePage() {
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
@@ -46,6 +49,8 @@ export default function HomePage() {
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
@@ -124,12 +129,12 @@ export default function HomePage() {
               <p className="text-gray-600 mb-4">
                 Families deserve affordable healthcare, housing, and everyday essentials.
               </p>
-              <Link
+              <a
                 href="/policies"
                 className="text-blue-600 font-medium inline-flex items-center"
               >
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
+              </a>
             </div>
 
             <div className="aclu-card">
@@ -140,12 +145,12 @@ export default function HomePage() {
               <p className="text-gray-600 mb-4">
                 A livable planet for our kids means bold action on climate change now.
               </p>
-              <Link
+              <a
                 href="/policies"
                 className="text-blue-600 font-medium inline-flex items-center"
               >
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
+              </a>
             </div>
 
             <div className="aclu-card">
@@ -156,12 +161,12 @@ export default function HomePage() {
               <p className="text-gray-600 mb-4">
                 Equal pay and fair prices for women and families—no exceptions.
               </p>
-              <Link
+              <a
                 href="/policies"
                 className="text-blue-600 font-medium inline-flex items-center"
               >
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -182,6 +187,8 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mx-auto">
               <a
                 href="https://jump4senate.com/volunteer"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
@@ -192,12 +199,14 @@ export default function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
+                style={{ backgroundColor: "#2479ff", color: "#fff", border: "2px solid #ffffff" }}
               >
                 Donate Today
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
@@ -205,6 +214,8 @@ export default function HomePage() {
               </a>
               <a
                 href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
