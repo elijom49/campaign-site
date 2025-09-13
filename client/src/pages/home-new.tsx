@@ -18,12 +18,10 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* Four CTA Buttons in 2x2 Grid */}
+            {/* Four CTA Buttons in 2x2 Grid - FIXED URLS */}
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mt-6">
               <a
                 href="https://jump4senate.com/volunteer"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
@@ -39,18 +37,14 @@ export default function HomePage() {
                 Donate
               </a>
               <a
-                href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://jump4senate.com/community"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
                 Follow Us on Socials
               </a>
               <a
-                href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://jump4senate.com/volunteer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
@@ -68,7 +62,7 @@ export default function HomePage() {
               />
               <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
                 <blockquote className="text-sm font-medium italic">
-                  "It’s not Red vs. Blue, it’s Oligarchs vs. You 🫵🏽"
+                  "It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽"
                 </blockquote>
               </div>
             </div>
@@ -116,7 +110,7 @@ export default function HomePage() {
               Fighting for What Matters
             </h2>
             <p className="text-body-large text-white max-w-2xl mx-auto">
-              From lowering costs to protecting our planet, we’re building a campaign for all of us.
+              From lowering costs to protecting our planet, we're building a campaign for all of us.
             </p>
           </div>
 
@@ -183,12 +177,10 @@ export default function HomePage() {
               Be part of the campaign that puts people before profits.
             </p>
 
-            {/* Four CTA Buttons in 2x2 Grid */}
+            {/* Four CTA Buttons in 2x2 Grid - FIXED URLS */}
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mx-auto">
               <a
                 href="https://jump4senate.com/volunteer"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#FFD60A", color: "#000" }}
               >
@@ -204,18 +196,14 @@ export default function HomePage() {
                 Donate Today
               </a>
               <a
-                href="https://jump4senate.com/community#:~:text=and%20progressive%20change.-,Follow%20the%20Campaign,-Stay%20connected%20with"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://jump4senate.com/community"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2E8B57", color: "#fff" }}
               >
                 Follow Us on Socials
               </a>
               <a
-                href="https://jump4senate.com/community#:~:text=Donate-,Join%20Our%0ACommunity,-Connect%20with%20Illinois"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="https://jump4senate.com/volunteer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
               >
