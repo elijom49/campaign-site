@@ -1,6 +1,7 @@
 /* globals.css */
 
-/* Load the Greve font from /public/fonts */
+/* Optional: Remove Greve font-face if no longer used */
+/* 
 @font-face {
   font-family: 'Greve';
   src: url('/fonts/Greve.woff2') format('woff2'),
@@ -9,11 +10,11 @@
   font-style: normal;
   font-display: swap;
 }
+*/
 
-/* Utility class to apply Greve font */
-.font-greve {
-  font-family: 'Greve', ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, sans-serif;
+/* Utility class to apply Impact font */
+.font-impact {
+  font-family: 'Impact', sans-serif;
 }
 
 /* Force hero background to #1e75ff and remove any gradient/image */
