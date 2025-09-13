@@ -1,24 +1,26 @@
 import { ArrowRight, Users, Heart, Zap } from "lucide-react";
-import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
+import candidatePhoto from "@assets/main headshot no bg.png";
 import chicagoSkyline from "@assets/chicago-river-5249198_1280_1751144895089.jpg";
 
 export default function HomePage() {
   return (
     <div className="bg-white">
-      {/* Advanced Hero Section */}
-      <section className="hero-section-advanced min-h-screen flex items-center">
+      {/* Advanced Hero Section - CHANGED BACKGROUND TO BLUE */}
+      <section className="hero-section-advanced min-h-screen flex items-center" style={{ backgroundColor: "#1e75ff" }}>
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-gray-900 leading-tight mt-12">
+              {/* CHANGED TEXT TO WHITE */}
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mt-12">
                 Fighting for Working Families in Illinois
               </h1>
-              <p className="text-body-large text-gray-600 max-w-lg">
+              {/* CHANGED TEXT TO YELLOW, BIGGER, BOLD */}
+              <p className="text-body-large font-bold text-2xl" style={{ color: "#fed709" }}>
                 Together, we can build a fairer, stronger, and more just future for everyone.
               </p>
             </div>
 
-            {/* Four CTA Buttons in 2x2 Grid - FIXED URLS */}
+            {/* Four CTA Buttons in 2x2 Grid - UPDATED DONATE BUTTONS */}
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mt-6">
               <a
                 href="https://jump4senate.com/volunteer"
@@ -27,12 +29,13 @@ export default function HomePage() {
               >
                 Get Involved
               </a>
+              {/* CHANGED DONATE BUTTON - BLUE BACKGROUND, WHITE TEXT, WHITE OUTLINE */}
               <a
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#2479ff", color: "#fff" }}
+                style={{ backgroundColor: "#1e75ff", color: "#fff", border: "2px solid #ffffff" }}
               >
                 Donate
               </a>
@@ -43,10 +46,11 @@ export default function HomePage() {
               >
                 Follow Us on Socials
               </a>
+              {/* REMOVED GRAY OUTLINE FROM SIGN PETITION BUTTON */}
               <a
                 href="https://jump4senate.com/volunteer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
+                style={{ backgroundColor: "#ffffff", color: "#000" }}
               >
                 Sign Petition
               </a>
@@ -55,14 +59,18 @@ export default function HomePage() {
 
           <div className="col-span-12 lg:col-span-5 lg:-ml-24">
             <div className="relative">
+              {/* CHANGED TO NEW HEADSHOT IMAGE */}
               <img
                 src={candidatePhoto}
                 alt="Jump - Candidate for U.S. Senate"
                 className="w-4/5 h-auto rounded-2xl shadow-2xl mx-auto"
               />
-              <div className="absolute bottom-4 right-4 bg-blue-600 text-white p-4 rounded-lg shadow-lg max-w-xs border-l-4 border-yellow-400">
-                <blockquote className="text-sm font-medium italic">
-                  "It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽"
+              {/* CHANGED QUOTE BOX - BIG YELLOW BOX, WHITE TEXT, GREEN QUOTES, 3X BIGGER */}
+              <div className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md text-2xl" style={{ backgroundColor: "#fed709" }}>
+                <blockquote className="font-bold text-white">
+                  <span className="text-4xl font-black" style={{ color: "#2E8B57" }}>"</span>
+                  It's not Red vs. Blue, it's Oligarchs vs. You 🫵🏽
+                  <span className="text-4xl font-black" style={{ color: "#2E8B57" }}>"</span>
                 </blockquote>
               </div>
             </div>
@@ -115,7 +123,8 @@ export default function HomePage() {
           </div>
 
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="aclu-card">
+            {/* REMOVED BLUE OUTLINE FROM POLICY CARDS */}
+            <div className="aclu-card" style={{ border: "none" }}>
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">Lowering the Cost of Living</h3>
@@ -131,7 +140,7 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="aclu-card">
+            <div className="aclu-card" style={{ border: "none" }}>
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">Protecting Our Environment</h3>
@@ -147,7 +156,7 @@ export default function HomePage() {
               </a>
             </div>
 
-            <div className="aclu-card">
+            <div className="aclu-card" style={{ border: "none" }}>
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold">Ending the Pink Tax</h3>
@@ -177,7 +186,7 @@ export default function HomePage() {
               Be part of the campaign that puts people before profits.
             </p>
 
-            {/* Four CTA Buttons in 2x2 Grid - FIXED URLS */}
+            {/* Four CTA Buttons in 2x2 Grid - UPDATED DONATE BUTTONS */}
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mx-auto">
               <a
                 href="https://jump4senate.com/volunteer"
@@ -186,12 +195,13 @@ export default function HomePage() {
               >
                 Get Involved
               </a>
+              {/* CHANGED DONATE BUTTON - BLUE BACKGROUND, WHITE TEXT, WHITE OUTLINE */}
               <a
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#2479ff", color: "#fff", border: "2px solid #ffffff" }}
+                style={{ backgroundColor: "#1e75ff", color: "#fff", border: "2px solid #ffffff" }}
               >
                 Donate Today
               </a>
@@ -202,10 +212,11 @@ export default function HomePage() {
               >
                 Follow Us on Socials
               </a>
+              {/* REMOVED GRAY OUTLINE FROM SECOND SIGN PETITION BUTTON */}
               <a
                 href="https://jump4senate.com/volunteer"
                 className="text-center py-3 rounded-lg font-semibold shadow-md"
-                style={{ backgroundColor: "#ffffff", color: "#000", border: "2px solid #e5e7eb" }}
+                style={{ backgroundColor: "#ffffff", color: "#000" }}
               >
                 Sign Petition
               </a>
