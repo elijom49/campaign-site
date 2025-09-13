@@ -4,7 +4,7 @@ import chicagoSkyline from "@assets/chicago-river-5249198_1280_1751144895089.jpg
 
 export default function HomePage() {
   return (
-    <div className="bg-white font-impact">
+    <div className="bg-white font-sans">
       {/* Advanced Hero Section */}
       <section
         className="hero-section-advanced min-h-screen flex items-center"
@@ -13,10 +13,10 @@ export default function HomePage() {
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 lg:col-span-7 space-y-8 lg:ml-24">
             <div className="space-y-6">
-              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mt-12 font-impact">
+              <h1 className="text-display text-5xl lg:text-6xl xl:text-7xl text-white leading-tight mt-12 font-serif">
                 Fighting for Working Families in Illinois
               </h1>
-              <p className="text-body-large font-bold text-2xl text-yellow-400 font-impact">
+              <p className="text-body-large font-bold text-2xl text-yellow-400 font-serif">
                 Together, we can build a fairer, stronger, and more just future for everyone.
               </p>
             </div>
@@ -25,7 +25,7 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mt-6">
               <a
                 href="https://jump4senate.com/volunteer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ff7600", color: "#fff" }}
               >
                 Get Involved
@@ -34,21 +34,21 @@ export default function HomePage() {
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2e8b57", color: "#fff" }}
               >
                 Donate
               </a>
               <a
                 href="https://jump4senate.com/community"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000" }}
               >
                 Follow Us on Socials
               </a>
               <a
                 href="https://jump4senate.com/volunteer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffd60a", color: "#000" }}
               >
                 Sign Petition
@@ -64,7 +64,7 @@ export default function HomePage() {
                 className="w-4/5 h-auto rounded-2xl mx-auto"
               />
               <div
-                className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md text-2xl font-impact"
+                className="absolute bottom-4 right-4 p-8 rounded-lg shadow-lg max-w-md font-serif"
                 style={{
                   backgroundColor: "white",
                   border: "4px solid #fed709",
@@ -82,7 +82,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="stats-section font-impact">
+      <section className="stats-section font-serif">
         <div className="content-grid-advanced">
           <div className="col-span-12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -105,7 +105,7 @@ export default function HomePage() {
 
       {/* Policy Platform Section */}
       <section
-        className="section-spacing-loose relative font-impact"
+        className="section-spacing-loose relative font-serif"
         style={{
           backgroundImage: `url(${chicagoSkyline})`,
           backgroundSize: "cover",
@@ -116,50 +116,50 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-blue-600 bg-opacity-70"></div>
         <div className="content-grid-advanced relative z-10">
           <div className="col-span-12 text-center mb-16">
-            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6 font-impact">
+            <h2 className="text-headline text-4xl lg:text-5xl text-white mb-6 font-serif">
               Fighting for What Matters
             </h2>
-            <p className="text-body-large text-white max-w-2xl mx-auto font-impact">
+            <p className="text-body-large text-white max-w-2xl mx-auto font-serif">
               From lowering costs to protecting our planet, we're building a campaign for all of us.
             </p>
           </div>
 
           <div className="col-span-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="aclu-card border-none font-impact">
+            <div className="aclu-card border-none font-serif">
               <div className="flex items-center mb-4">
                 <Heart className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold font-impact">Lowering the Cost of Living</h3>
+                <h3 className="text-xl font-semibold font-serif">Lowering the Cost of Living</h3>
               </div>
-              <p className="text-gray-600 mb-4 font-impact">
+              <p className="text-gray-600 mb-4 font-serif">
                 Families deserve affordable healthcare, housing, and everyday essentials.
               </p>
-              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-impact">
+              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-serif">
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
 
-            <div className="aclu-card border-none font-impact">
+            <div className="aclu-card border-none font-serif">
               <div className="flex items-center mb-4">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold font-impact">Protecting Our Environment</h3>
+                <h3 className="text-xl font-semibold font-serif">Protecting Our Environment</h3>
               </div>
-              <p className="text-gray-600 mb-4 font-impact">
+              <p className="text-gray-600 mb-4 font-serif">
                 A livable planet for our kids means bold action on climate change now.
               </p>
-              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-impact">
+              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-serif">
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
 
-            <div className="aclu-card border-none font-impact">
+            <div className="aclu-card border-none font-serif">
               <div className="flex items-center mb-4">
                 <Zap className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold font-impact">Ending the Pink Tax</h3>
+                <h3 className="text-xl font-semibold font-serif">Ending the Pink Tax</h3>
               </div>
-              <p className="text-gray-600 mb-4 font-impact">
+              <p className="text-gray-600 mb-4 font-serif">
                 Equal pay and fair prices for women and families—no exceptions.
               </p>
-              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-impact">
+              <a href="/policies" className="text-blue-600 font-medium inline-flex items-center font-serif">
                 Learn More <ArrowRight className="w-4 h-4 ml-1" />
               </a>
             </div>
@@ -168,20 +168,20 @@ export default function HomePage() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="cta-section-advanced font-impact">
+      <section className="cta-section-advanced font-serif">
         <div className="content-grid-advanced">
           <div className="col-span-12 text-center">
-            <h2 className="text-headline text-4xl lg:text-5xl mb-6 font-impact">
+            <h2 className="text-headline text-4xl lg:text-5xl mb-6 font-serif">
               Join the Movement
             </h2>
-            <p className="text-body-large mb-8 max-w-2xl mx-auto font-impact">
+            <p className="text-body-large mb-8 max-w-2xl mx-auto font-serif">
               Be part of the campaign that puts people before profits.
             </p>
 
             <div className="grid grid-cols-2 gap-4 w-full sm:w-96 mx-auto">
               <a
                 href="https://jump4senate.com/volunteer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ff7600", color: "#fff" }}
               >
                 Get Involved
@@ -190,21 +190,21 @@ export default function HomePage() {
                 href="https://secure.actblue.com/donate/jumpforsenate"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#2e8b57", color: "#fff" }}
               >
                 Donate Today
               </a>
               <a
                 href="https://jump4senate.com/community"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffffff", color: "#000" }}
               >
                 Follow Us on Socials
               </a>
               <a
                 href="https://jump4senate.com/volunteer"
-                className="text-center py-3 rounded-lg font-semibold shadow-md font-impact"
+                className="text-center py-3 rounded-lg font-semibold shadow-md"
                 style={{ backgroundColor: "#ffd60a", color: "#000" }}
               >
                 Sign Petition
@@ -215,7 +215,7 @@ export default function HomePage() {
       </section>
 
       {/* Election Day Banner */}
-      <div className="bg-orange-600 py-4 overflow-hidden font-impact">
+      <div className="bg-orange-600 py-4 overflow-hidden font-serif">
         <div className="animate-marquee text-white font-bold text-xl md:text-2xl">
           <span className="pr-20">
             Primary is March 17, 2026! • Primary is March 17, 2026! • Primary is March 17, 2026!
