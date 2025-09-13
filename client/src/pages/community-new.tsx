@@ -89,7 +89,7 @@ export default function CommunityPage() {
               className="policy-card-advanced bg-black border-gray-800 interactive-element group"
             >
               <div className="flex items-center mb-4">
-                <img src={threadsIcon} alt="Threads" className="w-8 h-8 mr-3" style={{ filter: "invert(33%) sepia(86%) saturate(7400%) hue-rotate(357deg) brightness(100%) contrast(104%)" }} />
+                <img src={threadsIcon} alt="Threads" className="w-8 h-8 mr-3" />
                 <h3 className="text-subheadline text-xl font-semibold text-white">Threads</h3>
                 <ArrowUpRight className="w-5 h-5 text-gray-400 ml-auto group-hover:text-white transition-colors" />
               </div>
