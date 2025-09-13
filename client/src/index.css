@@ -1,15 +1,15 @@
-/* Load Greve variable font */
+/* Load Impact variable font */
 @font-face {
-  font-family: 'Greve';
-  src: url('/fonts/greve-variable.ttf') format('truetype');
+  font-family: 'Impact';
+  src: url('/fonts/impact-variable.ttf') format('truetype');
   font-weight: 100 900; /* variable weight range */
   font-style: normal;
   font-display: swap;
 }
 
 /* Utility class */
-.font-greve {
-  font-family: 'Greve', ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+.font-impact {
+  font-family: 'Impact', ui-sans-serif, system-ui, -apple-system, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -138,6 +138,28 @@ body, p, span, div, a, button, input, textarea, label {
   z-index: -1;
   border-radius: inherit;
 }
+
+.frame-yellow-3d {
+  background: hsl(45, 100%, 50%);
+  box-shadow: var(--shadow-yellow-3d), var(--border-3d-yellow);
+  border: 2px solid hsl(45, 100%, 40%);
+  position: relative;
+}
+
+.frame-yellow-3d::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: hsl(45, 100%, 60%);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* ... rest of the file remains unchanged ... */
+
 
 .frame-yellow-3d {
   background: hsl(45, 100%, 50%);
