@@ -1,10 +1,9 @@
 import candidatePhoto from "@assets/IMG_2361_1751061882818.jpg";
 import flyerImage from "@attached_assets/Sen Logo Flyer.png";
-import petitionFlyer from "client/public/petition-event.png"; // Petition event flyer
+import petitionFlyer from "@attached_assets/petition-event.png"; // fixed import
 import { ExternalLink, Calendar, Megaphone, Users, DollarSign, Camera, Share2 } from "lucide-react";
 
 export default function CampaignPage() {
-
   return (
     <div className="bg-white text-black min-h-screen">
       <div className="content-grid-advanced py-12">
@@ -133,29 +132,26 @@ export default function CampaignPage() {
           <div className="py-12"></div>
 
           {/* Petition Event Section */}
-          <div className="bg-blue-800 border-4 border-yellow-400 rounded-3xl p-12 mb-12">
-            <div className="text-center mb-8">
-              <h2 className="text-5xl font-bold text-yellow-400 mb-4">🇺🇸 Petition Signing & Fundraising Event</h2>
+          <div className="bg-white border-4 border-yellow-400 rounded-3xl p-12 mb-12">
+            <div className="text-center mb-12">
+              <h2 className="text-5xl font-bold text-yellow-500 mb-4">Petition Signing / Fundraising / Voter Registration</h2>
+              <p className="text-xl text-gray-800 max-w-4xl mx-auto mb-8">
+                🇺🇸 Come through our Petition signing/fundraising/voter registration drive! There will be a DJ, musicians, and comics as well. Share this flyer!
+              </p>
+              <p className="text-lg text-gray-700">
+                Time: Thursday, October 9th, 6-10PM <br/>
+                Location: 918 W 119th Street, Chicago IL <br/>
+                Donate: $25 <br/>
+                Jump Shepherd for U.S. Senate 🇺🇸 <br/>
+                Food, Fun, Politics 🌭
+              </p>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto">
-              <div className="flex-1">
-                <img
-                  src={petitionFlyer}
-                  alt="Petition Event Flyer"
-                  className="rounded-lg shadow-lg mx-auto max-w-full"
-                />
-              </div>
-              <div className="flex-1 text-left text-white max-w-md">
-                <p className="mb-4">
-                  🇺🇸 Come through our Petition signing/fundraising/voter registration drive! There will be a DJ, musicians, and comics as well. 
-                  Share this flyer!
-                </p>
-                <p className="mb-2"><strong>Time:</strong> Thursday, October 9th, 6-10PM</p>
-                <p className="mb-2"><strong>Location:</strong> 918 W 119th Street, Chicago IL</p>
-                <p className="mb-2"><strong>Donate:</strong> $25</p>
-                <p className="mt-4 font-bold">Jump Shepherd for U.S. Senate 🇺🇸</p>
-                <p>Food, Fun, Politics 🌭</p>
-              </div>
+            <div className="flex justify-center">
+              <img 
+                src={petitionFlyer} 
+                alt="Petition Event Flyer" 
+                className="rounded-lg shadow-lg max-w-full sm:max-w-xl"
+              />
             </div>
           </div>
 
@@ -182,7 +178,7 @@ export default function CampaignPage() {
                 />
               </div>
 
-              {/* Flyer image */}
+              {/* Flyer image - no white box or shadow */}
               <img
                 src={flyerImage}
                 alt="The Senator's Cup Flyer"
