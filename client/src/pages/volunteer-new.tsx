@@ -110,6 +110,33 @@ export default function VolunteerPage() {
         </div>
       </section>
 
+      {/* Video + Petition Section */}
+      <section className="py-12 bg-gray-900">
+        <div className="content-grid-advanced grid md:grid-cols-2 gap-8 items-center">
+          <div className="col-span-1">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                className="w-full h-64 md:h-80 rounded-xl"
+                src="https://www.youtube.com/embed/xnNF3vN5QfY"
+                title="YouTube video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+          <div className="col-span-1 flex justify-center">
+            <a
+              href="/assets/Petition Form.pdf"
+              download="Petition Form.pdf"
+              className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 px-8 text-lg rounded shadow-lg"
+            >
+              Download Petition Form
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Volunteer Opportunities */}
       <section className="section-spacing-tight bg-blue-600">
         <div className="content-grid-advanced">
@@ -376,4 +403,3 @@ export default function VolunteerPage() {
     </div>
   );
 }
-
