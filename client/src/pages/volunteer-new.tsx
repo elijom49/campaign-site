@@ -125,9 +125,16 @@ export default function VolunteerPage() {
               ></iframe>
             </div>
           </div>
-          <div className="col-span-1 flex justify-center">
+          <div className="col-span-1 flex flex-col items-center">
+            {/* Inline PDF Viewer */}
+            <iframe
+              src="/petition-form.pdf"
+              className="w-full h-96 md:h-[32rem] rounded-xl mb-4"
+              title="Petition Form"
+            ></iframe>
+            {/* Download Button */}
             <a
-              href="/attached_assets/Petition Form.pdf"
+              href="/petition-form.pdf"
               download="Petition Form.pdf"
               className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 px-8 text-lg rounded shadow-lg"
             >
@@ -136,7 +143,6 @@ export default function VolunteerPage() {
           </div>
         </div>
       </section>
-
       {/* Volunteer Opportunities */}
       <section className="section-spacing-tight bg-blue-600">
         <div className="content-grid-advanced">
@@ -249,7 +255,6 @@ export default function VolunteerPage() {
             >
               Sign Up to Volunteer or Apply to Join Our Team
             </a>
-
             {/* Volunteer Training Box under button */}
             <div className="bg-white border border-gray-300 p-8 rounded-2xl mt-8 text-left max-w-md mx-auto">
               <h3 className="text-headline text-2xl text-black mb-4">Volunteer Training</h3>
@@ -344,7 +349,6 @@ export default function VolunteerPage() {
           </div>
         </div>
       </section>
-
       {/* Meet the Campaign Team Section */}
       <section className="bg-gray-900 py-16">
         <div className="max-w-6xl mx-auto px-6">
