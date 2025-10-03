@@ -127,7 +127,7 @@ export default function VolunteerPage() {
           </div>
           <div className="col-span-1 flex justify-center">
             <a
-              href="/assets/Petition Form.pdf"
+              href="/attached_assets/Petition Form.pdf"
               download="Petition Form.pdf"
               className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-4 px-8 text-lg rounded shadow-lg"
             >
