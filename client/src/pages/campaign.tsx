@@ -128,33 +128,6 @@ export default function CampaignPage() {
             </div>
           </div>
 
-          {/* Spacer */}
-          <div className="py-12"></div>
-
-          {/* Petition Event Section */}
-          <div className="bg-white border-4 border-yellow-400 rounded-3xl p-12 mb-12">
-            <div className="text-center mb-12">
-              <h2 className="text-5xl font-bold text-yellow-500 mb-4">Petition Signing / Fundraising / Voter Registration</h2>
-              <p className="text-xl text-gray-800 max-w-4xl mx-auto mb-8">
-                🇺🇸 Come through our Petition signing/fundraising/voter registration drive! There will be a DJ, musicians, and comics as well. Share this flyer!
-              </p>
-              <p className="text-lg text-gray-700">
-                Time: Thursday, October 9th, 6-10PM <br/>
-                Location: 918 W 119th Street, Chicago IL <br/>
-                Donate: $25 <br/>
-                Jump Shepherd for U.S. Senate 🇺🇸 <br/>
-                Food, Fun, Politics 🌭
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <img 
-                src={petitionFlyer} 
-                alt="Petition Event Flyer" 
-                className="rounded-lg shadow-lg max-w-full sm:max-w-xl"
-              />
-            </div>
-          </div>
-
           {/* New Fundraiser Section */}
           <div className="bg-white border-4 border-yellow-400 rounded-3xl p-12">
             <div className="text-center mb-12">
