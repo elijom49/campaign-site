@@ -71,31 +71,6 @@ export default function CampaignPage() {
         </div>
       </div>
 
-      {/* Petition Signing / Fundraising Event */}
-      <div className="bg-blue-800 py-16 px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">🇺🇸 Petition Signing & Fundraising Event</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 max-w-5xl mx-auto">
-          <div className="flex-1">
-            <img
-              src={petitionFlyer}
-              alt="Petition Event Flyer"
-              className="rounded-lg shadow-lg mx-auto max-w-full"
-            />
-          </div>
-          <div className="flex-1 text-left text-white max-w-md">
-            <p className="mb-4">
-              🇺🇸 Come through our Petition signing/fundraising/voter registration drive! There will be a DJ, musicians, and comics as well. 
-              Share this flyer!
-            </p>
-            <p className="mb-2"><strong>Time:</strong> Thursday, October 9th, 6-10PM</p>
-            <p className="mb-2"><strong>Location:</strong> 918 W 119th Street, Chicago IL</p>
-            <p className="mb-2"><strong>Donate:</strong> $25</p>
-            <p className="mt-4 font-bold">Jump Shepherd for U.S. Senate 🇺🇸</p>
-            <p>Food, Fun, Politics 🌭</p>
-          </div>
-        </div>
-      </div>
-
       {/* Fundraiser: The Senator’s Cup */}
       <div className="bg-blue-900 py-16 px-4 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Fundraiser: The Senator’s Cup</h2>
