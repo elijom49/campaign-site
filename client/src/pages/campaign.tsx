@@ -128,6 +128,9 @@ export default function CampaignPage() {
             </div>
           </div>
 
+           {/* Spacer */}
+          <div className="py-12"></div>
+
           {/* New Fundraiser Section */}
           <div className="bg-white border-4 border-yellow-400 rounded-3xl p-12">
             <div className="text-center mb-12">
